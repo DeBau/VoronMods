@@ -1,8 +1,15 @@
 # CW2 Umbilical mount
 Voron Clockwork 2 / LGX lite umbilical cord mount
 
+
+![Mounting](https://github.com/DeBau/VoronMods/blob/main/CW2%20umbilical%20mount/Pics/view01.jpg?raw=true)
+
 - Cord Diameter: 9-10mm
 - other diameter coming soon
+
+
+![Mounting](https://github.com/DeBau/VoronMods/blob/main/CW2%20umbilical%20mount/Pics/upper01.jpg?raw=true)
+
 
 ### BOM 
    - 1* M3x12 SHCS  
