@@ -11,4 +11,5 @@ Voron Clockwork 2 / LGX lite umbilical cord mount
    - 
 ## Installation:  
 
-![Mounting]([./Lgx_Lite_Mounting.png](https://github.com/DeBau/VoronMods/blob/main/CW2%20umbilical%20mount/Pics/Umbilical06.png))
+![Mounting](https://github.com/DeBau/VoronMods/blob/main/CW2%20umbilical%20mount/Pics/Umbilical06.png?raw=true)
+![Mounting](https://github.com/DeBau/VoronMods/blob/main/CW2%20umbilical%20mount/Pics/Umbilical008.png?raw=true)
