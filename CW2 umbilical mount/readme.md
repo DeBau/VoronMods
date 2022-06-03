@@ -28,6 +28,3 @@
 ## Print orientation  
 
 ![ori](https://github.com/DeBau/VoronMods/blob/main/CW2%20umbilical%20mount/Pics/orientation.png?raw=true)
-
-###links
-
