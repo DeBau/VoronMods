@@ -2,8 +2,9 @@ comming soon
 
 # Galileo Extruder Umbilical mount
 
-- [Galileo by JaredC01](https://github.com/JaredC01/Galileo)
+the original Galileo project was developed by JaredC01. I have adapted some of his parts to develop an umbilical cord mount
 
+- [Galileo by JaredC01](https://github.com/JaredC01/Galileo)
 
 ## Printer
 - Voron V2 / Trident / Switchwire
