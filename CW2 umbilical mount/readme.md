@@ -3,6 +3,8 @@
 - Voron Clockwork 2 
 - [LGX lite Stealthburner CW2 stye mount](https://github.com/Eytecz/LGX_Lite_Stealthburner_CW2_style_mount?fbclid=IwAR2jVpmkN6CF3g_x64RvfNjL_XqWFyiwmMs-Udkr8nwRxlgJkvjAkYAEyz4)
 
+- Voron V2 / Trident / Switchwire
+
 ![Front](https://github.com/DeBau/VoronMods/blob/main/CW2%20umbilical%20mount/Pics/Front.jpg?raw=true)
 
 ![Pic](https://github.com/DeBau/VoronMods/blob/main/CW2%20umbilical%20mount/Pics/view01.jpg?raw=true)
