@@ -1,6 +1,9 @@
 # CW2 Umbilical mount
-Voron Clockwork 2 / LGX lite umbilical cord mount
 
+- Voron Clockwork 2 
+- LGX lite Stealthburner CW2 Stye [GitHub Pages](https://github.com/Eytecz/LGX_Lite_Stealthburner_CW2_style_mount?fbclid=IwAR2jVpmkN6CF3g_x64RvfNjL_XqWFyiwmMs-Udkr8nwRxlgJkvjAkYAEyz4)
+
+![Front](https://github.com/DeBau/VoronMods/blob/main/CW2%20umbilical%20mount/Pics/Front.jpg?raw=true)
 
 ![Pic](https://github.com/DeBau/VoronMods/blob/main/CW2%20umbilical%20mount/Pics/view01.jpg?raw=true)
 
@@ -25,3 +28,6 @@ Voron Clockwork 2 / LGX lite umbilical cord mount
 ## Print orientation  
 
 ![ori](https://github.com/DeBau/VoronMods/blob/main/CW2%20umbilical%20mount/Pics/orientation.png?raw=true)
+
+###links
+
