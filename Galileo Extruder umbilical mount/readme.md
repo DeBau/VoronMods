@@ -23,7 +23,7 @@ the original Galileo project was developed by JaredC01. I have adapted some of h
    - 7* heatset inserts M3x5x4
    - 6* M3x8 SHCS
 ### other Print Parts 
--[Galileo by JaredC01](https://github.com/JaredC01/Galileo)
+- [Galileo by JaredC01](https://github.com/JaredC01/Galileo)
 
   
   
