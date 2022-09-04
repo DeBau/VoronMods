@@ -14,6 +14,9 @@
 
 ![Pic](https://github.com/DeBau/VoronMods/blob/main/CW2%20umbilical%20mount/Pics/upper.jpg?raw=true)
 
+## Rear Umbilical Addon and Y Endstop Relocation
+Use the Minsekt Mod
+https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Minsekt/Rear_Umbilical
 
 ## BOM 
    - 1* M3x12 SHCS  
