@@ -31,3 +31,6 @@ Use the Minsekt Mod
 ![Mounting](https://github.com/DeBau/VoronMods/blob/main/CW2%20umbilical%20mount/Pics/install01.png?raw=true)
 ![Mounting01](https://github.com/DeBau/VoronMods/blob/main/CW2%20umbilical%20mount/Pics/install02.png?raw=true)
 
+## Print orientation
+
+![Pic](https://github.com/DeBau/VoronMods/blob/main/CW2%20umbilical%20mount/Pics/print_orientation.png?raw=true)
