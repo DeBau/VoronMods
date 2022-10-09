@@ -14,9 +14,9 @@ It saves up to 60cm bowden
 ### for Glue Version
    - 3M VHB Tape
 
-<img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/TopView.jpg" alt="Top View" width=400 height=550>
+<img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/TopView.jpg" alt="Top View" width=400 height=510>
 
-<img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/ButtomView.jpg" alt="Buttom View" width=400 height=550>
+<img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/ButtomView.jpg" alt="Buttom View" width=400 height=510>
 
 ## Work great with
 - [elcrni V2.4-Trident-Spool-Holders](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/elcrni/V2.4-Trident-Spool-Holders)
