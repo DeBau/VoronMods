@@ -21,6 +21,16 @@ It saves up to 60cm bowden
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/ButtomView.jpg" alt="Buttom View" width=400 height=510>
 
+## Required parts
+
+|                                                              |                                                              |
+| :----------------------------------------------------------: | ------------------------------------------------------------ |
+| Voron Edition Standard und BSP| Top_VoronStyle_Bowden_Guide.stl or Top_VoronStyle_Bowden_Guide_BSP.stl                      |
+|                               | Bottom_VoronStyle_Bowden_Guide.stl                                                            |
+
+
+
+
 ## Work great with
 - [elcrni V2.4-Trident-Spool-Holders](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/elcrni/V2.4-Trident-Spool-Holders)
 
