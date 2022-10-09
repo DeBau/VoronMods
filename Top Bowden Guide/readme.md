@@ -25,8 +25,7 @@ It saves up to 60cm bowden
 
 |                                                              |                                                              |
 | :----------------------------------------------------------: | ------------------------------------------------------------ |
-| Voron Edition Standard und BSP| Top_VoronStyle_Bowden_Guide.stl or Top_VoronStyle_Bowden_Guide_BSP.stl                      |
-|                               |  Bottom_VoronStyle_Bowden_Guide.stl                                                        |                                  | :----------------------------------------------------------: | ------------------------------------------------------------ |                         
+| Voron Edition Standard und BSP| Top_VoronStyle_Bowden_Guide.stl or Top_VoronStyle_Bowden_Guide_BSP.stl andBottom_VoronStyle_Bowden_Guide.stl |                                  
 
 
 
