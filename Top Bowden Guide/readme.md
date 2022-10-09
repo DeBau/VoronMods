@@ -25,7 +25,15 @@ It saves up to 60cm bowden
 
 |                                                              |                                                              |
 | :----------------------------------------------------------: | ------------------------------------------------------------ |
-| Voron Edition Standard und BSP| Top_VoronStyle_Bowden_Guide.stl or Top_VoronStyle_Bowden_Guide_BSP.stl andBottom_VoronStyle_Bowden_Guide.stl |                                  
+| Voron Edition BSP| Top_VoronStyle_Bowden_Guide_BSP.stl and Bottom_VoronStyle_Bowden_Guide.stl |   
+| :----------------------------------------------------------: | ------------------------------------------------------------ |
+| Voron Edition | Top_VoronStyle_Bowden_Guide.stl and Bottom_VoronStyle_Bowden_Guide.stl |   
+| :----------------------------------------------------------: | ------------------------------------------------------------ |
+| 15mm Version| Top_Bowden_Guide_360_Joint_15mm.stl and Bottom_Bowden_Guide_360_Joint_15mm.stl |  
+| :----------------------------------------------------------: | ------------------------------------------------------------ |
+| 15mm  Glue Version| Bowden_Guide_360_Joint_15mm_Glue.stl |  
+
+
 
 
 
