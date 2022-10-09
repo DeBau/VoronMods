@@ -4,12 +4,12 @@ Top bowden guide with print-in-place 360 degree joint.
 It saves up to 60cm bowden
 
 
-<img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/Voron_Style.png" align="center" width=400 height=400>
+<img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/Voron_Style.png" alt="Voron Style" width=400 height=400>
 
-<img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/TopView.jpg" align="center" width=400 height=400>
+<img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/TopView.jpg" alt="Top View" width=400 height=400>
 
 
-<img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/ButtomView.jpg" align="center" width=400 height=400>
+<img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/ButtomView.jpg" alt="Buttom View" width=400 height=400>
 
 ## Work great with
 - [elcrni V2.4-Trident-Spool-Holders](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/elcrni/V2.4-Trident-Spool-Holders)
