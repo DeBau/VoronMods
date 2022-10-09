@@ -25,12 +25,16 @@ It saves up to 60cm bowden
 
 |        Version                                                      |    parts needed to print                             |
 | :----------------------------------------------------------: | ------------------------------------------------------------ |
-| Voron Edition BSP 1/8 Bowden Coupler| Top_VoronStyle_Bowden_Guide_BSP.stl and Bottom_VoronStyle_Bowden_Guide.stl |   
-| Voron Edition | Top_VoronStyle_Bowden_Guide.stl and Bottom_VoronStyle_Bowden_Guide.stl | 
+|Voron Edition BSP 1/8 Bowden Coupler| Top_VoronStyle_Bowden_Guide_BSP.stl and Bottom_VoronStyle_Bowden_Guide.stl |   
+|Voron Edition | Top_VoronStyle_Bowden_Guide.stl and Bottom_VoronStyle_Bowden_Guide.stl | 
 |Voron Edition Glue BSP 1/8 Bowden Coupler| VoronStyle_Bowden_Guide_Glue_BSP.stl|
-|Voron Edition Glue|VoronStyle_Bowden_Guide_Glue_BSP.stl|
-| 15mm Version| Top_Bowden_Guide_360_Joint_15mm.stl and Bottom_Bowden_Guide_360_Joint_15mm.stl |  
-| 15mm  Glue Version| Bowden_Guide_360_Joint_15mm_Glue.stl |  
+|Voron Edition Glue|VoronStyle_Bowden_Guide_Glue.stl|
+|15mm Joint Version| Top_Bowden_Guide_360_Joint_15mm.stl and Bottom_Bowden_Guide_360_Joint_15mm.stl |  
+|15mm Joint Glue Version| Bowden_Guide_360_Joint_15mm_Glue.stl |  
+|20mm Joint Version BSP 1/8 Bowden Coupler| Top_Bowden_Guide_360_Joint_20mm_BSP.stl and Bottom_Bowden_Guide_360_Joint_20mm.stl | 
+|20mm Joint Version| Top_Bowden_Guide_360_Joint_20mm.stl and Bottom_Bowden_Guide_360_Joint_20mm.stl | 
+|20mm Joint Glue Version| Bowden_Guide_360_Joint_20mm_Glue.stl |
+
 
 
 
