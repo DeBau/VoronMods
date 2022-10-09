@@ -23,14 +23,13 @@ It saves up to 60cm bowden
 
 ## Required parts
 
-|                                                              |                                                              |
+|        Version                                                      |    parts needed to print                             |
 | :----------------------------------------------------------: | ------------------------------------------------------------ |
-| Voron Edition BSP| Top_VoronStyle_Bowden_Guide_BSP.stl and Bottom_VoronStyle_Bowden_Guide.stl |   
-| :----------------------------------------------------------: | ------------------------------------------------------------ |
-| Voron Edition | Top_VoronStyle_Bowden_Guide.stl and Bottom_VoronStyle_Bowden_Guide.stl |   
-| :----------------------------------------------------------: | ------------------------------------------------------------ |
+| Voron Edition BSP 1/8 Bowden Coupler| Top_VoronStyle_Bowden_Guide_BSP.stl and Bottom_VoronStyle_Bowden_Guide.stl |   
+| Voron Edition | Top_VoronStyle_Bowden_Guide.stl and Bottom_VoronStyle_Bowden_Guide.stl | 
+|Voron Edition Glue BSP 1/8 Bowden Coupler| VoronStyle_Bowden_Guide_Glue_BSP.stl|
+|Voron Edition Glue|VoronStyle_Bowden_Guide_Glue_BSP.stl|
 | 15mm Version| Top_Bowden_Guide_360_Joint_15mm.stl and Bottom_Bowden_Guide_360_Joint_15mm.stl |  
-| :----------------------------------------------------------: | ------------------------------------------------------------ |
 | 15mm  Glue Version| Bowden_Guide_360_Joint_15mm_Glue.stl |  
 
 
