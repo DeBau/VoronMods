@@ -51,6 +51,11 @@ It saves up to 60cm bowden
 - 2nd - try the 0,4mm (0,2mm around the joint) clearance versions
 - 3rd download the cad file and customize it 
 
+#### Fusion 360 - change the diameter of the sphere
+Go to the history timeline -> left click on the 2nd sphere > Edit Feature -> change the diameter
+
+<img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/Change_Sphere_diameter.png" alt="sphere_diameter" width=700 height=400>
+
 ### Works great with
 - [elcrni V2.4-Trident-Spool-Holders](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/elcrni/V2.4-Trident-Spool-Holders)
 
