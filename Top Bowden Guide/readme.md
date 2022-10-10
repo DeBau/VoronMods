@@ -35,10 +35,9 @@ It saves up to 60cm bowden
 |20mm Joint Version| Top_Bowden_Guide_360_Joint_20mm.stl and Bottom_Bowden_Guide_360_Joint_20mm.stl | 
 |20mm Joint Glue Version| Bowden_Guide_360_Joint_20mm_Glue.stl |
 
-
-
-
-
+### If the joint doesn`t move
+1st check your printer settings. There`s a distance of 0,25mm between the joint and the body
+2nd - try the 0,4mm clearance versions
 
 
 ## Works great with
