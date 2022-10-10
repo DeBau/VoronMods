@@ -36,6 +36,18 @@ It saves up to 60cm bowden
 |20mm Joint Glue Version| Bowden_Guide_360_Joint_20mm_Glue.stl |
 
 
+## Print Settings
+
+    - Layer height: 0.2mm
+    - Extrusion width: 0.4mm, forced
+    - Infill pecentage: 40%
+    - Infill type: grid, gyroid, honeycomb, triangle, or cubic
+    - Wall count: 4
+    - Solid top/bottom layers: 5
+    - Supports: NONE
+    - Material: ABS/ABS+/ASA
+
+
 ### If the joint doesn`t move
 - 1st check your printer settings. There`s a distance of 0,25mm between the joint and the body
 - 2nd - try the 0,4mm clearance versions
