@@ -38,6 +38,7 @@ It saves up to 60cm bowden
 ### If the joint doesn`t move
 - 1st check your printer settings. There`s a distance of 0,25mm between the joint and the body
 - 2nd - try the 0,4mm clearance versions
+- 3rd download the cad file and customize it 
 
 
 ## Works great with
