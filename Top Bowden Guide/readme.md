@@ -54,7 +54,7 @@ It saves up to 60cm bowden
 #### Fusion 360 - change the diameter of the sphere
 Go to the history timeline -> left click on the 2nd sphere > Edit Feature -> change the diameter
 
-<img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/Change_Sphere_diameter.png" alt="sphere_diameter" width=700 height=400>
+<img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/Change_Sphere_diameter.png" alt="sphere_diameter" width=600 height=220>
 
 ### Works great with
 - [elcrni V2.4-Trident-Spool-Holders](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/elcrni/V2.4-Trident-Spool-Holders)
