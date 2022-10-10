@@ -41,7 +41,7 @@ It saves up to 60cm bowden
 
 
 
-## Work great with
+## Works great with
 - [elcrni V2.4-Trident-Spool-Holders](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/elcrni/V2.4-Trident-Spool-Holders)
 
   
