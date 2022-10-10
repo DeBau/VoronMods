@@ -52,7 +52,7 @@ It saves up to 60cm bowden
 - 3rd download the cad file and customize it 
 
 #### Fusion 360 - change the joint diameter
-Go to the history timeline -> left click on the 2nd sphere > Edit Feature -> change the diameter
+Go to the history timeline -> right click on the 2nd sphere > Edit Feature -> change the diameter
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/Change_Sphere_diameter.png" alt="sphere_diameter" width=600 height=220>
 
