@@ -35,7 +35,6 @@ It saves up to 60cm bowden
 |20mm Joint Version| Top_Bowden_Guide_360_Joint_20mm.stl and Bottom_Bowden_Guide_360_Joint_20mm.stl | 
 |20mm Joint Glue Version| Bowden_Guide_360_Joint_20mm_Glue.stl |
 
-
 ## Print Settings
 
     - Layer height: 0.2mm
@@ -47,12 +46,10 @@ It saves up to 60cm bowden
     - Supports: NONE
     - Material: ABS/ABS+/ASA
 
-
 ### If the joint doesn`t move
 - 1st check your printer settings. There`s a distance of 0,25mm between the joint and the body
 - 2nd - try the 0,4mm clearance versions
 - 3rd download the cad file and customize it 
-
 
 ### Works great with
 - [elcrni V2.4-Trident-Spool-Holders](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/elcrni/V2.4-Trident-Spool-Holders)
