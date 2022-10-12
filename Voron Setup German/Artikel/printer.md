@@ -246,7 +246,7 @@ pid_kd = 131.721
 ##  Default is 0.040, leave stock
 #pressure_advance_smooth_time: 0.040
 ```
-angepasst auf den CW1 mit einem Thermistor vom ```Type ATC Semitec 104GT-2```
+angepasst auf den CW1 mit einem Thermistor vom Type ```ATC Semitec 104GT-2```
 ```
 ##  Connected to MOTOR_6
 ##  Heater - HE0
@@ -388,8 +388,144 @@ home_xy_position:204,350
 speed:100
 z_hop:10
 ```
+#### Quad Gantry Leveling
+Original:
+```
+[quad_gantry_level]
 
+#--------------------------------------------------------------------
+##  Gantry Corners for 250mm Build
+##  Uncomment for 250mm build
+#gantry_corners:
+#   -60,-10
+#   310, 320
+##  Probe points
+#points:
+#   50,25
+#   50,175
+#   200,175
+#   200,25
+    
+##  Gantry Corners for 300mm Build
+##  Uncomment for 300mm build
+#gantry_corners:
+#   -60,-10
+#   360,370
+##  Probe points
+#points:
+#   50,25
+#   50,225
+#   250,225
+#   250,25
 
+##  Gantry Corners for 350mm Build
+##  Uncomment for 350mm build
+#gantry_corners:
+#   -60,-10
+#   410,420
+##  Probe points
+#points:
+#   50,25
+#   50,275
+#   300,275
+#   300,25
+
+#--------------------------------------------------------------------
+speed: 100
+horizontal_move_z: 10
+retries: 5
+retry_tolerance: 0.0075
+max_adjust: 10
+```
+für einen V2 350er enstprechend angepasst wird daraus:
+```
+[quad_gantry_level]
+gantry_corners:
+   -60,-10
+   410,420
+##  Probe points
+points:
+   50,25
+   50,275
+   300,275
+   300,25
+speed: 100
+horizontal_move_z: 10
+retries: 5
+retry_tolerance: 0.0075
+max_adjust: 10
+```
+
+#### Display
+In  meinem Fall verwende ich das BTT mini12864 LC Display und kommentiere die Passagen entsprechend aud der printer.cfg aus
+Original:
+```
+##  mini12864 LCD Display
+#[display]
+#lcd_type: uc1701
+#cs_pin: EXP1_3
+#a0_pin: EXP1_4
+#rst_pin: EXP1_5
+#encoder_pins: ^EXP2_5, ^EXP2_3
+#click_pin: ^!EXP1_2
+#contrast: 63
+#spi_software_miso_pin: EXP2_1
+#spi_software_mosi_pin: EXP2_6
+#spi_software_sclk_pin: EXP2_2
+
+##  To control Neopixel RGB in mini12864 display
+#[neopixel btt_mini12864]
+#pin: EXP1_6
+#chain_count: 3
+#initial_RED: 0.1
+#initial_GREEN: 0.5
+#initial_BLUE: 0.0
+#color_order: RGB
+
+##  Set RGB values on boot up for each Neopixel. 
+##  Index 1 = display, Index 2 and 3 = Knob
+#[delayed_gcode setdisplayneopixel]
+#initial_duration: 1
+#gcode:
+#        SET_LED LED=btt_mini12864 RED=1 GREEN=1 BLUE=1 INDEX=1 TRANSMIT=0
+#        SET_LED LED=btt_mini12864 RED=1 GREEN=0 BLUE=0 INDEX=2 TRANSMIT=0
+#        SET_LED LED=btt_mini12864 RED=1 GREEN=0 BLUE=0 INDEX=3 
+
+#--------------------------------------------------------------------
+```
+auskommentiert für das mini12864 
+```
+##  mini12864 LCD Display
+[display]
+lcd_type: uc1701
+cs_pin: EXP1_3
+a0_pin: EXP1_4
+rst_pin: EXP1_5
+encoder_pins: ^EXP2_5, ^EXP2_3
+click_pin: ^!EXP1_2
+contrast: 63
+spi_software_miso_pin: EXP2_1
+spi_software_mosi_pin: EXP2_6
+spi_software_sclk_pin: EXP2_2
+
+##  To control Neopixel RGB in mini12864 display
+[neopixel btt_mini12864]
+pin: EXP1_6
+chain_count: 3
+initial_RED: 0.1
+initial_GREEN: 0.5
+initial_BLUE: 0.0
+color_order: RGB
+
+##  Set RGB values on boot up for each Neopixel. 
+##  Index 1 = display, Index 2 and 3 = Knob
+[delayed_gcode setdisplayneopixel]
+initial_duration: 1
+gcode:
+        SET_LED LED=btt_mini12864 RED=1 GREEN=1 BLUE=1 INDEX=1 TRANSMIT=0
+        SET_LED LED=btt_mini12864 RED=1 GREEN=0 BLUE=0 INDEX=2 TRANSMIT=0
+        SET_LED LED=btt_mini12864 RED=1 GREEN=0 BLUE=0 INDEX=3 
+```
 ### Berechnung von Motorstrom
 
 Bei Verwendung der Treibertypen 2208 / 2209 werden Spannung und Strom in der Software eingestellt. 
