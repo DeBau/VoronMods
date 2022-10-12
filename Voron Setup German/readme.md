@@ -56,12 +56,56 @@ Man sollte es sich ja einfach machen ;)
 Die Makros kann ich jetzt über die Weboberfläche über die entsprechende Schaltfläche oder über die Eingabe der Befehle:
 - PID_EXTRUDER
 - PID_BED
+
 in der Konsole ausführen.
 
 Nach jedem Befehl und ausgeführtem PID Tuning die ermittelten Werte mit der Eingabe 
 - SAVE_CONFIG
 
 in der Konsole speichern
+
+### Stepper Motoren überprüfen
+Um die Motoren zu überprüfen kann man den Stepper_Buzz Befehl nutzen.
+Dafür gebt folgende Befehl in die Konsole ein
+
+STEPPER_BUZZ STEPPER=stepper_x
+
+Der Motor sollte sich nun 10x je 1mm in die positive Richtung und wieder zurück zur Ausgangsposition bewegen.
+Dies wiederholt ihr für alle Motoren
+
+STEPPER_BUZZ STEPPER=stepper_y
+STEPPER_BUZZ STEPPER=stepper_z
+STEPPER_BUZZ STEPPER=stepper_z1
+STEPPER_BUZZ STEPPER=stepper_z2
+STEPPER_BUZZ STEPPER=stepper_z3
+STEPPER_BUZZ STEPPER=stepper_extruder
+
+Anordung der Motoren
+<img src="https://docs.vorondesign.com/build/startup/images/V2-motor-positions.png" alt="v2Motoren" width=400 height=400>
+
+#### ACHTUNG
+Mein Vorgehen sieht etwas anders aus
+Ich nutze den force_move Befehl um die Motoren zu testen
+Forcen bedeutet, dass ich die Motoren ohne vorher zu homen verfahren kann. Hierbei wirken auch keine Abschaltungen
+durch Endschalter. Dies kann euren Drucker zerstören!
+Bitte nur anwenden, wenn ihr wisst was ihr macht!
+
+Befehle:
+FORCE_MOVE STEPPER=stepper_z DISTANCE=2 VELOCITY=5 [ACCEL=100]
+FORCE_MOVE STEPPER=stepper_z0 DISTANCE=2 VELOCITY=5 [ACCEL=100]
+FORCE_MOVE STEPPER=stepper_z1 DISTANCE=2 VELOCITY=5 [ACCEL=100]
+FORCE_MOVE STEPPER=stepper_z2 DISTANCE=2 VELOCITY=5 [ACCEL=100]
+FORCE_MOVE STEPPER=stepper_z3 DISTANCE=2 VELOCITY=5 [ACCEL=100]
+FORCE_MOVE STEPPER=stepper_x DISTANCE=2 VELOCITY=5 [ACCEL=100]
+FORCE_MOVE STEPPER=stepper_y DISTANCE=2 VELOCITY=5 [ACCEL=100]
+FORCE_MOVE STEPPER=stepper_extruder DISTANCE=2 VELOCITY=5 [ACCEL=100]
+
+Änderungen in der printer.cfg
+[force_move]
+#enable_force_move: true
+
+
+
 
 
 
