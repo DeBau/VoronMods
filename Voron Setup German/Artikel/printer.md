@@ -527,6 +527,46 @@ gcode:
         SET_LED LED=btt_mini12864 RED=1 GREEN=0 BLUE=0 INDEX=2 TRANSMIT=0
         SET_LED LED=btt_mini12864 RED=1 GREEN=0 BLUE=0 INDEX=3 
 ```
+#### GCode Makro G32
+Original:
+```
+[gcode_macro G32]
+gcode:
+    SAVE_GCODE_STATE NAME=STATE_G32
+    G90
+    G28
+    QUAD_GANTRY_LEVEL
+    G28
+    ##  Uncomment for for your size printer:
+    #--------------------------------------------------------------------
+    ##  Uncomment for 250mm build
+    #G0 X125 Y125 Z30 F3600
+    
+    ##  Uncomment for 300 build
+    #G0 X150 Y150 Z30 F3600
+    
+    ##  Uncomment for 350mm build
+    #G0 X175 Y175 Z30 F3600
+    #--------------------------------------------------------------------
+    RESTORE_GCODE_STATE NAME=STATE_G32
+```
+angepasst:
+```
+[gcode_macro G32]
+gcode:
+    SAVE_GCODE_STATE NAME=STATE_G32
+    G90
+    G28
+    QUAD_GANTRY_LEVEL
+    G28
+    G0 X175 Y175 Z30 F3600
+    RESTORE_GCODE_STATE NAME=STATE_G32
+```
+
+
+
+
+
 ### Berechnung von Motorstrom
 
 Bei Verwendung der Treibertypen 2208 / 2209 werden Spannung und Strom in der Software eingestellt. 
