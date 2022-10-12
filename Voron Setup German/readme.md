@@ -32,6 +32,7 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 - [Thermistoren und Heater](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Temperaturen.md) 
 - [PID Tuning](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/PID_Tuning.md) 
 ## Motion
+*Gehe hier der Reihe nach vor. 1-6*
 1. [Stepper überprüfen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Stepper.md) 
 #### Endstops überprüfen
 2. [XYZ](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/XYZ_Endstops.md) 
