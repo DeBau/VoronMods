@@ -1,4 +1,5 @@
-Ladet aus folgende printer.cfg herunter und passt sie entsprechend euren Anforderungen an
+Ladet folgende printer.cfg herunter und passt sie entsprechend euren Anforderungen an
+
 [Voron Design printer.cfg für das Octopus Board](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/firmware/klipper_configurations/Octopus)
 
 ## Fangen wir von vorne an 
