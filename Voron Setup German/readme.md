@@ -1,12 +1,19 @@
-## Diese Anleitung basiert auf einem Voron V2 350er mit Octopus V1.1 Board ohne Mods
-
+## Initial Setup für einen Voron V2 350
+- Octopus v1.1 Board
+- TMC2209 Treiber
+- Moons Motoren
+- Omron TL-Q5MC2-Z Sensor
+- 
 ### Quellen: 
 - [Voron Design Dokumentation](https://docs.vorondesign.com)
 - [Voron Design Github Voron v2](https://docs.vorondesign.com)
+- [Klipper](https://www.klipper3d.org/)
 
 ## Vorbereitungen
 ### Download der Voron printer.cfg
 - [Voron Design prnter.cfg für das Octopus Board](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/firmware/klipper_configurations/Octopus)
+### PinOut vom Octopus Board
+
 
 ### Einstellungen in der printer.cfg die unbedingt überprüft werden müssen
 - MCU ID     
