@@ -2,9 +2,9 @@
 
 ### Quellen: 
 - [Voron Design Dokumentation](https://docs.vorondesign.com)
-- [Voron Design Github Voron v2]([https://docs.vorondesign.com](https://github.com/VoronDesign/Voron-2)
+- [Voron Design Github Voron v2](https://docs.vorondesign.com)
 
 ## Vorbereitungen
 ### Download der Voron printer.cfg
-- [Voron Design Github prnter.cfg für das Octopus Board](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/firmware/klipper_configurations/Octopus)
+- [Voron Design prnter.cfg für das Octopus Board](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/firmware/klipper_configurations/Octopus)
 
