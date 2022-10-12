@@ -23,7 +23,7 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 
 # Inhaltsverzeichnis
 ## Grundeintellungen
-*Notwendige Anpassungen
+*Notwendige Anpassungen*
 - [printer.cfg](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/printer.md) 
 ### Infos rund um die printer.cfg und deren Einstellungen 
 - [Motorstromberechnung](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Motorstrom.md)
