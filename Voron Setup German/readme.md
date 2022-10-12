@@ -163,14 +163,12 @@ Bitte niemals im Eingeschalteten Zustand eine Motorleitung vom Motor oder Mainbo
 
 <img src="https://docs.vorondesign.com/build/startup/images/V2-motor-configuration-guide.png" alt="v2Motorenmove" width=700 height=400>
 
-
 ## Ausrichtung vom Druckbett 
 Bevor der 0,0-Punkt und die Position des Z-Endanschlags eingestellt werden, müssen die physischen Positionen des Z-Endanschlags und des Druckbetts endgültig festgelegt werden.
 
 Der Z-Endanschlag sollte sich in einer Linie mit der Düse befinden, wenn sich der Werkzeugkopf in der maximalen Y-Position befindet. Stellt X und Y mit G28 X Y ein und verfahrt dann nur X, um eine Position des Z-Endanschlags bei maximalem Y-Verfahrweg zu finden, bei der der Endanschlag noch ausgelöst wird. Schraubt anschliend den Z-Endanschlag in dieser Position fest
 
 Sobald der Z-Endanschlag in seiner Position fixiert ist, sollte die Grundplatte so eingestellt werden, so dass der Z-Endanschlagstift etwa 2-3 mm von der Aluminiumgrundplatte entfernt ist. Die Grundplatte sollte auf jeder Seite vermessen werden, um sicherzustellen, dass sie zentriert und eben mit der Vorderkante des Rahmens ist. Wenn dabei die Profile, auf denen das B ettmontiert ist, verschoben werden müssen, überprüft den Z-Anschlag anschließend noch einmal, um sicherzustellen, dass er noch erreichbar ist. Beim Anziehen der Befestigungsschrauben für das Bett empfiehlt es sich, eine Schraube fest, zwei halbfest und die letzte locker anzuziehen (am besten im heißen Zustand).
-
 
 ## 0,0-Punkt bestimmen
 
@@ -230,7 +228,6 @@ homen.
      
 ## Probe
 Home den Drucker und fahre in die Mitte des Druckbettes in 50mm Höhe
-
 ```
 G28
 G90
@@ -242,9 +239,7 @@ Der Probe sollte nach Eingabe von folgenden Befehl:
 QUERY_PROBE
 ```
 "open" anzeigen. 
-
 Wenn sich ein Metallobjekt in der Nähe des Messtasters befindet, sollte QUERY_PROBE "triggered" anzeigen. Wenn das Signal invertiert ist, fügt ein "!" vor der Pin-Definition hinzu.
-
 Verringert nun langsam die Z-Höhe
 ```
 G1 Z10 F600
@@ -257,7 +252,7 @@ und führt
 QUERY_PROBE 
 ```
 jedes Mal aus, bis QUERY_PROBE "getriggert" anzeigt.
-Stellen Sie sicher, dass die Düse die Druckoberfläche nicht berührt (und Freiraum hat).
+Stellt sicher, dass die Düse die Druckoberfläche nicht berührt
 
 ### Wiederholgenauigkeit
 fahr den Druckkopf mittig übers Bett
@@ -275,6 +270,32 @@ Vergewisser dich, dass der gemessene Abstand keine Tendenz aufweist (allmählich
 ## Quad Gantry Level 
 Da der V2 4 unabhängige Z-Motoren verwendet, muss das gesamte Gantry-System speziell nivelliert werden. Das Makro, mit dem dieser Prozess aufgerufen wird, heißt QUAD_GANTRY_LEVEL (im Sprachgebrauch manchmal auch als 'QGL' bezeichnet). Es prüft jeden der 4 Punkte dreimal, ermittelt den Durchschnitt der Messwerte und nimmt dann Anpassungen vor, bis das Portal waagerecht ausgerichtet ist.
 Wenn der Prozess aufgrund eines Fehlers "außerhalb der Grenzen" fehlschlägt, deaktiviert die Schrittmotoren und bewegt das Portal langsam von Hand, bis es annähernd gerade ist.
+```
+QUAD_GANTRY_LEVEL
+```
+
+### QGL im aufgeheiztem Zustand
+
+Heize das Bett auf 100°C und die Nozzle auf 240°C, schließe die Türen und warte 15min.
+Fahr in die Mitte
+```
+G28
+G90
+G1 X 175 Y175 F3000
+```
+Dies wird das erste Mal sein, dass ein Quad Gantry Level bei einer hohen Kammertemperatur ausgeführt wird. 
+Führe den Befehl aus:
+```
+PROBE_ACCURACY
+```
+Wenn die Werte über die 10 Tastzyklen hinweg eine Tendenz aufweisen (steigend oder fallend) oder die Standardabweichung größer als 0,003 mm ist, warte weitere 5 Minuten und versuche es erneut.
+
+Sobald die Messwerte stabil sind, führe
+```
+QUAD_GANTRY_LEVEL
+```
+aus. 
+Notieren dir, wie lange die Messwerte des Sonsors brauchten, um sich zu stabilisieren - ein kalter Drucker braucht in der Regel eine 10-20 minütige Vorheizphase
 
 ## Z-Offset-Einstellung
 Lasst den Drucker min 15min bei 245°C Hotend und 100°C Bett vorheizen
