@@ -369,6 +369,25 @@ sample_retract_dist: 3.0
 samples_tolerance: 0.006
 samples_tolerance_retries: 3
 ```
+#### Position eures Z-Endschalters
+Wie die Position Ermittelt wird, erfahrt ihr hier  [Ermittels der Z-Endstop Position](https://github.com/DeBau/VoronMods/tree/main/Voron%20Setup%20German#position-vom-z-endstops)
+```
+[safe_z_home]
+##  XY Location of the Z Endstop Switch
+##  Update -10,-10 to the XY coordinates of your endstop pin 
+##  (such as 157,305) after going through Z Endstop Pin
+##  Location Definition step.
+home_xy_position:-10,-10
+speed:100
+z_hop:10
+```
+Die ermittelte Position muss entsprechend eingetragen werden
+```
+[safe_z_home]
+home_xy_position:204,350
+speed:100
+z_hop:10
+```
 
 
 ### Berechnung von Motorstrom
