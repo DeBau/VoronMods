@@ -30,6 +30,8 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 - [SpreadCycle oder Stealthchop](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/printer.md)
 
 ## Temperaturen
+- [Thermistoren und Heater](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Temperaturen.md) 
+- [PID Tuning](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/PID_Tuning.md) 
 
 ## Motion
 
@@ -48,41 +50,6 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 
 
 
-
-
-
-### Überprüfen der Temperaturen für das Hotend und Heizbett
-
-Die angezeigten Temperaturen sollten im Ausgangszustand ungefähr die aktuelle Raumtemperatur anzeigen.
-Ist das nicht der Fall, sollte der Sensortyp und der Sensorpin überprüft werden
-- [Sensortypen](https://www.klipper3d.org/Config_Reference.html?h=common+thermistors+thermistor#common-thermistors)
-
-<img src="https://docs.vorondesign.com/build/startup/images/mainsail_temp_graph.png" alt="Temperaturen" width=600 height=400>
-
-### Überprüfung der Heizelemente
-Gebt eine Temperatur für das Heizbett und das Hotend von 50°C vor und beobachtet ob eure Temperatur steigt.
-Wenn die Temperatur nicht steigen sollte, überprüft bitte den Anschluss und den Pin des jeweiligen Heizelementes.
-
-### PID Tuning
-An diesem Punkt mach ich personlich direkt das PID Tuning
-
-Dafür füge ich mir in meine printer.cfg oder einer inkludierten macro.cfg folgende Makros ein.
-Man sollte es sich ja einfach machen ;)
-
-[PID Makros](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/PID_Tuning_Makros)
-
-Die Makros kann ich jetzt über die Weboberfläche über die entsprechenden Schaltflächen oder über die Eingabe der Befehle:
-```
-PID_EXTRUDER
-PID_BED
-```
-in der Konsole ausführen.
-
-Nach jedem Befehl und ausgeführtem PID Tuning die ermittelten Werte mit der Eingabe 
-```
-SAVE_CONFIG
-```
-in der Konsole speichern
 
 ### Stepper Motoren überprüfen
 Um die Motoren zu überprüfen kann man den Stepper_Buzz Befehl nutzen.
