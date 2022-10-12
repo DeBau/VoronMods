@@ -22,7 +22,7 @@ Sollten die Axen falsch fahren, muss eventuell der DIR-PIN von den AB Motoren ne
 
 Hierfür ist folgende Grafik recht hilfreich.
 
-:warning: Bitte niemals im Eingeschalteten Zustand eine Motorleitung vom Motor oder Mainboard entfernen! 
+:warning: Bitte niemals im eingeschalteten Zustand eine Motorleitung vom Motor oder Mainboard entfernen! 
 
 <img src="https://docs.vorondesign.com/build/startup/images/V2-motor-configuration-guide.png" alt="v2Motorenmove" width=700 height=400>
 
