@@ -1,4 +1,4 @@
-# Position vom Z-Endstops 
+## Position vom Z-Endstop
 Home zuerst wieder X und Y.
 Fahre den Druckkopf in die Position, so dass sich die Düse genau über den Z-Endstop befindet.
 Tippe 
