@@ -21,7 +21,7 @@ nur der Veranschaulichung dienen! Bitte nicht 1:1 übernehmen
 - PID tune                     
 - Probe pin  
 - Fine tune E steps
-  
+## Notwendige Anpassungen der pinter.cfg
 #### MCU ID
 diese muss ermittelt werden, nähere Infos findet ihr hier [MCU ID beim Octopus Board](https://docs.vorondesign.com/build/software/octopus_klipper.html)
 
@@ -205,10 +205,9 @@ homing_speed: 8
 second_homing_speed: 3
 homing_retract_dist: 3
 ```
-Hierbei gint es eine Besonderheit: Euren Z-Endstop. Wenn dieser über das Bett hinausragt, tragt bei
+Hierbei gibt es eine Besonderheit: Euren Z-Endstop. Wenn dieser über das Bett hinausragt, tragt bei
 ```position_endstop``` einen positiven Wert ein, wenn er unterhalb des Bettes steht, dann einen negativen. Der korrekte Wert wird später mittels
 ```Z_ENDSTOP_CALIBRATE```ermittelt.
-
 #### Extruder
 Original:
 ```
@@ -276,7 +275,7 @@ pid_kd = 131.721
 #pressure_advance: 0.05
 #pressure_advance_smooth_time: 0.040
 ```
-### Sensortypen
+#### Sensortypen
 
 - EPCOS 100K B57560G104F
 - ATC Semitec 104GT-2
@@ -287,6 +286,89 @@ pid_kd = 131.721
 - SliceEngineering 450
 - TDK NTCG104LH104JT1
 
+#### Bed Heater
+Original:
+```
+#####################################################################
+#   Bed Heater
+#####################################################################
+##  SSR Pin - HE1
+##  Thermistor - TB
+[heater_bed]
+##  Uncomment the following line if using the default SSR wiring from the docs site
+#heater_pin: PA3
+##  Other wiring guides may use BED_OUT to control the SSR. Uncomment the following line for those cases
+#heater_pin: PA1
+## Check what thermistor type you have. See https://www.klipper3d.org/Config_Reference.html#common-thermistors for common thermistor types.
+## Use "Generic 3950" for Keenovo heaters
+#sensor_type:
+sensor_pin: PF3
+##  Adjust Max Power so your heater doesn't warp your bed. Rule of thumb is 0.4 watts / cm^2 .
+max_power: 0.6
+min_temp: 0
+max_temp: 120
+control: pid
+pid_kp: 58.437
+pid_ki: 2.347
+pid_kd: 363.769
+```
+angepasst mit dem Heater Pin ```PA3``` und einen ```Generic 3950``` Thermistor
+```
+##  SSR Pin - HE1
+##  Thermistor - TB
+[heater_bed]
+heater_pin: PA3
+#sensor_type: Generic 3950
+sensor_pin: PF3
+max_power: 0.6
+min_temp: 0
+max_temp: 120
+control: pid
+pid_kp: 58.437
+pid_ki: 2.347
+pid_kd: 363.769
+```
+#### Probe
+Original:
+```
+[probe]
+
+#--------------------------------------------------------------------
+
+## Select the probe port by type:
+## For the PROBE port. Will not work with Diode. May need pull-up resistor from signal to 24V.
+#pin: ~!PB7
+## For the DIAG_7 port. NEEDS BAT85 DIODE! Change to !PG15 if probe is NO.
+#pin: PG15
+## For Octopus Pro PROBE port; NPN and PNP proximity switch types can be set by jumper
+#pin: ~!PC5
+
+#--------------------------------------------------------------------
+
+x_offset: 0
+y_offset: 25.0
+z_offset: 0
+speed: 10.0
+samples: 3
+samples_result: median
+sample_retract_dist: 3.0
+samples_tolerance: 0.006
+samples_tolerance_retries: 3
+```
+enstpechend angepasst unter Verwendung vom Probe Port PB7
+```
+[probe]
+pin: ~!PB7
+x_offset: 0
+y_offset: 25.0
+z_offset: 0
+speed: 10.0
+samples: 3
+samples_result: median
+sample_retract_dist: 3.0
+samples_tolerance: 0.006
+samples_tolerance_retries: 3
+```
 
 
 ### Berechnung von Motorstrom
