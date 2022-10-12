@@ -258,6 +258,7 @@ Stellt sicher, dass die Düse die Druckoberfläche nicht berührt
 fahr den Druckkopf mittig übers Bett
 ```
 G90
+G1 Z50 F600 (nur für den Fall, dass er durch den vorherigen Test noch sehr weit unten seid)
 G1 X175 Y175 F3000
 ```
 Anschließend tippe folgenden Befehl in die Konsole ein
