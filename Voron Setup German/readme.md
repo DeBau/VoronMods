@@ -285,7 +285,7 @@ TESTZ Z=-1
 ```
 bis die Düse relativ nahe am Bett ist.
 
-Das "Feintuning" erledigt dann mit kleiner Abstufung
+Das "Feintuning" erledigt dann mit kleinerer Abstufung
 ```
 TESTZ Z=-0.1
 TESTZ Z=-0.025
@@ -308,6 +308,5 @@ TESTZ Z=0.1
 TESTZ Z=0.25
 etc...
 ```
-Wichtig: Klipper geht davon aus, dass dieser Prozess kalt durchgeführt wird. Wenn er im heißen Zustand durchgeführt wird, fahrt, nachdem das Papier entfernt wurde, noch einmal mittels TESTZ Z=-0.1 0,1mm runter.
 
 
