@@ -12,7 +12,7 @@
 
 ## Vorbereitungen
 ### Download der Voron printer.cfg
-- [Voron Design prnter.cfg für das Octopus Board](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/firmware/klipper_configurations/Octopus)
+- [Voron Design printer.cfg für das Octopus Board](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/firmware/klipper_configurations/Octopus)
 ### PinOut vom Octopus Board
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/BIGTREETECH-Octopus-1.1-color-PIN.jpg" alt="pinout" width=800 height=400>
 
@@ -279,26 +279,31 @@ Anschließend folgenden Befehl ausführen
 ```phyton
 Z_ENDSTOP_CALIBRATE
 ```
-
-Legt ein Blatt Papier unter den Druckkopf aufs Bett und fahrt den Druckkopf langsam in Richtung Bett, indem ihr den Befehl 
+Legt ein Blatt Papier unter den Druckkopf aufs Bett und fahrt den Druckkopf langsam in Richtung Bett
 ```
 TESTZ Z=-1 
 ```
-verwenden bis die Düse relativ nahe am Bett ist.
-Mit 
+bis die Düse relativ nahe am Bett ist.
+
+Kleinere Schritte gehen auch.
 ```
 TESTZ Z=-0.1
 ```
-könnt ihr anschließend soweit nach unten fahren, bis die Düse leicht über das Papier kratzt. Wenn Ihr zu weit unten seid, dann könnt ihr mit dem Befehl  
+Wenn das Papier bei Bewegung leicht an der Nozzle kratzt, entfernt es und fahrt nochmals um die Dicke des Papieres runter
 ```
-TESTZ Z=0.1
+TESTZ Z=-0.1
 ```
-wieder höher fahren. Es gehen auch kleinen Schritte wie TESTZ Z=-0.025 oder ähnlich. Wenn alles passt gebt 
+Akzeptiert und speichert den neuen Z-Offset Wert mit folgenden Befehlen
 ```
 ACCEPT 
 SAVE_CONFIG 
 ```
-nacheinander in die Konsole ein.
+Sollte ihr mal zu tief gefahren sein, ist es natürlich auch möglich mittel TESTZ hoch zu fahren.
+Kleiner Abstufungen sind auch möglich
+```
+TESTZ Z=0.1
+TESTZ Z=0.025
+```
 Wichtig: Klipper geht davon aus, dass dieser Prozess kalt durchgeführt wird. Wenn er im heißen Zustand durchgeführt wird, fahrt, nachdem das Papier entfernt wurde, noch einmal mittels TESTZ Z=-0.1 0,1mm runter.
 
 
