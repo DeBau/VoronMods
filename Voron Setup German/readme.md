@@ -111,9 +111,12 @@ FORCE_MOVE STEPPER=stepper_extruder DISTANCE=2 VELOCITY=5 [ACCEL=100]
 Wer sich mit den Force Move auskennt, wird wissen was er noch in die printer.cfg einfügen muss um die Befehle zum laufen zu bekommen ;)
 
 ### Endstops kontrollieren
-
 Vergewisser dich, dass keiner der X-, Y- oder Z-Endstopps betätigt ist. 
-Tippe dann QUERY_ENDSTOPS in die Konsole ein.
+Tippe dann
+```
+QUERY_ENDSTOPS 
+```
+in die Konsole ein.
 Folgendes solltest du dann angezeigt bekommen:
 ```
 x:open y:open z:open
@@ -121,7 +124,7 @@ x:open y:open z:open
 Wenn ein Endschalter "triggered" statt "open" anzeigt, überprüfe bitte ob wirklich keiner betätigt ist. 
 Jetzt kannst du den X-Endschalter händisch betätigen und erneut QUERY_ENDSTOPS in die Konsole eingeben.
 
-Die anzeige sollte nun lautet:
+Die anzeige sollte nun lauten:
 ```
 x:triggered y:open z:open
 ```
@@ -153,7 +156,6 @@ Bitte niemals im Eingeschalteten Zustand eine Motorleitung vom Motor oder Mainbo
 <img src="https://docs.vorondesign.com/build/startup/images/V2-motor-configuration-guide.png" alt="v2Motorenmove" width=700 height=400>
 
 
-   
 ## Ausrichtung vom Druckbett 
 Bevor der 0,0-Punkt und die Position des Z-Endanschlags eingestellt werden, müssen die physischen Positionen des Z-Endanschlags und des Druckbetts endgültig festgelegt werden.
 
@@ -184,35 +186,73 @@ Wenn die X- und Y-Versätze innerhalb von 5 mm liegen oder 0,0 über dem Bett li
 
 Wenn die Position des Z-Endstopps zuvor definiert wurde, müssen Sie den Prozess erneut durchführen, um die Position des Z-Endstopps festzulegen 
 
-Die Änderunge in der printer.cfg werden erst nach Eingabe des Befehls FIRMWARE_RESTART übernommen.
+Die Änderunge in der printer.cfg werden erst nach Eingabe des Befehls 
+```
+FIRMWARE_RESTART
+```
+übernommen.
 
 ## Position vom Z-Endstops 
-
 Home zuerst wieder X und Y.
 Fahre den Druckkopf in die Position, so dass sich die Düse genau über den Z-Endstop befindet.
-Tippe M114 in die Konsole und notiere die die Werte für X und Y
+Tippe 
+```
+M114 
+```
+in die Konsole und notiere dir die Werte für X und Y
 Diese Werte müssen jetzt in der printer.cfg unter der Sektion [safe_z_home] eingetargen werden
-- als Bespiel "home_xy_position:204,350"
 
-Starte Klipper mit FIRMWARE_RESTART neu.
-Jetzt sollte der Drucker vollständig mit dem Befehl G28 homen.
-    
-    
+Beispiel:
+```
+[safe_z_home]
+home_xy_position:204,350
+speed:100
+z_hop:10
+```
+
+Starte Klipper mit 
+```
+FIRMWARE_RESTART
+```
+neu. Jetzt sollte der Drucker vollständig mit dem Befehl 
+```
+G28
+```
+homen.
+     
 ## Probe
 
 Wenn sich der Werkzeugkopf in der Mitte des Bettes befindet, vergewissern Sie sich, dass der Messtaster richtig funktioniert.
 
-Wenn er weit vom Bett entfernt ist, sollte QUERY_PROBE "offen" zurückgeben. Wenn sich ein Metallobjekt in der Nähe des Messtasters befindet, sollte QUERY_PROBE "ausgelöst" zurückgeben. Wenn das Signal invertiert ist, fügen Sie ein "!" vor der Pin-Definition hinzu (z. B. pin: ! z:P1.24).
+Wenn er weit vom Bett entfernt ist, sollte 
+```
+QUERY_PROBE
+```
+"open" anzeigen. 
+Wenn sich ein Metallobjekt in der Nähe des Messtasters befindet, sollte QUERY_PROBE "triggered" anzeigen. Wenn das Signal invertiert ist, fügen Sie ein "!" vor der Pin-Definition hinzu.
 
-Verringern Sie langsam die Z-Höhe und führen Sie QUERY_PROBE jedes Mal aus, bis QUERY_PROBE "getriggert" zurückgibt - stellen Sie sicher, dass die Düse die Druckoberfläche nicht berührt (und Freiraum hat).
-Überprüfung der Tastkopfgenauigkeit
+Verringern Sie langsam die Z-Höhe und führen Sie 
+```
+QUERY_PROBE 
+```
+jedes Mal aus, bis QUERY_PROBE "getriggert" anzeigt - stellen Sie sicher, dass die Düse die Druckoberfläche nicht berührt (und Freiraum hat).
 
-Bewegen Sie die Sonde bei (vorerst) kaltem Bett und Hotend in die Mitte des Bettes und führen Sie PROBE_ACCURACY aus. Das Programm tastet das Bett 10 Mal hintereinander ab und gibt am Ende einen Wert für die Standardabweichung aus. Vergewissern Sie sich, dass der gemessene Abstand keine Tendenz aufweist (allmählich ab- oder zunimmt während der 10 Messungen) und dass die Standardabweichung weniger als 0,003 mm beträgt.
+### Wiederholgenauigkeit
 
+fahr den Druckkopf mittig übers Bett
+```
+G90
+G1 X175 Y175 F3000
+```
+Anschließend tippe folgenden befehl in die Konsole ein
+```
+PROBE_ACCURACY
+```
+Das Programm tastet das Bett 10 Mal hintereinander ab und gibt am Ende einen Wert für die Standardabweichung aus. 
+Vergewisser dich, dass der gemessene Abstand keine Tendenz aufweist (allmählich ab- oder zunimmt während der 10 Messungen) und dass die Standardabweichung weniger als 0,003 mm beträgt.
 
 ## Quad Gantry Level 
 Da der V2 4 unabhängige Z-Motoren verwendet, muss das gesamte Gantry-System speziell nivelliert werden. Das Makro, mit dem dieser Prozess aufgerufen wird, heißt QUAD_GANTRY_LEVEL (im Sprachgebrauch manchmal auch als 'QGL' bezeichnet). Es prüft jeden der 4 Punkte dreimal, ermittelt den Durchschnitt der Messwerte und nimmt dann Anpassungen vor, bis das Portal waagerecht ausgerichtet ist.
-
 Wenn der Prozess aufgrund eines Fehlers "außerhalb der Grenzen" fehlschlägt, deaktiviert die Schrittmotoren und bewegt das Portal langsam von Hand, bis es annähernd gerade ist.
 
 ## Z-Offset-Einstellung
