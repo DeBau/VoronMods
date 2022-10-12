@@ -27,7 +27,7 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 - [printer.cfg](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/printer.md) 
 ### Infos rund um die printer.cfg und deren Einstellungen 
 - [Motorstromberechnung](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Motorstrom.md)
-- [SpreadCycle oder Stealthchop](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/printer.md)
+- [TMC Treiber](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/TMC_Treiber.md)
 
 ## Temperaturen
 - [Thermistoren und Heater](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Temperaturen.md) 
