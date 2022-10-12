@@ -42,5 +42,32 @@ Ist das nicht der Fall, sollte der Seonsortyp und der Sensorpin überprüft werd
 <img src="https://docs.vorondesign.com/build/startup/images/mainsail_temp_graph.png" alt="Temperaturen" width=600 height=400>
 
 ### Überprüfung der Heizelemente
+Gebt einen Temperatur für das Heizbett und das Hotend von 50°C vor und beobachtet ob eure Temperatur steigt.
+Wenn die Temperatur nicht steigen sollte, überprüft bitte den Anschluss und den Pin des jeweiligen Heizelementes
+
+### PID Tuning
+An diesem Punkt mach ich personlich direkt das PID Tuning
+
+Dafür füge ich mir in meine printer.cfg oder einer inkludierten macro.cfg folgende Makros ein.
+Man sollte es sich ja einfach machen ;)
+
+[gcode_macro PID_Extruder]
+gcode:
+  M106 S64
+  PID_CALIBRATE HEATER=extruder TARGET=245
+
+[gcode_macro PID_Bed]
+gcode:
+  PID_CALIBRATE HEATER=heater_bed TARGET=100
+
+Die Makros kann ich jetzt über die Weboberfläche über die entsprechende Schaltfläche oder über die Eingabe der Befehle:
+- PID_EXTRUDER
+- PID_BED
+in der Konsole ausführen.
+
+Nach jedem Befehl und ausgeführtem PID Tuning die ermittelten Werte mit der Eingabe 
+- SAVE_CONFIG
+in der Konsole speichern
+
 
 
