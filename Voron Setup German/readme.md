@@ -58,12 +58,13 @@ Die Makros kann ich jetzt über die Weboberfläche über die entsprechende Schal
 ```python
 PID_EXTRUDER
 PID_BED
-
+```
 in der Konsole ausführen.
 
 Nach jedem Befehl und ausgeführtem PID Tuning die ermittelten Werte mit der Eingabe 
-- SAVE_CONFIG
-
+```python
+SAVE_CONFIG
+```
 in der Konsole speichern
 
 ### Stepper Motoren überprüfen
@@ -74,14 +75,14 @@ STEPPER_BUZZ STEPPER=stepper_x
 
 Der Motor sollte sich nun 10x je 1mm in die positive Richtung und wieder zurück zur Ausgangsposition bewegen.
 Dies wiederholt ihr für alle Motoren
-
-- STEPPER_BUZZ STEPPER=stepper_y
-- STEPPER_BUZZ STEPPER=stepper_z
-- STEPPER_BUZZ STEPPER=stepper_z1
-- STEPPER_BUZZ STEPPER=stepper_z2
-- STEPPER_BUZZ STEPPER=stepper_z3
-- STEPPER_BUZZ STEPPER=stepper_extruder
-
+```python
+STEPPER_BUZZ STEPPER=stepper_y
+STEPPER_BUZZ STEPPER=stepper_z
+STEPPER_BUZZ STEPPER=stepper_z1
+STEPPER_BUZZ STEPPER=stepper_z2
+STEPPER_BUZZ STEPPER=stepper_z3
+STEPPER_BUZZ STEPPER=stepper_extruder
+```
 Wenn sich der Schrittmotor überhaupt nicht bewegt, überprüft die Einstellungen "enable_pin" und "step_pin" für den Schrittmotor. Wenn sich der Schrittmotor bewegt, aber nicht in seine ursprüngliche Position zurückkehrt, überprüft die Einstellung "dir_pin". Wenn 
 der Schrittmotor in eine falsche Richtung schwingt, deutet dies im Allgemeinen darauf hin, dass der "dir_pin" für die Achse invertiert werden muss. Fügt dazu in der Pinter.cfg ein '!' an den "dir_pin" an (oder entferntes, falls bereits eines vorhanden ist). 
 Wenn sich der Motor deutlich mehr oder weniger als einen Millimeter bewegt, überprüft die Einstellung rotation_distance.
@@ -97,15 +98,16 @@ durch Endschalter. Dies kann euren Drucker zerstören!
 Bitte nur anwenden, wenn ihr wisst was ihr macht!
 
 Befehle:
-- FORCE_MOVE STEPPER=stepper_z DISTANCE=2 VELOCITY=5 [ACCEL=100]
-- FORCE_MOVE STEPPER=stepper_z0 DISTANCE=2 VELOCITY=5 [ACCEL=100]
-- FORCE_MOVE STEPPER=stepper_z1 DISTANCE=2 VELOCITY=5 [ACCEL=100]
-- FORCE_MOVE STEPPER=stepper_z2 DISTANCE=2 VELOCITY=5 [ACCEL=100]
-- FORCE_MOVE STEPPER=stepper_z3 DISTANCE=2 VELOCITY=5 [ACCEL=100]
-- FORCE_MOVE STEPPER=stepper_x DISTANCE=2 VELOCITY=5 [ACCEL=100]
-- FORCE_MOVE STEPPER=stepper_y DISTANCE=2 VELOCITY=5 [ACCEL=100]
+```python
+FORCE_MOVE STEPPER=stepper_z DISTANCE=2 VELOCITY=5 [ACCEL=100]
+FORCE_MOVE STEPPER=stepper_z0 DISTANCE=2 VELOCITY=5 [ACCEL=100]
+FORCE_MOVE STEPPER=stepper_z1 DISTANCE=2 VELOCITY=5 [ACCEL=100]
+FORCE_MOVE STEPPER=stepper_z2 DISTANCE=2 VELOCITY=5 [ACCEL=100]
+FORCE_MOVE STEPPER=stepper_z3 DISTANCE=2 VELOCITY=5 [ACCEL=100]
+FORCE_MOVE STEPPER=stepper_x DISTANCE=2 VELOCITY=5 [ACCEL=100]
+FORCE_MOVE STEPPER=stepper_y DISTANCE=2 VELOCITY=5 [ACCEL=100]
 - FORCE_MOVE STEPPER=stepper_extruder DISTANCE=2 VELOCITY=5 [ACCEL=100]
-
+```
 Wer sich mit den Force Move auskennt, wird wissen was er noch in die printer.cfg einfügen muss um die Befehle zum laufen zu bekommen ;)
 
 ### Endstops kontrollieren
@@ -113,35 +115,37 @@ Wer sich mit den Force Move auskennt, wird wissen was er noch in die printer.cfg
 Vergewisser dich, dass keiner der X-, Y- oder Z-Endstopps betätigt ist. 
 Tippe dann QUERY_ENDSTOPS in die Konsole ein.
 Folgendes solltest du dann angezeigt bekommen:
-
+```python
 - x:open y:open z:open
-
+```
 Wenn ein Endschalter "triggered" statt "open" anzeigt, überprüfe bitte ob wirklich keiner betätigt ist. 
 Jetzt kannst du den X-Endschalter händisch betätigen und erneut QUERY_ENDSTOPS in die Konsole eingeben.
 
 Die anzeige sollte nun lautet:
+```python
 - x:triggered y:open z:open
-
+```
 Wiederhole den Test auch für den Y und Z Endschalter.
 
 Wenn die Endschalter falsch herum arbeiten, sprich bei Nichtbetätigung schon "triggered" anzeigen, dann geh in die printer.cfg und füge ein ! vor der Pin ein, bzw. entferne es, wenn es schon vorhanden ist. 
 
 als Beispiel:
-
+```python
 - aus endstop_pin: P1.28 wird endstop_pin: !P1.28
-
+```
 
 ## XY-Homen
 
 Wichtig! Hand auf den Netzschalter, oder mit der Maus in der Weboberfläche auf den Emergency Stop um bei einem Fehler schnell reagieren und den Drucker ausschalten zu können.
 
 Homen von X mit dem Befehl
-
+```python
 - G28 X
-
+```
 Homen von Y mit dem Befehl
-
+```python
 - G28 Y
+```
 
 Sollten die Axen falsch fahren, muss evntuell der DIR-PIN von den AB Motoren negiert, oder die Anschlüsse der beiden Motoren getauscht werden. Hierfür ist folgende Grafik recht hilfreich.
 Bitte niemals im Eingeschalteten Zustand eine Motorleitung vom Motor oder Mainboard entfernen! 
@@ -181,8 +185,6 @@ Wenn die X- und Y-Versätze innerhalb von 5 mm liegen oder 0,0 über dem Bett li
 Wenn die Position des Z-Endstopps zuvor definiert wurde, müssen Sie den Prozess erneut durchführen, um die Position des Z-Endstopps festzulegen 
 
 Die Änderunge in der printer.cfg werden erst nach Eingabe des Befehls FIRMWARE_RESTART übernommen.
-     test 
-     hgdgd
 
 ## Position vom Z-Endstops 
 
@@ -191,7 +193,7 @@ Fahre den Druckkopf in die Position, so dass sich die Düse genau über den Z-En
 Tippe M114 in die Konsole und notiere die die Werte für X und Y
 Diese Werte müssen jetzt in der printer.cfg unter der Sektion [safe_z_home] eingetargen werden
 - als Bespiel "home_xy_position:204,350"
--
+
 Starte Klipper mit FIRMWARE_RESTART neu.
 Jetzt sollte der Drucker vollständig mit dem Befehl G28 homen.
     
@@ -207,7 +209,6 @@ Verringern Sie langsam die Z-Höhe und führen Sie QUERY_PROBE jedes Mal aus, bi
 
 Bewegen Sie die Sonde bei (vorerst) kaltem Bett und Hotend in die Mitte des Bettes und führen Sie PROBE_ACCURACY aus. Das Programm tastet das Bett 10 Mal hintereinander ab und gibt am Ende einen Wert für die Standardabweichung aus. Vergewissern Sie sich, dass der gemessene Abstand keine Tendenz aufweist (allmählich ab- oder zunimmt während der 10 Messungen) und dass die Standardabweichung weniger als 0,003 mm beträgt.
 
-Beispiel für eine instabile PROBE_ACCURACY (Tendenz nach unten während der Aufwärmphase).
 
 ## Quad Gantry Level 
 Da der V2 4 unabhängige Z-Motoren verwendet, muss das gesamte Gantry-System speziell nivelliert werden. Das Makro, mit dem dieser Prozess aufgerufen wird, heißt QUAD_GANTRY_LEVEL (im Sprachgebrauch manchmal auch als 'QGL' bezeichnet). Es prüft jeden der 4 Punkte dreimal, ermittelt den Durchschnitt der Messwerte und nimmt dann Anpassungen vor, bis das Portal waagerecht ausgerichtet ist.
@@ -218,15 +219,18 @@ Wenn der Prozess aufgrund eines Fehlers "außerhalb der Grenzen" fehlschlägt, d
 Lasst den Drucker min 15min bei 245°C Hotend und 100°C Bett vorheizen
 
 Vorbereitung (Befehle nacheinander in die Konsole eingeben)
-- G28
-- QUAD_GANTRY_LEVEL
-- G28
-- BED_MESH_CLEAR
-- G90
-- G1 X175 Y175 F3000
-
+```phyton
+G28
+QUAD_GANTRY_LEVEL
+G28
+BED_MESH_CLEAR
+G90
+G1 X175 Y175 F3000
+```
 Anschließend folgenden Befehl ausführen
- - Z_ENDSTOP_CALIBRATE
+```phyton
+Z_ENDSTOP_CALIBRATE
+```
 
 Legt ein Blatt Papier unter den Druckkopf auf bett und fhrt den Druckkopf langsam in Richtung Bett, indem ihr den Befehl TESTZ Z=-1 verwenden, bis die Düse relativ nahe am Bett ist.
 Mit TESTZ Z=-0.1 könnt ihr anschließend soweit nach unten fahren, bis die Düse leicht über das Papier kratzt. Wenn Ihr zu weit unten seid, dann könnt ihr mit dem Befehl  TESTZ Z=0.1 wieder höher fahren. Es gehen auch kleinen Schritte wie TESTZ Z=-0.025 oder ähnlich. Wenn alles passt gebt ACCEPT und SAVE_CONFIG nacheinander in die Konsole ein
