@@ -285,9 +285,12 @@ TESTZ Z=-1
 ```
 bis die Düse relativ nahe am Bett ist.
 
-Kleinere Schritte gehen auch.
+Das "Feintuning" erledigt dann mit kleiner Abstufung
 ```
 TESTZ Z=-0.1
+TESTZ Z=-0.025
+TESTZ Z=-0.001
+etc...
 ```
 Wenn das Papier bei Bewegung leicht an der Nozzle kratzt, entfernt es und fahrt nochmals um die Dicke des Papieres runter
 ```
@@ -299,10 +302,11 @@ ACCEPT
 SAVE_CONFIG 
 ```
 Sollte ihr mal zu tief gefahren sein, ist es natürlich auch möglich mittel TESTZ hoch zu fahren.
-Kleiner Abstufungen sind auch möglich
+
 ```
 TESTZ Z=0.1
-TESTZ Z=0.025
+TESTZ Z=0.25
+etc...
 ```
 Wichtig: Klipper geht davon aus, dass dieser Prozess kalt durchgeführt wird. Wenn er im heißen Zustand durchgeführt wird, fahrt, nachdem das Papier entfernt wurde, noch einmal mittels TESTZ Z=-0.1 0,1mm runter.
 
