@@ -54,8 +54,10 @@ Man sollte es sich ja einfach machen ;)
 [PID Makros](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/PID_Tuning_Makros)
 
 Die Makros kann ich jetzt über die Weboberfläche über die entsprechende Schaltfläche oder über die Eingabe der Befehle:
-- PID_EXTRUDER
-- PID_BED
+
+```python
+PID_EXTRUDER
+PID_BED
 
 in der Konsole ausführen.
 
