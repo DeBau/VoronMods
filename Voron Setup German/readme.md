@@ -11,7 +11,7 @@
 - [Klipper](https://www.klipper3d.org/)
 
 #### Support
-Wenn ihr mir einen kaffee ausgeben wollt: 
+Wenn ihr mir einen Kaffee ausgeben wollt: 
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://paypal.me/dfoure?country.x=DE&locale.x=de_DE)
 
 
