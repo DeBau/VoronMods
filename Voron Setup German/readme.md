@@ -87,6 +87,9 @@ Wenn sich der Motor deutlich mehr oder weniger als einen Millimeter bewegt, übe
 Anordung der Motoren
 <img src="https://docs.vorondesign.com/build/startup/images/V2-motor-positions.png" alt="v2Motoren" width=400 height=400>
 
+<img src="https://docs.vorondesign.com/build/startup/images/V2-motor-configuration-guide.png" alt="v2Motorenmove" width=700 height=400>
+
+
 #### ACHTUNG
 Mein Vorgehen sieht etwas anders aus
 Ich nutze den force_move Befehl um die Motoren zu testen
@@ -106,26 +109,27 @@ Befehle:
 
 Änderungen in der printer.cfg
 
-[force_move]
-
-enable_force_move: true
-
-Fahrbewegungen bei den Befehlen:
-- Alle Z Motoren sollten 2mm hoch fahren
-- Force X - nach rechts und hinten
-- Force Y - nach links und hinten
+- [force_move]
+- enable_force_move: true
 
 ### Endstops kontrollieren
 
-Vergewissern Sie sich, dass keiner der X-, Y- oder Z-Endstopps gedrückt wird. Senden Sie dann einen QUERY_ENDSTOPS-Befehl. Das Terminal-Fenster sollte mit folgendem Wortlaut antworten:
+Vergewisser dich, dass keiner der X-, Y- oder Z-Endstopps gedrückt wird. 
+Tippe dann QUERY_ENDSTOPS in die Konsole ein.
+Folgendes sollte du dann angezeigt bekommen:
 
 Senden: QUERY_ENDSTOPS
 Empfangen: x:offen y:offen z:offen
 
-Wenn auf einer der Tasten "triggered" statt "open" steht, überprüfen Sie, ob keine der Tasten gedrückt ist. Drücken Sie als Nächstes manuell den X-Endschalter, senden Sie erneut den Befehl QUERY_ENDSTOPS und vergewissern Sie sich, dass auf dem X-Endschalter "triggered" steht und die Y- und Z-Endschalter geöffnet bleiben. Wiederholen Sie den Vorgang mit den Endschaltern Y und Z.
+Wenn ein Endschalter "triggered" statt "open" anzeigt, überprüf ob wiiklich keine betätigt ist. 
+Jetzt kannst du den X-Endschalter händisch betätigen und erneut QUERY_ENDSTOPS in die Konsole eingeben.
+Die anzeige sollte nun lautet:
+- x:triggerd y:offen z:offen
+Wiederhole den Test auch für den Y und Z Endschalter
 
-Wenn festgestellt wird, dass eine der Endhaltestellen eine umgekehrte Anmeldung hat (d. h. sie wird als "offen" angezeigt, wenn sie gedrückt wird, und als "ausgelöst", wenn sie nicht gedrückt wird), gehen Sie in die Druckerkonfigurationsdatei (normalerweise printer.cfg) und fügen Sie das ! vor der Stiftkennung hinzu oder entfernen Sie es. Wenn zum Beispiel der X-Endstopp invertiert wurde, fügen Sie ein ! vor der Stiftnummer wie folgt hinzu:
+Wenn die Endschalter falsch herum arbeiten, sprich bei Nichtbetätigung schon "triggerd" anzeigen, dann geh in die printer.cfg und füge ein ! vor der Pin ein, bzw. entferne es, wenn es schon vorhanden ist. 
 
+als Beispiel:
 endstop_pin: P1.28 -> endstop_pin: !P1.28
 
 
