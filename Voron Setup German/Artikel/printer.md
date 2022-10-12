@@ -23,7 +23,8 @@ nur der Veranschaulichung dienen! Bitte nicht 1:1 übernehmen
 
 Bei Verwendung der Treibertypen 2208 / 2209 werden Spannung und Strom in der Software eingestellt. 
 In Klipper haben die Motorströme zwei Einstellungen: 
-_ run_current 
+
+- run_current 
 - hold_current
 
 Für die meisten Motoren ist es jedoch nicht mehr empfehlenswert, einen Haltestrom anzugeben. Die Stromeinstellungen in Klipper basieren auf dem Effektivwert (RMS) und nicht auf dem Spitzenstrom. In den technischen Datenblättern der meisten Motoren ist die Spitzenstromkapazität angegeben.
