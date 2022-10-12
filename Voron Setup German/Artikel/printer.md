@@ -102,49 +102,44 @@ homing_positive_dir: true
 #### Stepper Y
 Original:
 ```
+[#  A Stepper - Right
+##  Connected to MOTOR_1
+##  Endstop connected to DIAG_1
+[stepper_y]
+step_pin: PG0
+dir_pin: !PG1
+enable_pin: !PF15
+rotation_distance: 40
+microsteps: 32
+full_steps_per_rotation:200  #set to 400 for 0.9 degree stepper
+endstop_pin: PG9
+position_min: 0
+##--------------------------------------------------------------------
+
+##  Uncomment for 250mm build
+#position_endstop: 250
+#position_max: 250
+
+##  Uncomment for 300mm build
+#position_endstop: 300
+#position_max: 300
+
+##  Uncomment for 350mm build
+#position_endstop: 350
+#position_max: 350
+
+##--------------------------------------------------------------------
+homing_speed: 25  #Max 100
+homing_retract_dist: 5
+homing_positive_dir: true
+
+##  Make sure to update below for your relevant driver (2208 or 2209)
 [tmc2209 stepper_y]
 uart_pin: PD11
 interpolate: false
 run_current: 0.8
 sense_resistor: 0.110
 stealthchop_threshold: 0
- 
-#####################################################################
-#   Z Stepper Settings
-#####################################################################
-
-## Z0 Stepper - Front Left
-##  Connected to MOTOR_2
-##  Endstop connected to DIAG_2
-[stepper_z]
-step_pin: PF11
-dir_pin: !PG3
-enable_pin: !PG5
-rotation_distance: 40
-gear_ratio: 80:16
-microsteps: 32
-endstop_pin: PG10
-##  Z-position of nozzle (in mm) to z-endstop trigger point relative to print surface (Z0)
-##  (+) value = endstop above Z0, (-) value = endstop below
-##  Increasing position_endstop brings nozzle closer to the bed
-##  After you run Z_ENDSTOP_CALIBRATE, position_endstop will be stored at the very end of your config
-position_endstop: -0.5
-##--------------------------------------------------------------------
-
-##  Uncomment below for 250mm build
-#position_max: 210
-
-##  Uncomment below for 300mm build
-#position_max: 260
-
-##  Uncomment below for 350mm build
-#position_max: 310
-
-##--------------------------------------------------------------------
-position_min: -5
-homing_speed: 8
-second_homing_speed: 3
-homing_retract_dist: 3
 ```
 angepasst auf den v2 350er
 ```
