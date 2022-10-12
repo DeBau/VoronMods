@@ -22,9 +22,12 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/BIGTREETECH-Octopus-1.1-color-PIN.jpg" alt="pinout" width=800 height=400>
 
 # Table of Contents
-## Grundeisntellungen
-*Notwendige Einstellungen
-- [printer.cfg](/Artikel/printer.md)  
+## Grundeintellungen
+*Notwendige Anpassungen
+- [printer.cfg](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/printer.md)  
+- [Motorstromberechnung](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/printer.md)
+- [SpreadCycle oder Stealthchop](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/printer.md)
+- 
 ## Step by Step 
 
 ### printer.cfg vorbereiten
