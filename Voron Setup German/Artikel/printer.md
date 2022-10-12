@@ -370,7 +370,7 @@ samples_tolerance: 0.006
 samples_tolerance_retries: 3
 ```
 #### Position eures Z-Endschalters
-Wie die Position Ermittelt wird, erfahrt ihr hier  [Ermittels der Z-Endstop Position](https://github.com/DeBau/VoronMods/tree/main/Voron%20Setup%20German#position-vom-z-endstops)
+Wie die Position ermittelt wird, erfahrt ihr hier  [Ermittels der Z-Endstop Position](https://github.com/DeBau/VoronMods/tree/main/Voron%20Setup%20German#position-vom-z-endstops)
 ```
 [safe_z_home]
 ##  XY Location of the Z Endstop Switch
@@ -457,7 +457,7 @@ max_adjust: 10
 ```
 
 #### Display
-In  meinem Fall verwende ich das BTT mini12864 LC Display und kommentiere die Passagen entsprechend aud der printer.cfg aus
+In  meinem Fall verwende ich das BTT mini12864 LC Display und kommentiere die Passagen entsprechend in der printer.cfg aus
 
 Original:
 ```
