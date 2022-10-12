@@ -105,6 +105,7 @@ Befehle:
 - FORCE_MOVE STEPPER=stepper_extruder DISTANCE=2 VELOCITY=5 [ACCEL=100]
 
 Änderungen in der printer.cfg
+
 [force_move]
 
 enable_force_move: true
@@ -112,7 +113,7 @@ enable_force_move: true
 Fahrbewegungen bei den Befehlen:
 - Alle Z Motoren sollten 2mm hoch fahren
 - Force X - nach rechts und hinten
-- Force Y - nach links und vorne
+- Force Y - nach links und hinten
 
 
 
