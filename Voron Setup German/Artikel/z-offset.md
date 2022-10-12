@@ -36,7 +36,7 @@ Akzeptiert und speichert den neuen Z-Offset Wert mit folgenden Befehlen
 ACCEPT 
 SAVE_CONFIG 
 ```
-Sollte ihr mal zu tief gefahren sein, ist es natürlich auch möglich mittel TESTZ hoch zu fahren.
+Sollte ihr mal zu tief gefahren sein, ist es natürlich auch möglich mittels ```TESTZ``` hoch zu fahren.
 
 ```
 TESTZ Z=0.1
