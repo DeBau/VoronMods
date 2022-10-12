@@ -1,9 +1,10 @@
 ## Initial Setup für einen Voron V2 350
 - Octopus v1.1 Board
 - TMC2209 Treiber
-- Moons Motoren
+- Moons Motoren (17HS19-2004S und 17HS08-1004S)
 - Omron TL-Q5MC2-Z Sensor
-- 
+- mini12864 LCD Display
+
 ### Quellen: 
 - [Voron Design Dokumentation](https://docs.vorondesign.com)
 - [Voron Design Github Voron v2](https://docs.vorondesign.com)
@@ -13,6 +14,7 @@
 ### Download der Voron printer.cfg
 - [Voron Design prnter.cfg für das Octopus Board](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/firmware/klipper_configurations/Octopus)
 ### PinOut vom Octopus Board
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/BIGTREETECH-Octopus-1.1-color-PIN.jpg" alt="pinout" width=800 height=400>
 
 
 ### Einstellungen in der printer.cfg die unbedingt überprüft werden müssen
@@ -61,7 +63,6 @@ Man sollte es sich ja einfach machen ;)
 [PID Makros](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/PID_Tuning_Makros)
 
 Die Makros kann ich jetzt über die Weboberfläche über die entsprechenden Schaltflächen oder über die Eingabe der Befehle:
-
 ```
 PID_EXTRUDER
 PID_BED
