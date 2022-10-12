@@ -115,7 +115,18 @@ Fahrbewegungen bei den Befehlen:
 - Force X - nach rechts und hinten
 - Force Y - nach links und hinten
 
+### Endstops kontrollieren
 
+Vergewissern Sie sich, dass keiner der X-, Y- oder Z-Endstopps gedrückt wird. Senden Sie dann einen QUERY_ENDSTOPS-Befehl. Das Terminal-Fenster sollte mit folgendem Wortlaut antworten:
+
+Senden: QUERY_ENDSTOPS
+Empfangen: x:offen y:offen z:offen
+
+Wenn auf einer der Tasten "triggered" statt "open" steht, überprüfen Sie, ob keine der Tasten gedrückt ist. Drücken Sie als Nächstes manuell den X-Endschalter, senden Sie erneut den Befehl QUERY_ENDSTOPS und vergewissern Sie sich, dass auf dem X-Endschalter "triggered" steht und die Y- und Z-Endschalter geöffnet bleiben. Wiederholen Sie den Vorgang mit den Endschaltern Y und Z.
+
+Wenn festgestellt wird, dass eine der Endhaltestellen eine umgekehrte Anmeldung hat (d. h. sie wird als "offen" angezeigt, wenn sie gedrückt wird, und als "ausgelöst", wenn sie nicht gedrückt wird), gehen Sie in die Druckerkonfigurationsdatei (normalerweise printer.cfg) und fügen Sie das ! vor der Stiftkennung hinzu oder entfernen Sie es. Wenn zum Beispiel der X-Endstopp invertiert wurde, fügen Sie ein ! vor der Stiftnummer wie folgt hinzu:
+
+endstop_pin: P1.28 -> endstop_pin: !P1.28
 
 
 
