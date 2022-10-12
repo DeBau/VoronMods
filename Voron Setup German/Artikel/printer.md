@@ -458,6 +458,7 @@ max_adjust: 10
 
 #### Display
 In  meinem Fall verwende ich das BTT mini12864 LC Display und kommentiere die Passagen entsprechend aud der printer.cfg aus
+
 Original:
 ```
 ##  mini12864 LCD Display
