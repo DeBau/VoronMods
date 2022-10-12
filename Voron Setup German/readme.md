@@ -36,14 +36,14 @@ nur der Veranschaulichung dienen! Bitte nicht 1:1 übernehmen
 ### Überprüfen der Temperaturen für das Hotend und Heizbett
 
 Die angezeigten Temperaturen sollten im Ausgangszustand ungefähr die aktuelle Raumtemperatur anzeigen.
-Ist das nicht der Fall, sollte der Seonsortyp und der Sensorpin überprüft werden
+Ist das nicht der Fall, sollte der Sensortyp und der Sensorpin überprüft werden
 - [Sensortypen](https://www.klipper3d.org/Config_Reference.html?h=common+thermistors+thermistor#common-thermistors)
 
 <img src="https://docs.vorondesign.com/build/startup/images/mainsail_temp_graph.png" alt="Temperaturen" width=600 height=400>
 
 ### Überprüfung der Heizelemente
-Gebt einen Temperatur für das Heizbett und das Hotend von 50°C vor und beobachtet ob eure Temperatur steigt.
-Wenn die Temperatur nicht steigen sollte, überprüft bitte den Anschluss und den Pin des jeweiligen Heizelementes
+Gebt eine Temperatur für das Heizbett und das Hotend von 50°C vor und beobachtet ob eure Temperatur steigt.
+Wenn die Temperatur nicht steigen sollte, überprüft bitte den Anschluss und den Pin des jeweiligen Heizelementes.
 
 ### PID Tuning
 An diesem Punkt mach ich personlich direkt das PID Tuning
@@ -53,7 +53,7 @@ Man sollte es sich ja einfach machen ;)
 
 [PID Makros](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/PID_Tuning_Makros)
 
-Die Makros kann ich jetzt über die Weboberfläche über die entsprechende Schaltfläche oder über die Eingabe der Befehle:
+Die Makros kann ich jetzt über die Weboberfläche über die entsprechenden Schaltflächen oder über die Eingabe der Befehle:
 
 ```
 PID_EXTRUDER
@@ -69,7 +69,7 @@ in der Konsole speichern
 
 ### Stepper Motoren überprüfen
 Um die Motoren zu überprüfen kann man den Stepper_Buzz Befehl nutzen.
-Dafür gebt folgende Befehl in die Konsole ein
+Dafür gebt folgenden Befehl in die Konsole ein
 ```
 STEPPER_BUZZ STEPPER=stepper_x
 ```
@@ -87,7 +87,7 @@ Wenn sich der Schrittmotor überhaupt nicht bewegt, überprüft die Einstellunge
 der Schrittmotor in eine falsche Richtung schwingt, deutet dies im Allgemeinen darauf hin, dass der "dir_pin" für die Achse invertiert werden muss. Fügt dazu in der Pinter.cfg ein '!' an den "dir_pin" an (oder entferntes, falls bereits eines vorhanden ist). 
 Wenn sich der Motor deutlich mehr oder weniger als einen Millimeter bewegt, überprüft die Einstellung rotation_distance.
 
-Anordung der Motoren
+###Anordung der Motoren
 <img src="https://docs.vorondesign.com/build/startup/images/V2-motor-positions.png" alt="v2Motoren" width=400 height=400>
 
 #### ACHTUNG
@@ -108,7 +108,7 @@ FORCE_MOVE STEPPER=stepper_x DISTANCE=2 VELOCITY=5 [ACCEL=100]
 FORCE_MOVE STEPPER=stepper_y DISTANCE=2 VELOCITY=5 [ACCEL=100]
 FORCE_MOVE STEPPER=stepper_extruder DISTANCE=2 VELOCITY=5 [ACCEL=100]
 ```
-Wer sich mit den Force Move auskennt, wird wissen was er noch in die printer.cfg einfügen muss um die Befehle zum laufen zu bekommen ;)
+Wer sich mit den Force Move auskennt, wird wissen was er noch in die printer.cfg einfügen muss um die Befehle zum Laufen zu bekommen ;)
 
 ### Endstops kontrollieren
 Vergewisser dich, dass keiner der X-, Y- oder Z-Endstopps betätigt ist. 
