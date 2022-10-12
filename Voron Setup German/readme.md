@@ -1,4 +1,4 @@
-## Diese Anleitung basiert auf einem Voron V2 350er mit Octopus Board ohne Mods
+## Diese Anleitung basiert auf einem Voron V2 350er mit Octopus V1.1 Board ohne Mods
 
 ### Quellen: 
 - [Voron Design Dokumentation](https://docs.vorondesign.com)
@@ -23,12 +23,21 @@
 
 ## Step by Step 
 
+### printer.cfg vorbereiten
+Ersteinmal kümmern wir uns um die Printer.cfg und kommentieren die entsprechenden Bereiche für unseren Drukcer aus.
+Alles was nicht benötigt wird kann und sollte wegen der Übersichtlichkeit gelöscht werden.
+Für einen Voron V2 350er sieht die fertige printer.cfg dann so aus
+
+
+
 ### Überprüfen der Temperaturen für das Hotend und Heizbett
 
 Die angezeigten Temperaturen sollten im Ausgangszustand ungefähr die aktuelle Raumtemperatur anzeigen.
 Ist das nicht der Fall, sollte der Seonsortyp und der Sensorpin überprüft werden
-- [Sensortypen]([https://github.com/VoronDesign/Voron-2/tree/Voron2.4/firmware/klipper_configurations/Octopus](https://www.klipper3d.org/Config_Reference.html?h=common+thermistors+thermistor#common-thermistors)
-
+- [Sensortypen](https://www.klipper3d.org/Config_Reference.html?h=common+thermistors+thermistor#common-thermistors)
 
 <img src="https://docs.vorondesign.com/build/startup/images/mainsail_temp_graph.png" alt="Temperaturen" width=600 height=400>
+
+### Überprüfung der Heizelemente
+
 
