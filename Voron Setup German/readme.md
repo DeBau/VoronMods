@@ -7,7 +7,6 @@
 ## Vorbereitungen
 ### Download der Voron printer.cfg
 - [Voron Design prnter.cfg für das Octopus Board](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/firmware/klipper_configurations/Octopus)
-- 
 
 ### Einstellungen in der printer.cfg die unbedingt überprüft werden müssen
 - MCU ID     
@@ -24,11 +23,15 @@
 ## Step by Step 
 
 ### printer.cfg vorbereiten
-Ersteinmal kümmern wir uns um die Printer.cfg und kommentieren die entsprechenden Bereiche für unseren Drukcer aus.
-Alles was nicht benötigt wird kann und sollte wegen der Übersichtlichkeit gelöscht werden.
-Für einen Voron V2 350er sieht die fertige printer.cfg dann so aus
+Ersteinmal kümmern wir uns um die Printer.cfg und kommentieren die entsprechenden Bereiche für unseren Drucker aus.
+Alles was nicht benötigt wird, kann und sollte wegen der Übersichtlichkeit gelöscht werden.
+Für einen Voron V2 350er sieht die fertige printer.cfg dann so aus:
 
+- [Bespiel printer.cfg](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/printer.cfg)
 
+Natürlich ist diese printer.cfg nicht allgemein gültig! 
+Sie kann sich je nach verwendeten Motoren, Sensoren, Extruder, Board, Z-Endstop Position, Probe etc unterscheiden und sollte hier
+nur der Veranschaulichung dienen! Bitte nicht 1:1 übernehmen
 
 ### Überprüfen der Temperaturen für das Hotend und Heizbett
 
