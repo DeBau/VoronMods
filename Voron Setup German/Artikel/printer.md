@@ -184,9 +184,7 @@ position_min: -5
 homing_speed: 8
 second_homing_speed: 3
 homing_retract_dist: 3
-```
-angepasst auf den V2 350er
-```
+```angepasst auf den V2 350er```
 ## Z0 Stepper - Front Left
 ##  Connected to MOTOR_2
 ##  Endstop connected to DIAG_2
@@ -206,12 +204,9 @@ second_homing_speed: 3
 homing_retract_dist: 3
 ```
 
-Hierbei gint es eine Besonderheit: Euren Z-Endstop. Wenn dieser über das bett hinausragt, tragt bei
-- position_endstop
-
-einen positiven Wert ein, wenn er unterhalb des Bettes steht, dann einen negativen. Der korrekte Wert wird später mittels
-```Z_ENDSTOP_CALIBRATE```
-ermittelt.
+Hierbei gint es eine Besonderheit: Euren Z-Endstop. Wenn dieser über das Bett hinausragt, tragt bei
+```position_endstop``` einen positiven Wert ein, wenn er unterhalb des Bettes steht, dann einen negativen. Der korrekte Wert wird später mittels
+```Z_ENDSTOP_CALIBRATE```ermittelt.
 
 ### Sensortypen
 
