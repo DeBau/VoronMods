@@ -229,30 +229,43 @@ G28
 homen.
      
 ## Probe
+Home den Drucker und fahre in die Mitte des Druckbettes in 50mm Höhe
 
-Wenn sich der Werkzeugkopf in der Mitte des Bettes befindet, vergewissern Sie sich, dass der Messtaster richtig funktioniert.
-
-Wenn er weit vom Bett entfernt ist, sollte 
+```
+G28
+G90
+G1 X175 Y175 F3000
+G1 Z50 F600
+```
+Der Probe sollte nach Eingabe von folgenden Befehl:
 ```
 QUERY_PROBE
 ```
 "open" anzeigen. 
-Wenn sich ein Metallobjekt in der Nähe des Messtasters befindet, sollte QUERY_PROBE "triggered" anzeigen. Wenn das Signal invertiert ist, fügen Sie ein "!" vor der Pin-Definition hinzu.
 
-Verringern Sie langsam die Z-Höhe und führen Sie 
+Wenn sich ein Metallobjekt in der Nähe des Messtasters befindet, sollte QUERY_PROBE "triggered" anzeigen. Wenn das Signal invertiert ist, fügt ein "!" vor der Pin-Definition hinzu.
+
+Verringert nun langsam die Z-Höhe
+```
+G1 Z10 F600
+G1 Z9 F600
+G1 Z8 F600
+usw.
+```
+und führt
 ```
 QUERY_PROBE 
 ```
-jedes Mal aus, bis QUERY_PROBE "getriggert" anzeigt - stellen Sie sicher, dass die Düse die Druckoberfläche nicht berührt (und Freiraum hat).
+jedes Mal aus, bis QUERY_PROBE "getriggert" anzeigt.
+Stellen Sie sicher, dass die Düse die Druckoberfläche nicht berührt (und Freiraum hat).
 
 ### Wiederholgenauigkeit
-
 fahr den Druckkopf mittig übers Bett
 ```
 G90
 G1 X175 Y175 F3000
 ```
-Anschließend tippe folgenden befehl in die Konsole ein
+Anschließend tippe folgenden Befehl in die Konsole ein
 ```
 PROBE_ACCURACY
 ```
