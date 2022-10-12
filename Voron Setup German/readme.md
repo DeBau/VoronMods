@@ -28,19 +28,18 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 ##### Infos rund um die printer.cfg und deren Einstellungen 
 - [Motorstromberechnung](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Motorstrom.md)
 - [TMC Treiber](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/TMC_Treiber.md)
-
 ## Temperaturen
 - [Thermistoren und Heater](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Temperaturen.md) 
 - [PID Tuning](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/PID_Tuning.md) 
-
 ## Motion
 - [Stepper überprüfen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Stepper.md) 
 #### Homen
 - [XY Homen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/XY_Homen.md) 
-
-
-## Endstops
+#### Endstops
 - [XYZ](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/XYZ_Endstops.md) 
+#### Z Position und Druckbettausrichtung
+- [Druckbettausrichtung](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Ausrichtung.md) 
+- [0-Punkt Bestimmung](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/0-Punkt.md) 
 - [Z-Endstop Position festlegen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Z_Endstop.md) 
 ### Probe
 
@@ -67,40 +66,10 @@ Bitte niemals im Eingeschalteten Zustand eine Motorleitung vom Motor oder Mainbo
 
 <img src="https://docs.vorondesign.com/build/startup/images/V2-motor-configuration-guide.png" alt="v2Motorenmove" width=700 height=400>
 
-## Ausrichtung vom Druckbett 
-Bevor der 0,0-Punkt und die Position des Z-Endanschlags eingestellt werden, müssen die physischen Positionen des Z-Endanschlags und des Druckbetts endgültig festgelegt werden.
-
-Der Z-Endanschlag sollte sich in einer Linie mit der Düse befinden, wenn sich der Werkzeugkopf in der maximalen Y-Position befindet. Stellt X und Y mit G28 X Y ein und verfahrt dann nur X, um eine Position des Z-Endanschlags bei maximalem Y-Verfahrweg zu finden, bei der der Endanschlag noch ausgelöst wird. Schraubt anschliend den Z-Endanschlag in dieser Position fest
-
-Sobald der Z-Endanschlag in seiner Position fixiert ist, sollte die Grundplatte so eingestellt werden, so dass der Z-Endanschlagstift etwa 2-3 mm von der Aluminiumgrundplatte entfernt ist. Die Grundplatte sollte auf jeder Seite vermessen werden, um sicherzustellen, dass sie zentriert und eben mit der Vorderkante des Rahmens ist. Wenn dabei die Profile, auf denen das B ettmontiert ist, verschoben werden müssen, überprüft den Z-Anschlag anschließend noch einmal, um sicherzustellen, dass er noch erreichbar ist. Beim Anziehen der Befestigungsschrauben für das Bett empfiehlt es sich, eine Schraube fest, zwei halbfest und die letzte locker anzuziehen (am besten im heißen Zustand).
 
 ## 0,0-Punkt bestimmen
 
-Die Referenzpunktposition befindet sich nicht an der typischen Position 0,0, sondern an der maximalen Verfahrposition. Die tatsächlichen Werte variieren je nach Größe des Druckers.
 
-Je nach Bettposition müssen die Parameter möglicherweise angepasst werden, um den 0,0-Punkt neu zu positionieren.
-
-Beginnt mit der erneuten Ausführung der Befhele G28 X Y, um X und Y zu initialisieren. Danach befindet sich die Düse an der maximalen X,Y-Position, die durch position_max unter [stepper_x] und [stepper_y] definiert ist.
-Fahrt den Druckkopf  in die vordere linke Ecke des Bettes.
-Wenn die linke Ecke des Bettes nicht innerhalb von 3-5 mm erreicht werden kann, muss die Position des Bettes physisch angepasst werden (falls möglich). Verschiebt dafür das Bett auf den Profilen, um die Bettposition innerhalb des Bereichs zu erreichen.
-Wichtig! Die Düse muss nach der Justierung immer noch den Z-Endschalter erreichen können.
-Wenn der Druckkopf sich vorne links befindets tippe M114 in die Konsole ein, um die aktuelle Position abzurufen.
-Hinweis: Aufgrund anderer Toleranzen ist es in der Regel nicht empfehlenswert, die Position 0,0 genau auf die Ecke des Bettes zu setzen. Spezifische Bettgrößen sind immer etwas größer als das definierte Druckvolumen, so dass der Druckvolumenverlust minimal ist.
-
-Wenn der X- und Y-Versatz weniger als 1 mm beträgt und 0,0 über dem Bett liegt, muss nichts geändert werden.
-
-Wenn die X- und Y-Versätze innerhalb von 5 mm liegen oder 0,0 über dem Bett liegt, sollten die position_max-Werte angepasst werden. Liegt der 0,0-Punkt über dem Bett, muss der Abstand vom Nullpunkt nach vorne links (position_max) erhöht werden. Liegt der 0,0-Punkt hinter dem Bett, muss der Abstand verringert werden. Der jeweilige Wert wird durch die Ausgabe des Befehls M114 bestimmt. Aktualisieren Sie position_max und position_endstop für beide [stepper_x] und [stepper_y] wie folgt:
-
-    Für X: New = Current - Get Position X (M114) Ergebnis
-    Für Y: Neu = Aktuell - Hole Position Y (M114) Ergebnis
-
-Wenn die Position des Z-Endstopps zuvor definiert wurde, müssen Sie den Prozess erneut durchführen, um die Position des Z-Endstopps festzulegen 
-
-Die Änderunge in der printer.cfg werden erst nach Eingabe des Befehls 
-```
-FIRMWARE_RESTART
-```
-übernommen.
 
 #
      
