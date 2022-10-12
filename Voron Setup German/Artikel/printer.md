@@ -132,14 +132,6 @@ position_min: 0
 homing_speed: 25  #Max 100
 homing_retract_dist: 5
 homing_positive_dir: true
-
-##  Make sure to update below for your relevant driver (2208 or 2209)
-[tmc2209 stepper_y]
-uart_pin: PD11
-interpolate: false
-run_current: 0.8
-sense_resistor: 0.110
-stealthchop_threshold: 0
 ```
 angepasst auf den v2 350er
 ```
@@ -156,14 +148,70 @@ position_max: 350
 homing_speed: 50  
 homing_retract_dist: 5
 homing_positive_dir: true
-
-[tmc2209 stepper_y]
-uart_pin: PD11
-interpolate: false
-run_current: 0.8
-sense_resistor: 0.110
-stealthchop_threshold: 0
 ```
+#### Stepper Z
+Original
+```
+## Z0 Stepper - Front Left
+##  Connected to MOTOR_2
+##  Endstop connected to DIAG_2
+[stepper_z]
+step_pin: PF11
+dir_pin: !PG3
+enable_pin: !PG5
+rotation_distance: 40
+gear_ratio: 80:16
+microsteps: 32
+endstop_pin: PG10
+##  Z-position of nozzle (in mm) to z-endstop trigger point relative to print surface (Z0)
+##  (+) value = endstop above Z0, (-) value = endstop below
+##  Increasing position_endstop brings nozzle closer to the bed
+##  After you run Z_ENDSTOP_CALIBRATE, position_endstop will be stored at the very end of your config
+position_endstop: -0.5
+##--------------------------------------------------------------------
+
+##  Uncomment below for 250mm build
+#position_max: 210
+
+##  Uncomment below for 300mm build
+#position_max: 260
+
+##  Uncomment below for 350mm build
+#position_max: 310
+
+##--------------------------------------------------------------------
+position_min: -5
+homing_speed: 8
+second_homing_speed: 3
+homing_retract_dist: 3
+```
+angepasst auf den V2 350er
+```
+## Z0 Stepper - Front Left
+##  Connected to MOTOR_2
+##  Endstop connected to DIAG_2
+[stepper_z]
+step_pin: PF11
+dir_pin: !PG3
+enable_pin: !PG5
+rotation_distance: 40
+gear_ratio: 80:16
+microsteps: 32
+endstop_pin: PG10
+position_endstop: +0.5
+position_max: 310
+position_min: -5
+homing_speed: 8
+second_homing_speed: 3
+homing_retract_dist: 3
+```
+
+Hierbei gint es eine Besonderheit: Euren Z-Endstop. Wenn dieser über das bett hinausragt, tragt bei
+- position_endstop
+
+einen positiven Wert ein, wenn er unterhalb des Bettes steht, dann einen negativen. Der korrekte Wert wird später mittels
+```Z_ENDSTOP_CALIBRATE```
+ermittelt.
 
 ### Sensortypen
 
