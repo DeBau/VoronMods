@@ -10,6 +10,11 @@
 - [Voron Design Github Voron v2](https://docs.vorondesign.com)
 - [Klipper](https://www.klipper3d.org/)
 
+#### Support
+Wenn ihr mir einen kaffee ausgeben wollt: 
+[![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://paypal.me/dfoure?country.x=DE&locale.x=de_DE)
+
+
 ## Vorbereitungen
 ### Download der Voron printer.cfg
 - [Voron Design printer.cfg für das Octopus Board](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/firmware/klipper_configurations/Octopus)
