@@ -8,6 +8,97 @@ Natürlich ist diese printer.cfg nicht allgemein gültig!
 Sie kann sich je nach verwendeten Motoren, Sensoren, Extruder, Board, Z-Endstop Position, Probe etc unterscheiden und sollte hier
 nur der Veranschaulichung dienen! Bitte nicht 1:1 übernehmen
 
+## Fangen wir von vorne an 
+
+### Einstellungen in der printer.cfg die unbedingt überprüft werden müssen
+- MCU ID     
+- Thermistor Typen
+- Z Endstop Position
+- Homing end Position
+- Z Endstop offset für Z0 
+- Probe points   
+- Min & Max gantry corner Positionen
+- PID tune                     
+- Probe pin  
+- Fine tune E steps
+  
+#### MCU ID
+diese muss ermittelt werden, nähere Infos findet ihr hier:
+
+[MCU ID beim Octopus Board](https://docs.vorondesign.com/build/software/octopus_klipper.html)
+
+Original Abschnitt der printer.cfg
+```
+##--------------------------------------------------------------------
+serial: /dev/serial/by-id/{REPLACE WITH YOUR SERIAL}
+restart_method: command
+##--------------------------------------------------------------------
+```
+wir setzen die ermittelte ID ein und erhalten:
+```
+[mcu]
+serial: /dev/serial/by-id/usb-Klipper_stm32f446xx_1B0046000650534E4E313120-if00
+restart_method: command
+```
+
+#### Stepper X
+
+Original:
+```
+#####################################################################
+#   X/Y Stepper Settings
+#####################################################################
+
+##  B Stepper - Left
+##  Connected to MOTOR_0
+##  Endstop connected to DIAG_0
+[stepper_x]
+step_pin: PF13
+dir_pin: !PF12
+enable_pin: !PF14
+rotation_distance: 40
+microsteps: 32
+full_steps_per_rotation:200  #set to 400 for 0.9 degree stepper
+endstop_pin: PG6
+position_min: 0
+##--------------------------------------------------------------------
+
+##  Uncomment below for 250mm build
+#position_endstop: 250
+#position_max: 250
+
+##  Uncomment for 300mm build
+#position_endstop: 300
+#position_max: 300
+
+##  Uncomment for 350mm build
+#position_endstop: 350
+#position_max: 350
+```
+angepasst auf den 350er v2
+```
+#####################################################################
+#   X/Y Stepper Settings
+#####################################################################
+
+##  B Stepper - Left
+##  Connected to MOTOR_0
+##  Endstop connected to DIAG_0
+[stepper_x]
+step_pin: PF13
+dir_pin: !PF12
+enable_pin: !PF14
+rotation_distance: 40
+microsteps: 32
+endstop_pin: PG6
+position_min: 0
+position_endstop: 350
+position_max: 350
+homing_speed: 25   #Max 100
+homing_retract_dist: 5
+homing_positive_dir: true
+```
+
 ### Sensortypen
 
 - EPCOS 100K B57560G104F"
@@ -18,6 +109,8 @@ nur der Veranschaulichung dienen! Bitte nicht 1:1 übernehmen
 - NTC 100K MGB18-104F39050L32",
 - SliceEngineering 450
 - TDK NTCG104LH104JT1
+
+
 
 ### Berechnung von Motorstrom
 
