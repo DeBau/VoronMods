@@ -95,7 +95,7 @@ Wenn sich der Schrittmotor überhaupt nicht bewegt, überprüft die Einstellunge
 der Schrittmotor in eine falsche Richtung schwingt, deutet dies im Allgemeinen darauf hin, dass der "dir_pin" für die Achse invertiert werden muss. Fügt dazu in der Pinter.cfg ein '!' an den "dir_pin" an (oder entferntes, falls bereits eines vorhanden ist). 
 Wenn sich der Motor deutlich mehr oder weniger als einen Millimeter bewegt, überprüft die Einstellung rotation_distance.
 
-###Anordung der Motoren
+#### Anordung der Motoren
 <img src="https://docs.vorondesign.com/build/startup/images/V2-motor-positions.png" alt="v2Motoren" width=400 height=400>
 
 #### ACHTUNG
