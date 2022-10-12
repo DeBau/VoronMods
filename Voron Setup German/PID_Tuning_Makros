@@ -1,0 +1,8 @@
+[gcode_macro PID_Extruder]
+gcode:
+  M106 S64
+  PID_CALIBRATE HEATER=extruder TARGET=245
+
+[gcode_macro PID_Bed]
+gcode:
+  PID_CALIBRATE HEATER=heater_bed TARGET=100
