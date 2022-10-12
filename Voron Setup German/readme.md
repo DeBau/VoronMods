@@ -25,7 +25,7 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 ## Grundeintellungen
 *Notwendige Anpassungen
 - [printer.cfg](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/printer.md)  
-- [Motorstromberechnung](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/printer.md)
+- [Motorstromberechnung](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Motorstrom.md)
 - [SpreadCycle oder Stealthchop](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/printer.md)
 
 ## Temperaturen
