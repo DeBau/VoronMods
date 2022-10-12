@@ -184,7 +184,9 @@ position_min: -5
 homing_speed: 8
 second_homing_speed: 3
 homing_retract_dist: 3
-```angepasst auf den V2 350er```
+```
+angepasst auf den V2 350er
+```
 ## Z0 Stepper - Front Left
 ##  Connected to MOTOR_2
 ##  Endstop connected to DIAG_2
@@ -203,19 +205,85 @@ homing_speed: 8
 second_homing_speed: 3
 homing_retract_dist: 3
 ```
-
 Hierbei gint es eine Besonderheit: Euren Z-Endstop. Wenn dieser über das Bett hinausragt, tragt bei
 ```position_endstop``` einen positiven Wert ein, wenn er unterhalb des Bettes steht, dann einen negativen. Der korrekte Wert wird später mittels
 ```Z_ENDSTOP_CALIBRATE```ermittelt.
 
+#### Extruder
+Original:
+```
+[extruder]
+step_pin: PE2
+dir_pin: PE3
+enable_pin: !PD4
+##  Update value below when you perform extruder calibration
+##  If you ask for 100mm of filament, but in reality it is 98mm:
+##  rotation_distance = <previous_rotation_distance> * <actual_extrude_distance> / 100
+##  22.6789511 is a good starting point
+rotation_distance: 22.6789511   #Bondtech 5mm Drive Gears
+##  Update Gear Ratio depending on your Extruder Type
+##  Use 50:17 for Afterburner/Clockwork (BMG Gear Ratio)
+##  Use 80:20 for M4, M3.1
+gear_ratio: 50:17               #BMG Gear Ratio
+microsteps: 32
+full_steps_per_rotation: 200    #200 for 1.8 degree, 400 for 0.9 degree
+nozzle_diameter: 0.400
+filament_diameter: 1.75
+heater_pin: PA2
+## Check what thermistor type you have. See https://www.klipper3d.org/Config_Reference.html#common-thermistors for common thermistor types.
+## Use "Generic 3950" for NTC 100k 3950 thermistors
+#sensor_type:
+sensor_pin: PF4
+min_temp: 10
+max_temp: 270
+max_power: 1.0
+min_extrude_temp: 170
+control = pid
+pid_kp = 26.213
+pid_ki = 1.304
+pid_kd = 131.721
+##  Try to keep pressure_advance below 1.0
+#pressure_advance: 0.05
+##  Default is 0.040, leave stock
+#pressure_advance_smooth_time: 0.040
+```
+angepasst auf den CW1 mit einem Thermistor vom ```Type ATC Semitec 104GT-2```
+```
+##  Connected to MOTOR_6
+##  Heater - HE0
+##  Thermistor - T0
+[extruder]
+step_pin: PE2
+dir_pin: PE3
+enable_pin: !PD4
+rotation_distance: 22.6789511  
+gear_ratio: 50:17              
+microsteps: 32
+full_steps_per_rotation: 200    
+nozzle_diameter: 0.400
+filament_diameter: 1.75
+heater_pin: PA2
+sensor_type: ATC Semitec 104GT-2
+sensor_pin: PF4
+min_temp: 10
+max_temp: 270
+max_power: 1.0
+min_extrude_temp: 170
+control = pid
+pid_kp = 26.213
+pid_ki = 1.304
+pid_kd = 131.721
+#pressure_advance: 0.05
+#pressure_advance_smooth_time: 0.040
+```
 ### Sensortypen
 
-- EPCOS 100K B57560G104F"
-- ATC Semitec 104GT-2",
+- EPCOS 100K B57560G104F
+- ATC Semitec 104GT-2
 - ATC Semitec 104NT-4-R025H42G
 - Generic 3950
 - Honeywell 100K 135-104LAG-J01
-- NTC 100K MGB18-104F39050L32",
+- NTC 100K MGB18-104F39050L32
 - SliceEngineering 450
 - TDK NTCG104LH104JT1
 
