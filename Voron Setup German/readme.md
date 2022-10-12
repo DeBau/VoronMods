@@ -32,15 +32,15 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 - [Thermistoren und Heater](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Temperaturen.md) 
 - [PID Tuning](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/PID_Tuning.md) 
 ## Motion
-- 1. [Stepper überprüfen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Stepper.md) 
-#### Endstops überprüfen
-- 2. [XYZ](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/XYZ_Endstops.md) 
-#### Homen
-- 3. [XY Homen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/XY_Homen.md) 
-#### Z Position und Druckbettausrichtung
-- 4. [Druckbettausrichtung](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Ausrichtung.md) 
-- 5. [0-Punkt Bestimmung](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/0-Punkt.md) 
-- 6. [Z-Endstop Position festlegen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Z_Endstop.md) 
+1. [Stepper überprüfen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Stepper.md) 
+     #### Endstops überprüfen
+          2. [XYZ](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/XYZ_Endstops.md) 
+     #### Homen
+          3. [XY Homen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/XY_Homen.md) 
+     #### Z Position und Druckbettausrichtung
+          4. [Druckbettausrichtung](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Ausrichtung.md) 
+          5. [0-Punkt Bestimmung](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/0-Punkt.md) 
+          6. [Z-Endstop Position festlegen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/Z_Endstop.md) 
 ### Probe
 
 
