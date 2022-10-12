@@ -36,6 +36,8 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 ## Motion
 
 ## Endstops
+- [XYZ](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/XYZ_Endstops.md) 
+
 
 ## Homen
 
@@ -94,32 +96,7 @@ FORCE_MOVE STEPPER=stepper_extruder DISTANCE=2 VELOCITY=5 [ACCEL=100]
 ```
 Wer sich mit den Force Move auskennt, wird wissen was er noch in die printer.cfg einfügen muss um die Befehle zum Laufen zu bekommen ;)
 
-### Endstops kontrollieren
-Vergewisser dich, dass keiner der X-, Y- oder Z-Endstopps betätigt ist. 
-Tippe dann
-```
-QUERY_ENDSTOPS 
-```
-in die Konsole ein.
-Folgendes solltest du dann angezeigt bekommen:
-```
-x:open y:open z:open
-```
-Wenn ein Endschalter "triggered" statt "open" anzeigt, überprüfe bitte ob wirklich keiner betätigt ist. 
-Jetzt kannst du den X-Endschalter händisch betätigen und erneut QUERY_ENDSTOPS in die Konsole eingeben.
 
-Die anzeige sollte nun lauten:
-```
-x:triggered y:open z:open
-```
-Wiederhole den Test auch für den Y und Z Endschalter.
-
-Wenn die Endschalter falsch herum arbeiten, sprich bei Nichtbetätigung schon "triggered" anzeigen, dann geh in die printer.cfg und füge ein ! vor der Pin ein, bzw. entferne es, wenn es schon vorhanden ist. 
-
-als Beispiel:
-```
-aus endstop_pin: P1.28 wird endstop_pin: !P1.28
-```
 
 ## XY-Homen
 
