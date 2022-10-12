@@ -18,7 +18,7 @@ Der Druckkopf sollte nach hinten bewegen, bis er den Y-Endschalter auslöst.
 Bei dem CoreXY-Systme müssen sich beide Motoren bewegen, damit sich der Druckkopf nur in X- oder Y-Richtung bewegt. 
 Wenn sich die Gantry zuerst nach unten bewegt, bevor sich der Druckkopf nach rechts bewegt, müssen Sie die Z-Stepper-Richtungen in der Konfiguration umkehren.
 
-Sollten die Axen falsch fahren, muss evntuell der DIR-PIN von den AB Motoren negiert, oder die Anschlüsse der beiden Motoren getauscht werden. 
+Sollten die Axen falsch fahren, muss eventuell der DIR-PIN von den AB Motoren negiert, oder die Anschlüsse der beiden Motoren getauscht werden. 
 Hierfür ist folgende Grafik recht hilfreich.
 Bitte niemals im Eingeschalteten Zustand eine Motorleitung vom Motor oder Mainboard entfernen! 
 
