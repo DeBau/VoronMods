@@ -55,14 +55,14 @@ Man sollte es sich ja einfach machen ;)
 
 Die Makros kann ich jetzt über die Weboberfläche über die entsprechende Schaltfläche oder über die Eingabe der Befehle:
 
-```python
+```
 PID_EXTRUDER
 PID_BED
 ```
 in der Konsole ausführen.
 
 Nach jedem Befehl und ausgeführtem PID Tuning die ermittelten Werte mit der Eingabe 
-```python
+```
 SAVE_CONFIG
 ```
 in der Konsole speichern
@@ -70,12 +70,12 @@ in der Konsole speichern
 ### Stepper Motoren überprüfen
 Um die Motoren zu überprüfen kann man den Stepper_Buzz Befehl nutzen.
 Dafür gebt folgende Befehl in die Konsole ein
-
+```
 STEPPER_BUZZ STEPPER=stepper_x
-
+```
 Der Motor sollte sich nun 10x je 1mm in die positive Richtung und wieder zurück zur Ausgangsposition bewegen.
 Dies wiederholt ihr für alle Motoren
-```python
+```
 STEPPER_BUZZ STEPPER=stepper_y
 STEPPER_BUZZ STEPPER=stepper_z
 STEPPER_BUZZ STEPPER=stepper_z1
@@ -98,7 +98,7 @@ durch Endschalter. Dies kann euren Drucker zerstören!
 Bitte nur anwenden, wenn ihr wisst was ihr macht!
 
 Befehle:
-```python
+```
 FORCE_MOVE STEPPER=stepper_z DISTANCE=2 VELOCITY=5 [ACCEL=100]
 FORCE_MOVE STEPPER=stepper_z0 DISTANCE=2 VELOCITY=5 [ACCEL=100]
 FORCE_MOVE STEPPER=stepper_z1 DISTANCE=2 VELOCITY=5 [ACCEL=100]
@@ -106,7 +106,7 @@ FORCE_MOVE STEPPER=stepper_z2 DISTANCE=2 VELOCITY=5 [ACCEL=100]
 FORCE_MOVE STEPPER=stepper_z3 DISTANCE=2 VELOCITY=5 [ACCEL=100]
 FORCE_MOVE STEPPER=stepper_x DISTANCE=2 VELOCITY=5 [ACCEL=100]
 FORCE_MOVE STEPPER=stepper_y DISTANCE=2 VELOCITY=5 [ACCEL=100]
-- FORCE_MOVE STEPPER=stepper_extruder DISTANCE=2 VELOCITY=5 [ACCEL=100]
+FORCE_MOVE STEPPER=stepper_extruder DISTANCE=2 VELOCITY=5 [ACCEL=100]
 ```
 Wer sich mit den Force Move auskennt, wird wissen was er noch in die printer.cfg einfügen muss um die Befehle zum laufen zu bekommen ;)
 
@@ -115,23 +115,23 @@ Wer sich mit den Force Move auskennt, wird wissen was er noch in die printer.cfg
 Vergewisser dich, dass keiner der X-, Y- oder Z-Endstopps betätigt ist. 
 Tippe dann QUERY_ENDSTOPS in die Konsole ein.
 Folgendes solltest du dann angezeigt bekommen:
-```python
-- x:open y:open z:open
+```
+x:open y:open z:open
 ```
 Wenn ein Endschalter "triggered" statt "open" anzeigt, überprüfe bitte ob wirklich keiner betätigt ist. 
 Jetzt kannst du den X-Endschalter händisch betätigen und erneut QUERY_ENDSTOPS in die Konsole eingeben.
 
 Die anzeige sollte nun lautet:
-```python
-- x:triggered y:open z:open
+```
+x:triggered y:open z:open
 ```
 Wiederhole den Test auch für den Y und Z Endschalter.
 
 Wenn die Endschalter falsch herum arbeiten, sprich bei Nichtbetätigung schon "triggered" anzeigen, dann geh in die printer.cfg und füge ein ! vor der Pin ein, bzw. entferne es, wenn es schon vorhanden ist. 
 
 als Beispiel:
-```python
-- aus endstop_pin: P1.28 wird endstop_pin: !P1.28
+```
+aus endstop_pin: P1.28 wird endstop_pin: !P1.28
 ```
 
 ## XY-Homen
@@ -139,12 +139,12 @@ als Beispiel:
 Wichtig! Hand auf den Netzschalter, oder mit der Maus in der Weboberfläche auf den Emergency Stop um bei einem Fehler schnell reagieren und den Drucker ausschalten zu können.
 
 Homen von X mit dem Befehl
-```python
-- G28 X
+```
+G28 X
 ```
 Homen von Y mit dem Befehl
-```python
-- G28 Y
+```
+G28 Y
 ```
 
 Sollten die Axen falsch fahren, muss evntuell der DIR-PIN von den AB Motoren negiert, oder die Anschlüsse der beiden Motoren getauscht werden. Hierfür ist folgende Grafik recht hilfreich.
@@ -219,7 +219,7 @@ Wenn der Prozess aufgrund eines Fehlers "außerhalb der Grenzen" fehlschlägt, d
 Lasst den Drucker min 15min bei 245°C Hotend und 100°C Bett vorheizen
 
 Vorbereitung (Befehle nacheinander in die Konsole eingeben)
-```phyton
+```
 G28
 QUAD_GANTRY_LEVEL
 G28
