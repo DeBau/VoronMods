@@ -9,4 +9,6 @@ Loggt euch mit Putty auf eurem Raspberry Pi ein und gebt folgende Befehle der Re
 cd ~/moonraker
 git pull
 ./scripts/data-path-fix.sh
+sudo service moonraker restart
 ```
+
