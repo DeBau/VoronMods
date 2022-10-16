@@ -6,8 +6,10 @@ It saves up to 60cm bowden
 If you want to support me:
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://paypal.me/dfoure?country.x=DE&locale.x=de_DE)
 
+[![Bowden Guide]          // Title
+(https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/Bowden_Guides.jpg)] // Thumbnail
+(https://www.youtube.com/embed/73D4OECXUMo "Bowden Guide")    // Video Link
 
-<iframe width="406" height="722" src="https://www.youtube.com/embed/73D4OECXUMo" title="Top bowden guide with 360° print-in-place joint" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/Voron_Style.png" alt="Voron Style" width=400 height=400>
 
