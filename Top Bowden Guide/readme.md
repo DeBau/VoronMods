@@ -6,14 +6,11 @@ It saves up to 60cm bowden
 If you want to support me:
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://paypal.me/dfoure?country.x=DE&locale.x=de_DE)
 
+# Video
 [![Bowden Guide](https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/Bowden_Guides.jpg)](https://www.youtube.com/embed/73D4OECXUMo)
 
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/Voron_Style.png" alt="Voron Style" width=400 height=400>
-
-<img src="https://github.com/DeBau/VoronMods/blob/main/Top%20Bowden%20Guide/Pics/Bowden_Guides.jpg" alt="Voron Style" width=700 height=400>
-
-
 ## BOM 
    - 2-3 x heatset inserts M3x5x4
    - 2-3 x M3x8 - 16 SHCS
