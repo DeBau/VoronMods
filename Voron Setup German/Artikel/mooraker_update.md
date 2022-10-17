@@ -14,14 +14,16 @@ sudo service moonraker restart
 
 
 
+#### Drucken nicht möglich, Pfade nicht vorhanden etc.....
 
-
-
+```
 ls -l ~/printer_data
+```
+https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/printer_data_symlink.png
 
-Delet & symlink
------------------------------------------------------
-
+Delete & symlink
+----------------
+```
 sudo service moonraker stop
 cd ~/printer_data
 rm -rf gcodes
@@ -31,5 +33,5 @@ ln -s ~/.moonraker_database database
 rm -rf logs
 ln -s ~/klipper_logs ~/printer_data/logs
 sudo service moonraker start
- 
+```
 
