@@ -12,3 +12,24 @@ git pull
 sudo service moonraker restart
 ```
 
+
+
+
+
+
+ls -l ~/printer_data
+
+Delet & symlink
+-----------------------------------------------------
+
+sudo service moonraker stop
+cd ~/printer_data
+rm -rf gcodes
+ln -s ~/gcode_files gcodes
+rm -rf database
+ln -s ~/.moonraker_database database
+rm -rf logs
+ln -s ~/klipper_logs ~/printer_data/logs
+sudo service moonraker start
+ 
+
