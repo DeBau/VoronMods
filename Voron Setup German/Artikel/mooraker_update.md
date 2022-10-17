@@ -21,8 +21,7 @@ ls -l ~/printer_data
 ```
 Verzeichnisstruktur sollte so ausschauen
 
-<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/printer_data_symlink.png
-" alt="pinout" width=800 height=400>
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/printer_data_symlink.png" alt="Putty" width=800 height=400>
 
 Delete & symlink
 ----------------
