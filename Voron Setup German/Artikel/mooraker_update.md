@@ -31,7 +31,7 @@ ln -s ~/gcode_files gcodes
 rm -rf database
 ln -s ~/.moonraker_database database
 rm -rf logs
-ln -s ~/klipper_logs ~/printer_data/logs
+ln -s ~/klipper_logs logs
 sudo service moonraker start
 ```
 
