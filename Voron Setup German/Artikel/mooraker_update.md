@@ -19,7 +19,10 @@ sudo service moonraker restart
 ```
 ls -l ~/printer_data
 ```
-https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/printer_data_symlink.png
+Verzeichnisstruktur sollte so ausschauen
+
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/printer_data_symlink.png
+" alt="pinout" width=800 height=400>
 
 Delete & symlink
 ----------------
