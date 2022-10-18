@@ -31,7 +31,7 @@ cd ~/printer_data
 rm -rf gcodes
 ln -s ~/gcode_files gcodes
 rm -rf config
-ln -s ~/.moonraker_database database
+ln -s ~/klipper_config config
 rm -rf database
 ln -s ~/.moonraker_database database
 rm -rf logs
