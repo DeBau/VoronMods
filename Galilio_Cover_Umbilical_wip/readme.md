@@ -1,4 +1,7 @@
-## Remix (wip)
+##Galileo Umbilical Stealthburner Cover
+
+#### Remix (work in progress)
+
 [Galileo Stealthburner](https://github.com/Mamsih/Galileo-stealthBurner/blob/main/Galileo_cable_door-beta1%20v1.stl)
 
 and
