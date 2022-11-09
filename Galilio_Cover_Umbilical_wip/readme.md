@@ -1,4 +1,4 @@
-## Galileo Umbilical Stealthburner Cover
+## Galileo Umbilical Stealthburner Cover with strain relief
 
 #### Remix (work in progress)
 
