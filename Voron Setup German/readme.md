@@ -3,7 +3,7 @@
 - TMC2209 Treiber
 - Moons Motoren (17HS19-2004S und 17HS08-1004S)
 - Omron TL-Q5MC2-Z Sensor
-- mini12864 LCD Display
+- mini12864 LC Display
 
 ### Quellen: 
 - [Voron Design Dokumentation](https://docs.vorondesign.com)
