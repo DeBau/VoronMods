@@ -17,8 +17,8 @@ If you want to support me:
 
 
 ## BOM 
-   - 2 x M3x8 
-   - M3 T Slot Nut Hammer Head Fastener
+   - 2x M3x8 
+   - 2x M3 T Slot Nut Hammer Head Fastener
    
  
  
