@@ -1,7 +1,9 @@
 # Voron Trident Frame Brace
 
 It`s a remix from the VzBot Frame Brace
+
 https://github.com/VzBoT3D/VzBoT-Vz330
+
 The VzBoT project is licensed as: https://creativecommons.org/licenses/by-nc/4.0/
 
 
