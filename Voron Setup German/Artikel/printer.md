@@ -312,7 +312,7 @@ angepasst mit dem Heater Pin ```PA3``` und einen ```Generic 3950``` Thermistor
 ##  Thermistor - TB
 [heater_bed]
 heater_pin: PA3
-#sensor_type: Generic 3950
+sensor_type: Generic 3950
 sensor_pin: PF3
 max_power: 0.6
 min_temp: 0
