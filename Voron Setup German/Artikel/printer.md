@@ -192,7 +192,7 @@ rotation_distance: 40
 gear_ratio: 80:16
 microsteps: 32
 endstop_pin: PG10
-position_endstop: +0.5
+position_endstop: 0.5
 position_max: 310
 position_min: -5
 homing_speed: 8
