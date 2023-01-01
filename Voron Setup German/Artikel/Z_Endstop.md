@@ -6,7 +6,7 @@ Tippe
 M114 
 ```
 in die Konsole und notiere dir die Werte für X und Y
-Diese Werte müssen jetzt in der printer.cfg unter der Sektion [safe_z_home] eingetargen werden
+Diese Werte müssen jetzt in der printer.cfg unter der Sektion [safe_z_home] eingetragen werden
 
 Beispiel:
 ```
@@ -16,11 +16,10 @@ speed:100
 z_hop:10
 ```
 
-Starte Klipper mit 
-```
-FIRMWARE_RESTART
-```
-neu. Jetzt sollte der Drucker vollständig mit dem Befehl 
+Speichere die printer.cfg und starte neu
+
+
+Jetzt sollte der Drucker vollständig mit dem Befehl 
 ```
 G28
 ```
