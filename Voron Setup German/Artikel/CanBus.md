@@ -51,14 +51,14 @@ Bewährt haben sich bei mir folgende:
 * 8 printer.cfg anpassen
 
 
-## 1. CanBoot auf dem Rpi installieren
+# 1. CanBoot auf dem Rpi installieren
 
 ```
 sudo apt-get install git -y
 git clone https://github.com/Arksine/CanBoot
 ```
 
-## 2.CanBoot Firmware erstellen und compilieren
+# 2.CanBoot Firmware erstellen und compilieren
 ```
 cd CanBoot
 make menuconfig
@@ -87,9 +87,16 @@ make
 
 
 
-## 3. CanBoot Bootloader flashen
+# 3. CanBoot Bootloader flashen
 
-### Vorbereitungen
+## Vorbereitungen
+
+### 1. canboot.bin Datei auf den Rechner kopieren
+
+Öffnet WinSCP, loggt euch mit der IP vom RPi und euren Anmeldedaten ein
+Navigiert zum Ordner ```/home/pi/CanBoot/out``` und zieht die Datei ```canboot.bin``` via Drag&Drop auf euren Desktopb
+
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/winscp.png" alt="WinSCP">
 
 ### 1. 5V Jumper setzen
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB_DFU.png" alt="G0B1">
@@ -104,11 +111,13 @@ make
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB_DFU_Modus.png" alt="G0B1">
 
+
+
 STM32Cube Programmer starten 
 
 
 
-## 4. Klipper Firmware erstellen
+# 4. Klipper Firmware erstellen
 ```
 cd ~/klipper
 make clean
@@ -137,7 +146,7 @@ make
  <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/Klipper_G0B1.png" alt="Klipper-G0B1">
 
 
-## 5. can0 Schnittstelle auf dem Rpi konfigurieren
+# 5. can0 Schnittstelle auf dem Rpi konfigurieren
 ```
 cd
 sudo nano /etc/network/interfaces.d/can0
@@ -157,7 +166,7 @@ iface can0 can static
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/can0.png" alt="can0">
 
 
-## 6. UUID vom EBB Board auslesen
+# 6. UUID vom EBB Board auslesen
 ```
 cd ~/CanBoot/scripts
 pip3 install pyserial
@@ -166,7 +175,7 @@ python3 flash_can.py -i can0 -q
 ```
 
 
-## 7. EBB Klipper Firmware flashen
+# 7. EBB Klipper Firmware flashen
 ```
 python3 flash_can.py -f ~/klipper/ebb_klipper.bin -u <ebb_uuid>
 ```
@@ -177,7 +186,7 @@ python3 flash_can.py -f ~/klipper/out/klipper.bin -u 330a31adf6de
 ```
 
 
-## 8. printer.cfg anpassen
+# 8. printer.cfg anpassen
 
 Folgende Punkte müsst ihr in eurer printer.cfg anpassen
 
