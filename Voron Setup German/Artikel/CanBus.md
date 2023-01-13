@@ -36,7 +36,7 @@ Bewährt haben sich bei mir folgende:
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/CanSetup_02.png" alt="pinout" width=800 height=550>
 
 
-:warning: Der Reihe nach folgende Schritte ausführen
+## :warning: Der Reihe nach folgende Schritte ausführen
 * 1 CanBoot auf dem Rpi installieren
 * 2 CanBoot Firmware erstellen und compilieren
 * 3 CanBoot flashen
@@ -123,8 +123,7 @@ make menuconfig
 cd
 sudo nano /etc/network/interfaces.d/can0
 ```
-
-folgendes einfügen
+folgenden Inhalt kopieren und mit der rechten Maustaste in Putty einfügen
 ```
 allow-hotplug can0
 iface can0 can static
@@ -133,7 +132,9 @@ iface can0 can static
  pre-up ip link set can0 type can bitrate 500000
  pre-up ip link set can0 txqueuelen 128
 ```
-mit STRG+X beenden und mit Y bestätigen
+##### mit STRG+X beenden und mit Y bestätigen
+
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/can0.png" alt="can0">
 
 
 ## 6. UUID vom EBB Board auslesen
