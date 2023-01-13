@@ -1,12 +1,33 @@
+CanBoot auf dem Rpi installieren
+
 ```
 sudo apt-get install git -y
 git clone https://github.com/Arksine/CanBoot
 ```
 
+CanBoot Firmware erstellen und compilieren
 ```
 cd CanBoot
 make menuconfig
 ```
+Hier bitte aufpassen, welches EBB36 Board verwendet wird und folgende Einstellungen verweden
+
+für das BTT EBB36 v1.0
+Prozessor F072
+ - 8MHz crystal
+ - CAN bus on PB8/PB9 
+ - 8KiB offset
+ - 500000 CAN bus speed
+
+
+
+für das EBB36 v1.1 und v1.2
+Prozessor GB01
+ - 8MHz crystal
+ - Can bus on PB0/PB1 
+ - 8KiB offset
+ - 500000 CAN bus speed
+
 
 ```
 cd ~/klipper
