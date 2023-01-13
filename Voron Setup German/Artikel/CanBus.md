@@ -83,11 +83,23 @@ make menuconfig
 
 
 
-## 3. CanBoot Firmware erstellen und compilieren
+## 3. CanBoot Bootloader flashen
 
+### Vorbereitungen
+#### 1. 5V Jumper setzen
 
+### BTT EBB v1.1 / v1.2
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB_DFU.png" alt="G0B1">
 
+#### 2. BTT EBB Board über das migelieferte USB Kabel an den PC anschließen
 
+#### 3. DFU Modus aktivieren
+
+* Boot Taster drücken und gedrückt halten
+* zusätzlich den Reset Taster Drücken und halten
+* beide Taster wieder loslassen
+
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB_DFU_Modus.png" alt="G0B1">
 
 
 ## 4. Klipper Firmware erstellen
