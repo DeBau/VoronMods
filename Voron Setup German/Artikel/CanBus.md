@@ -54,6 +54,7 @@ cd CanBoot
 make menuconfig
 ```
 ###### :warning: Hier bitte aufpassen, welches EBB36/42 Board verwendet wird und folgende Einstellungen verweden
+
 #### BTT EBB36 v1.0 (Prozessor F072)
 
  - 8MHz crystal
