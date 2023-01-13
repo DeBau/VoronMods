@@ -1,11 +1,33 @@
-CanBoot auf dem Rpi installieren
+### CanBus Installation 
+folgende hardware wurde verwendet
+
+ * BTT Octopus V1.1
+ * BTT EBB36
+ * Fly Mellow UTOC-3
+ 
+ Das Octopus wie in der Voron Anleitung flashen
+ https://docs.vorondesign.com/build/software/octopus_klipper.html
+ 
+
+
+Der Reihe nach folgende Schritte ausführen
+* 1. CanBoot auf dem Rpi installieren
+* 2. CanBoot Firmware erstellen und compilieren
+* 3. Klipper Firmware erstellen
+* 4. can0 Schnittstelle auf dem Rpi konfigurieren
+* 5. UUID vom EBB Board auslesen
+* 6. EBB Klipper Firmware flashen
+* 7. printer.cfg anpassen
+
+
+#### 1. CanBoot auf dem Rpi installieren
 
 ```
 sudo apt-get install git -y
 git clone https://github.com/Arksine/CanBoot
 ```
 
-CanBoot Firmware erstellen und compilieren
+#### 2.CanBoot Firmware erstellen und compilieren
 ```
 cd CanBoot
 make menuconfig
@@ -27,7 +49,7 @@ für das EBB36 v1.1 und v1.2 (Prozessor GB01)
  - 500000 CAN bus speed
 
 
-Klipper Firmware erstellen
+#### 3.Klipper Firmware erstellen
 ```
 cd ~/klipper
 make clean
@@ -50,7 +72,7 @@ für das EBB36 v1.1 und v1.2 (Prozessor GB01)
  - 500000 CAN bus speed
 
 
-can0 Schnittstelle auf dem Rpi konfigurieren
+#### 4.can0 Schnittstelle auf dem Rpi konfigurieren
 ```
 cd
 sudo nano /etc/network/interfaces.d/can0
@@ -68,13 +90,27 @@ iface can0 can static
 mit STRG+X beenden und mit Y bestätigen
 
 
+#### 5.UUID vom EBB Board auslesen
 ```
 cd ~/CanBoot/scripts
 pip3 install pyserial
 ifconfig
 python3 flash_can.py -i can0 -q
+```
+
+
+#### 6.EBB Klipper Firmware flashen
+```
 python3 flash_can.py -f ~/klipper/ebb_klipper.bin -u <ebb_uuid>
 ```
+du zuvor ausgelesene UUID einsprechend in den Befehl einsetzen
+
+```
+python3 flash_can.py -f ~/klipper/out/klipper.bin -u 330a31adf6de
+```
+
+
+
 
 https://github.com/bigtreetech/U2C/blob/master/Image/pinout.png
 
@@ -84,6 +120,7 @@ https://github.com/bigtreetech/U2C/tree/master/firmware
 https://maz0r.github.io/klipper_canbus/controller/firmware_files/utoc_firmware.bin
 
 
+#### 7. printer.cfg anpassen
 ```
 [mcu EBB]
 canbus_uuid: 330a31adf6de
