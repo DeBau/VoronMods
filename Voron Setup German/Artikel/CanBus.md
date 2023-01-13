@@ -14,6 +14,12 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 
 ###### Es sind aber auch andere Hardware-Konstellationen (Fysetc Spider, Fly UTOC-1 / UTOC-3 möglich)
  
+ 
+## Vorbereitungen
+### Flasht euer Board ganz normal wie in der Voron Anleitung angegeben und bindet es als MCU mit der Serial in die printer.cfg ein
+- [Voron Design ](https://docs.vorondesign.com/build/software/#firmware-flashing)
+
+
 
 ## Elektrischer Anschluss
 Hier gibt es diverse Möglichkeiten. 
