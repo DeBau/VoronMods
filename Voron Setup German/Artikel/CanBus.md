@@ -11,14 +11,12 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://paypal.me/dfoure?country.x=DE&locale.x=de_DE)
 
 
-folgende hardware wurde verwendet
+### Verwendete Hardware 
 
  * BTT Octopus V1.1
  * BTT EBB36
  * Fly Mellow UTOC-3
- 
- Das Octopus wie in der Voron Anleitung flashen
- https://docs.vorondesign.com/build/software/octopus_klipper.html
+***Es sind aber auch andere Hardware-Konstellationen (Fysetc Spider, Fly UTOC-1 / UTOC-3 möglich)
  
 
 ### Elektrischer Anschluss
