@@ -56,14 +56,15 @@ make menuconfig
 ###### :warning: Hier bitte aufpassen, welches EBB36/42 Board verwendet wird und folgende Einstellungen verweden
 
 für das BTT EBB36 v1.0 (Prozessor F072)
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/F072_CanBoot.png" alt="F076">
  - 8MHz crystal
  - CAN bus on PB8/PB9 
  - 8KiB offset
  - 500000 CAN bus speed
 
 
-
 für das EBB36 v1.1 und v1.2 (Prozessor GB01)
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/GB01_CanBoot.png" alt="GB01">
  - 8MHz crystal
  - Can bus on PB0/PB1 
  - 8KiB offset
