@@ -54,15 +54,15 @@ probe_points:
 
 ```
 [extruder]
-step_pin: EBB:PD0 #PE2
-dir_pin: !EBB:PD1 #PE3
-enable_pin: !EBB:PD2 #PD4
-heater_pin: EBB:PA2 #PA2
-sensor_pin: EBB:PA3 #PF4
+step_pin: EBB:PD0
+dir_pin: !EBB:PD1
+enable_pin: !EBB:PD2
+heater_pin: EBB:PA2
+sensor_pin: EBB:PA3
 ```
 ```
 [tmc2209 extruder]
-uart_pin: EBB:PA15 #PE1
+uart_pin: EBB:PA15
 ```
 ```
 [probe]
