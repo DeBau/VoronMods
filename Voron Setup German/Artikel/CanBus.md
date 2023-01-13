@@ -20,6 +20,8 @@ Hier gibt es diverse Möglichkeiten.
 Bewährt haben sich bei mir folgende:
 
 
+###### :warning: Aufgrund der Übersicht, wurde die 24V Verdrahtung vom Octopus nicht dargestellt. Diese ist nach der Voron Anleitung durchzuführen
+
 #### without 24V passthrough
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/CanSetup_01.png" alt="pinout" width=800 height=550>
 
@@ -29,13 +31,14 @@ Bewährt haben sich bei mir folgende:
 
 
 :warning: Der Reihe nach folgende Schritte ausführen
-* 1. CanBoot auf dem Rpi installieren
-* 2. CanBoot Firmware erstellen und compilieren
-* 3. Klipper Firmware erstellen
-* 4. can0 Schnittstelle auf dem Rpi konfigurieren
-* 5. UUID vom EBB Board auslesen
-* 6. EBB Klipper Firmware flashen
-* 7. printer.cfg anpassen
+* 1 CanBoot auf dem Rpi installieren
+* 2 CanBoot Firmware erstellen und compilieren
+* 3 CanBoot flashen
+* 4 Klipper Firmware erstellen
+* 5 can0 Schnittstelle auf dem Rpi konfigurieren
+* 6 UUID vom EBB Board auslesen
+* 7 EBB Klipper Firmware flashen
+* 8 printer.cfg anpassen
 
 
 #### 1. CanBoot auf dem Rpi installieren
@@ -66,15 +69,21 @@ für das EBB36 v1.1 und v1.2 (Prozessor GB01)
  - 8KiB offset
  - 500000 CAN bus speed
 
+#### 3.CanBoot Firmware erstellen und compilieren
 
-#### 3.Klipper Firmware erstellen
+
+
+
+
+
+#### 4.Klipper Firmware erstellen
 ```
 cd ~/klipper
 make clean
 make menuconfig
 ```
 
-*:warning: Auch hier wieder auf die Board Versionen achten
+:warning: Auch hier wieder auf die Board Versionen achten
 
 für das BTT EBB36 v1.0 (Prozessor F072)
  - 8MHz crystal
@@ -90,7 +99,7 @@ für das EBB36 v1.1 und v1.2 (Prozessor GB01)
  - 500000 CAN bus speed
 
 
-#### 4.can0 Schnittstelle auf dem Rpi konfigurieren
+#### 5.can0 Schnittstelle auf dem Rpi konfigurieren
 ```
 cd
 sudo nano /etc/network/interfaces.d/can0
@@ -108,7 +117,7 @@ iface can0 can static
 mit STRG+X beenden und mit Y bestätigen
 
 
-#### 5.UUID vom EBB Board auslesen
+#### 6.UUID vom EBB Board auslesen
 ```
 cd ~/CanBoot/scripts
 pip3 install pyserial
@@ -117,7 +126,7 @@ python3 flash_can.py -i can0 -q
 ```
 
 
-#### 6.EBB Klipper Firmware flashen
+#### 7.EBB Klipper Firmware flashen
 ```
 python3 flash_can.py -f ~/klipper/ebb_klipper.bin -u <ebb_uuid>
 ```
@@ -138,7 +147,7 @@ https://github.com/bigtreetech/U2C/tree/master/firmware
 https://maz0r.github.io/klipper_canbus/controller/firmware_files/utoc_firmware.bin
 
 
-#### 7. printer.cfg anpassen
+#### 8. printer.cfg anpassen
 ```
 [mcu EBB]
 canbus_uuid: 330a31adf6de
