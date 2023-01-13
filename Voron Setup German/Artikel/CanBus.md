@@ -89,8 +89,6 @@ make
 
 # 3. CanBoot Bootloader flashen
 
-## Vorbereitungen
-
 ### 1. canboot.bin Datei auf den Rechner kopieren
 
 Öffnet WinSCP, loggt euch mit der IP vom RPi und euren Anmeldedaten ein
@@ -111,10 +109,37 @@ Navigiert zum Ordner ```/home/pi/CanBoot/out``` und zieht die Datei ```canboot.b
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB_DFU_Modus.png" alt="G0B1">
 
+### 3. STM32Cube Programmer starten 
 
+#### 3.1 mit dem Board Verbinden
 
-STM32Cube Programmer starten 
+- USB Schnittstelle auswählen
+- Verbinden
 
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/STM_USB_connect.png" alt="connect">
+
+#### 3.2 Full Chip erase ausführen
+
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/STM_fullchiperase.png" alt="erase">
+
+#### 3.2 conboot.bin flashen
+
+- Open File
+- canboot.bin auswählen
+- downloaden
+
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/STM_Download.png" alt="flashen">
+
+#### 3.4 Disconnecten
+- Verbindung trennen
+- Programm schließen
+
+### 4. 5V Jumper entfernen und 120Ohm Jumper setzen
+
+- USB Verbindung zum PC trennen
+- entfernt den 5V Jumper und setzt ihn an die Stelle für den 120Ohm Abschlusswiderstand
+
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/bootjumper.png" alt="120">
 
 
 # 4. Klipper Firmware erstellen
