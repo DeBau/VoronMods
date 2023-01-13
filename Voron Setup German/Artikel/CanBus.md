@@ -89,9 +89,9 @@ make
 
 # 3. CanBoot Bootloader flashen
 
-## :warning: Falls ihr die Heizpatrone bereits amm EBB angeschlossen habt, entfernt diese vorerst, da es bei manchen Versionen vorkommt, dass der Heater Ausgang mit 100% angesteuert wird!
+## :warning: Falls ihr die Heizpatrone bereits am EBB angeschlossen habt, entfernt diese vorerst, da es bei manchen Versionen vorkommt, dass der Heater Ausgang mit 100% angesteuert wird!
 
-### :warning: Für diesen Schritt benötigen wir nur den USB Anschluss. Entfernt, falls berits angeschlossen, den Molex Stecker mit der 24V Versorgung vom EBB
+### :warning: Für diesen Schritt benötigen wir nur den USB Anschluss. Entfernt, falls bereits angeschlossen, den Molex Stecker mit der 24V Versorgung vom EBB
 
 ### 1. canboot.bin Datei auf den Rechner kopieren
 
@@ -100,12 +100,12 @@ Navigiert zum Ordner ```/home/pi/CanBoot/out``` und zieht die Datei ```canboot.b
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/winscp.png" alt="WinSCP">
 
-### 1. 5V Jumper setzen
+### 2. 5V Jumper setzen
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB_DFU.png" alt="G0B1">
 
-### 2. BTT EBB Board über das migelieferte USB Kabel mit dem PC verbinden
+### 3. BTT EBB Board über das migelieferte USB Kabel mit dem PC verbinden
 
-### 3. DFU Modus aktivieren
+### 4. DFU Modus aktivieren
 
 * Boot Taster drücken und gedrückt halten
 * zusätzlich den Reset Taster Drücken und halten
@@ -113,20 +113,20 @@ Navigiert zum Ordner ```/home/pi/CanBoot/out``` und zieht die Datei ```canboot.b
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB_DFU_Modus.png" alt="G0B1">
 
-### 3. STM32Cube Programmer starten 
+### 5. STM32Cube Programmer starten 
 
-#### 3.1 mit dem Board Verbinden
+#### 5.1 mit dem Board Verbinden
 
 - USB Schnittstelle auswählen
 - Verbinden
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/STM_USB_connect.png" alt="connect">
 
-#### 3.2 Full Chip erase ausführen
+#### 5.2 Full Chip erase ausführen
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/STM_fullchiperase.png" alt="erase">
 
-#### 3.2 conboot.bin flashen
+#### 5.2 conboot.bin flashen
 
 - Open File
 - canboot.bin auswählen
@@ -134,16 +134,18 @@ Navigiert zum Ordner ```/home/pi/CanBoot/out``` und zieht die Datei ```canboot.b
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/STM_Download.png" alt="flashen">
 
-#### 3.4 Disconnecten
+#### 5.4 Disconnecten
 - Verbindung trennen
 - Programm schließen
 
-### 4. 5V Jumper entfernen und 120Ohm Jumper setzen
+### 6. 5V Jumper entfernen und 120Ohm Jumper setzen
 
 - USB Verbindung zum PC trennen
 - entfernt den 5V Jumper und setzt ihn an die Stelle für den 120Ohm Abschlusswiderstand
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/bootjumper.png" alt="120">
+
+### 7. Molexstecker wieder anschließen und das Board mit 24V versorgen
 
 
 # 4. Klipper Firmware erstellen
@@ -196,12 +198,27 @@ iface can0 can static
 
 
 # 6. UUID vom EBB Board auslesen
+
+can0 Netzwerk checken
+```
+ifconfig
+```
+Es sollte nun eine can0 Schnittstelle bei euch auftauchen
+
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/ifconfig_can0.png" alt="can0">
+
 ```
 cd ~/CanBoot/scripts
 pip3 install pyserial
-ifconfig
 python3 flash_can.py -i can0 -q
 ```
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/canboot_nodes.png" alt="can0">
+#### sollte es zu einem Fehler bei ```pip3 install pyserial``` kommen, versucht vorher folgenden Befehl auszuführen
+```
+apt-get install python3-pip
+```
+
+Notiert euch die angezeigte UUID, diese wird im nächste Step benötigt
 
 
 # 7. EBB Klipper Firmware flashen
