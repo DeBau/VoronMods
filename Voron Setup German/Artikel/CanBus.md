@@ -1,9 +1,4 @@
-### CanBus Installation 
-
-### Quellen: 
-- [Voron Design Dokumentation](https://docs.vorondesign.com)
-- [Voron Design Github Voron v2](https://docs.vorondesign.com)
-- [Klipper](https://www.klipper3d.org/)
+## CanBus Installation 
 
 
 #### Support
@@ -20,20 +15,20 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 ###### Es sind aber auch andere Hardware-Konstellationen (Fysetc Spider, Fly UTOC-1 / UTOC-3 möglich)
  
 
-### Elektrischer Anschluss
+## Elektrischer Anschluss
 Hier gibt es diverse Möglichkeiten. 
 Bewährt haben sich bei mir folgende:
 
 
-##### without 24V passthrough
+#### without 24V passthrough
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/CanSetup_01.png" alt="pinout" width=800 height=550>
 
 
-##### 24V passthrough
+#### 24V passthrough
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/CanSetup_01.png" alt="pinout" width=800 height=550>
 
 
-*:warning: Der Reihe nach folgende Schritte ausführen
+:warning: Der Reihe nach folgende Schritte ausführen
 * 1. CanBoot auf dem Rpi installieren
 * 2. CanBoot Firmware erstellen und compilieren
 * 3. Klipper Firmware erstellen
@@ -55,7 +50,7 @@ git clone https://github.com/Arksine/CanBoot
 cd CanBoot
 make menuconfig
 ```
-*:warning: Hier bitte aufpassen, welches EBB36 Board verwendet wird und folgende Einstellungen verweden
+###### :warning: Hier bitte aufpassen, welches EBB36/42 Board verwendet wird und folgende Einstellungen verweden
 
 für das BTT EBB36 v1.0 (Prozessor F072)
  - 8MHz crystal
