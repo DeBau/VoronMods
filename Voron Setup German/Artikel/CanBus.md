@@ -20,7 +20,8 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 - [Voron Design ](https://docs.vorondesign.com/build/software/#firmware-flashing)
 #### STM32CubePorgrammer herunterladen und installieren
 - [BTT Github ](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/tree/master/Firmware/DFU%20Update%20bootloader/install%20software)
-
+#### FTP Programm herunterladen und installieren (ich nutze WinSCP)
+- [WinSCP ](https://winscp.net/eng/download.php)
 
 
 
