@@ -12,8 +12,7 @@ make menuconfig
 ```
 Hier bitte aufpassen, welches EBB36 Board verwendet wird und folgende Einstellungen verweden
 
-für das BTT EBB36 v1.0
-Prozessor F072
+für das BTT EBB36 v1.0 (Prozessor F072)
  - 8MHz crystal
  - CAN bus on PB8/PB9 
  - 8KiB offset
@@ -21,25 +20,43 @@ Prozessor F072
 
 
 
-für das EBB36 v1.1 und v1.2
-Prozessor GB01
+für das EBB36 v1.1 und v1.2 (Prozessor GB01)
  - 8MHz crystal
  - Can bus on PB0/PB1 
  - 8KiB offset
  - 500000 CAN bus speed
 
 
+Klipper Firmware erstellen
 ```
 cd ~/klipper
 make clean
 make menuconfig
 ```
 
+Auch hier wieder auf die Board Versionen achten
+
+für das BTT EBB36 v1.0 (Prozessor F072)
+ - 8MHz crystal
+ - CAN bus on PB8/PB9 
+ - 8KiB offset
+ - 500000 CAN bus speed
+
+
+für das EBB36 v1.1 und v1.2 (Prozessor GB01)
+ - 8MHz crystal
+ - Can bus on PB0/PB1 
+ - 8KiB offset
+ - 500000 CAN bus speed
+
+
+can0 Schnittstelle auf dem Rpi konfigurieren
 ```
 cd
 sudo nano /etc/network/interfaces.d/can0
 ```
 
+folgendes einfügen
 ```
 allow-hotplug can0
 iface can0 can static
@@ -48,6 +65,8 @@ iface can0 can static
  pre-up ip link set can0 type can bitrate 500000
  pre-up ip link set can0 txqueuelen 256
 ```
+mit STRG+X beenden und mit Y bestätigen
+
 
 ```
 cd ~/CanBoot/scripts
