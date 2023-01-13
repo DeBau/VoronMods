@@ -161,12 +161,38 @@ https://maz0r.github.io/klipper_canbus/controller/firmware_files/utoc_firmware.b
 
 
 #### 8. printer.cfg anpassen
+
+Folgende Punkte müsst ihr in eurer printer.cfg anpassen
+
+- EBB MCU einfügen 
+- Pin Belegung vom Extruder Motor 
+- Pin Belegung vom Heater 
+- Pin Belegung vom Hotend Thermistor
+- Pin Belegung des Probe
+- Pin Belegung Fan
+- Pin Belgung Hotend Fan
+- (Optional) Pin Belegung Neopixel Stealthburner LEDs
+- (Optional) Temperatur vom EBB Board 
+- (Optional) Pin Belegung vom adxl345 Sensor  
+- (Optional) Pin Belegung X Endschalter, wenn der X Endschalter am Druckkopf montiert wurde
+
+### Pinout BTT EBB36 v1.0
+
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB36%20CAN%20V1.0-PIN.png" alt="pinout-v1">
+
+### Pinout BTT EBB36 v1.1 / v1.2
+
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB36%20CAN%20V1.1%26V1.2-PIN.png" alt="pinout-v1.1-v1.2">
+
+Pinouts der EBB42 Versionen findet ihr hier: - [BTT EBB36/42 Github](https://github.com/bigtreetech/EBB)
+
+
+#### Bespiel für die Anpassung der Pins mit der neuen mcu EBB
+###### alle anderen Einstellungen bleiben identisch
 ```
 [mcu EBB]
 canbus_uuid: 330a31adf6de
-```
 
-```
 [adxl345]
 cs_pin: EBB:PB12
 spi_software_sclk_pin: EBB:PB10
@@ -178,37 +204,29 @@ axes_map: x,y,z
 accel_chip: adxl345
 probe_points:
     150,150,20 
-```
 
-```
 [extruder]
 step_pin: EBB:PD0
 dir_pin: !EBB:PD1
 enable_pin: !EBB:PD2
 heater_pin: EBB:PA2
 sensor_pin: EBB:PA3
-```
-```
+
 [tmc2209 extruder]
 uart_pin: EBB:PA15
-```
-```
+
 [probe]
 pin: EBB:PB8 
-```
-```
+
 [fan]
 pin: EBB:PA0
-```
-```
+
 [heater_fan hotend_fan]
 pin: EBB:PA1 
-```
-```
+
 [temperature_sensor ebb_temp]
 sensor_type: temperature_mcu
 sensor_mcu: EBB
 min_temp: 0
 max_temp: 120
 ```
-
