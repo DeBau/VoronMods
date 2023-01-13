@@ -21,6 +21,18 @@ folgende hardware wurde verwendet
  https://docs.vorondesign.com/build/software/octopus_klipper.html
  
 
+### Elektrischer Anschluss
+Hier gibt es diverse Möglichkeiten. 
+Bewährt haben sich bei mir folgende:
+
+
+##### without 24V passthrough
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/CanSetup_01.png" alt="pinout" width=800 height=400>
+
+
+##### 24V passthrough
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/CanSetup_01.png" alt="pinout" width=800 height=400>
+
 
 *:warning: Der Reihe nach folgende Schritte ausführen
 * 1. CanBoot auf dem Rpi installieren
