@@ -1,4 +1,16 @@
 ### CanBus Installation 
+
+### Quellen: 
+- [Voron Design Dokumentation](https://docs.vorondesign.com)
+- [Voron Design Github Voron v2](https://docs.vorondesign.com)
+- [Klipper](https://www.klipper3d.org/)
+
+
+#### Support
+Wenn ihr mir einen Kaffee ausgeben wollt: 
+[![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://paypal.me/dfoure?country.x=DE&locale.x=de_DE)
+
+
 folgende hardware wurde verwendet
 
  * BTT Octopus V1.1
@@ -10,7 +22,7 @@ folgende hardware wurde verwendet
  
 
 
-Der Reihe nach folgende Schritte ausführen
+*:warning: Der Reihe nach folgende Schritte ausführen
 * 1. CanBoot auf dem Rpi installieren
 * 2. CanBoot Firmware erstellen und compilieren
 * 3. Klipper Firmware erstellen
@@ -32,7 +44,7 @@ git clone https://github.com/Arksine/CanBoot
 cd CanBoot
 make menuconfig
 ```
-Hier bitte aufpassen, welches EBB36 Board verwendet wird und folgende Einstellungen verweden
+*:warning: Hier bitte aufpassen, welches EBB36 Board verwendet wird und folgende Einstellungen verweden
 
 für das BTT EBB36 v1.0 (Prozessor F072)
  - 8MHz crystal
@@ -56,7 +68,7 @@ make clean
 make menuconfig
 ```
 
-Auch hier wieder auf die Board Versionen achten
+*:warning: Auch hier wieder auf die Board Versionen achten
 
 für das BTT EBB36 v1.0 (Prozessor F072)
  - 8MHz crystal
