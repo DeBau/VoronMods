@@ -16,8 +16,11 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
  
  
 ## Vorbereitungen
-### Flasht euer Board ganz normal wie in der Voron Anleitung angegeben und bindet es als MCU mit der Serial in die printer.cfg ein
+#### Flasht euer Board ganz normal wie in der Voron Anleitung angegeben und bindet es als MCU mit der Serial in die printer.cfg ein
 - [Voron Design ](https://docs.vorondesign.com/build/software/#firmware-flashing)
+#### STM32CubePorgrammer herunterladen und installieren
+- [BTT Github ](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/tree/master/Firmware/DFU%20Update%20bootloader/install%20software)
+
 
 
 
@@ -82,7 +85,6 @@ make menuconfig
 
 
 
-
 ## 3. CanBoot Bootloader flashen
 
 ### Vorbereitungen
@@ -99,6 +101,9 @@ make menuconfig
 * beide Taster wieder loslassen
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB_DFU_Modus.png" alt="G0B1">
+
+STM32Cube Programmer starten 
+
 
 
 ## 4. Klipper Firmware erstellen
@@ -139,9 +144,9 @@ folgenden Inhalt kopieren und mit der rechten Maustaste in Putty einfügen
 allow-hotplug can0
 iface can0 can static
  bitrate 500000
- up ifconfig $IFACE txqueuelen 128
+ up ifconfig $IFACE txqueuelen 256
  pre-up ip link set can0 type can bitrate 500000
- pre-up ip link set can0 txqueuelen 128
+ pre-up ip link set can0 txqueuelen 256
 ```
 ##### mit STRG+X beenden und mit Y bestätigen
 
