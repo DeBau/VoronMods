@@ -62,6 +62,7 @@ git clone https://github.com/Arksine/CanBoot
 ```
 cd CanBoot
 make menuconfig
+make
 ```
 ###### :warning: Hier bitte aufpassen, welches EBB36/42 Board verwendet wird und folgende Einstellungen verweden
 
@@ -112,6 +113,7 @@ STM32Cube Programmer starten
 cd ~/klipper
 make clean
 make menuconfig
+make
 ```
 
 ###### :warning: Hier bitte aufpassen, welches EBB36/42 Board verwendet wird und folgende Einstellungen verweden
