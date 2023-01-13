@@ -1,4 +1,4 @@
-## CanBus Installation 
+# CanBus Installation 
 
 
 #### Support
@@ -41,14 +41,14 @@ Bewährt haben sich bei mir folgende:
 * 8 printer.cfg anpassen
 
 
-#### 1. CanBoot auf dem Rpi installieren
+## 1. CanBoot auf dem Rpi installieren
 
 ```
 sudo apt-get install git -y
 git clone https://github.com/Arksine/CanBoot
 ```
 
-#### 2.CanBoot Firmware erstellen und compilieren
+## 2.CanBoot Firmware erstellen und compilieren
 ```
 cd CanBoot
 make menuconfig
@@ -77,14 +77,14 @@ make menuconfig
 
 
 
-#### 3.CanBoot Firmware erstellen und compilieren
+## 3. CanBoot Firmware erstellen und compilieren
 
 
 
 
 
 
-#### 4.Klipper Firmware erstellen
+## 4. Klipper Firmware erstellen
 ```
 cd ~/klipper
 make clean
@@ -112,7 +112,7 @@ make menuconfig
  <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/Klipper_G0B1.png" alt="Klipper-G0B1">
 
 
-#### 5.can0 Schnittstelle auf dem Rpi konfigurieren
+## 5. can0 Schnittstelle auf dem Rpi konfigurieren
 ```
 cd
 sudo nano /etc/network/interfaces.d/can0
@@ -130,7 +130,7 @@ iface can0 can static
 mit STRG+X beenden und mit Y bestätigen
 
 
-#### 6.UUID vom EBB Board auslesen
+## 6. UUID vom EBB Board auslesen
 ```
 cd ~/CanBoot/scripts
 pip3 install pyserial
@@ -139,7 +139,7 @@ python3 flash_can.py -i can0 -q
 ```
 
 
-#### 7.EBB Klipper Firmware flashen
+## 7. EBB Klipper Firmware flashen
 ```
 python3 flash_can.py -f ~/klipper/ebb_klipper.bin -u <ebb_uuid>
 ```
@@ -160,7 +160,7 @@ https://github.com/bigtreetech/U2C/tree/master/firmware
 https://maz0r.github.io/klipper_canbus/controller/firmware_files/utoc_firmware.bin
 
 
-#### 8. printer.cfg anpassen
+## 8. printer.cfg anpassen
 
 Folgende Punkte müsst ihr in eurer printer.cfg anpassen
 
@@ -187,7 +187,7 @@ Folgende Punkte müsst ihr in eurer printer.cfg anpassen
 Pinouts der EBB42 Versionen findet ihr hier: - [BTT EBB36/42 Github](https://github.com/bigtreetech/EBB)
 
 
-#### Bespiel für die Anpassung der Pins mit der neuen mcu EBB
+### Bespiel für die Anpassung der Pins mit der neuen mcu EBB
 ###### alle anderen Einstellungen bleiben identisch
 ```
 [mcu EBB]
