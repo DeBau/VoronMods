@@ -89,6 +89,10 @@ make
 
 # 3. CanBoot Bootloader flashen
 
+## :warning: Falls ihr die Heizpatrone bereits amm EBB angeschlossen habt, entfernt diese vorerst, da es bei manchen Versionen vorkommt, dass der Heater Ausgang mit 100% angesteuert wird!
+
+### :warning: Für diesen Schritt benötigen wir nur den USB Anschluss. Entfernt, falls berits angeschlossen, den Molex Stecker mit der 24V Versorgung vom EBB
+
 ### 1. canboot.bin Datei auf den Rechner kopieren
 
 Öffnet WinSCP, loggt euch mit der IP vom RPi und euren Anmeldedaten ein
