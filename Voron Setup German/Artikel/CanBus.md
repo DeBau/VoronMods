@@ -188,7 +188,7 @@ Pinouts der EBB42 Versionen findet ihr hier: - [BTT EBB36/42 Github](https://git
 
 
 ### Bespiel für die Anpassung der Pins mit der neuen mcu EBB
-###### alle anderen Einstellungen bleiben identisch
+###### alle anderen Einstellungen bleiben bestehen
 ```
 [mcu EBB]
 canbus_uuid: 330a31adf6de
