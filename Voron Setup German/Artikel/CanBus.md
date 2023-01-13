@@ -15,13 +15,6 @@ make menuconfig
 ```
 
 ```
-cd ~/CanBoot/scripts
-pip3 install pyserial
-
-python3 flash_can.py -f ~/klipper/octopus_klipper.bin -d <serial_device>
-```
-
-```
 cd
 sudo nano /etc/network/interfaces.d/can0
 ```
@@ -29,9 +22,27 @@ sudo nano /etc/network/interfaces.d/can0
 ```
 allow-hotplug can0
 iface can0 can static
-    bitrate 500000
-    up ifconfig $IFACE txqueuelen 128
+ bitrate 500000
+ up ifconfig $IFACE txqueuelen 256
+ pre-up ip link set can0 type can bitrate 500000
+ pre-up ip link set can0 txqueuelen 256
 ```
+
+```
+cd ~/CanBoot/scripts
+pip3 install pyserial
+ifconfig
+python3 flash_can.py -i can0 -q
+python3 flash_can.py -f ~/klipper/ebb_klipper.bin -u <ebb_uuid>
+```
+
+https://github.com/bigtreetech/U2C/blob/master/Image/pinout.png
+
+https://github.com/bigtreetech/U2C/tree/master/firmware
+
+
+https://maz0r.github.io/klipper_canbus/controller/firmware_files/utoc_firmware.bin
+
 
 ```
 [mcu EBB]
