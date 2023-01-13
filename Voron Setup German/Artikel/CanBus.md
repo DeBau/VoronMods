@@ -86,14 +86,13 @@ make menuconfig
 ## 3. CanBoot Bootloader flashen
 
 ### Vorbereitungen
-#### 1. 5V Jumper setzen
 
-### BTT EBB v1.1 / v1.2
+### 1. 5V Jumper setzen
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB_DFU.png" alt="G0B1">
 
-#### 2. BTT EBB Board über das migelieferte USB Kabel an den PC anschließen
+### 2. BTT EBB Board über das migelieferte USB Kabel mit dem PC verbinden
 
-#### 3. DFU Modus aktivieren
+### 3. DFU Modus aktivieren
 
 * Boot Taster drücken und gedrückt halten
 * zusätzlich den Reset Taster Drücken und halten
