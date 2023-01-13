@@ -17,7 +17,7 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
  * BTT EBB36
  * Fly Mellow UTOC-3
 
-***Es sind aber auch andere Hardware-Konstellationen (Fysetc Spider, Fly UTOC-1 / UTOC-3 möglich)
+###### Es sind aber auch andere Hardware-Konstellationen (Fysetc Spider, Fly UTOC-1 / UTOC-3 möglich)
  
 
 ### Elektrischer Anschluss
