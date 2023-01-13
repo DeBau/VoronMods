@@ -62,17 +62,17 @@ make menuconfig
  - 8KiB offset
  - 500000 CAN bus speed
  
-<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/F072_CanBoot.png" alt="F076">
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/F072_CanBoot.png" alt="CanBoot-F076">
 
 
-#### BTT EBB36 v1.1 und v1.2 (Prozessor GB01)
+#### BTT EBB36 v1.1 und v1.2 (Prozessor G0B1)
 
  - 8MHz crystal
  - Can bus on PB0/PB1 
  - 8KiB offset
  - 500000 CAN bus speed
 
-<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/GB01_CanBoot.png" alt="GB01">
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/G0B1_CanBoot.png" alt="CanBoot-G0B1">
 
 
 
@@ -91,20 +91,25 @@ make clean
 make menuconfig
 ```
 
-:warning: Auch hier wieder auf die Board Versionen achten
+###### :warning: Hier bitte aufpassen, welches EBB36/42 Board verwendet wird und folgende Einstellungen verweden
 
-für das BTT EBB36 v1.0 (Prozessor F072)
+#### BTT EBB36 v1.0 (Prozessor F072)
+
  - 8MHz crystal
  - CAN bus on PB8/PB9 
  - 8KiB offset
  - 500000 CAN bus speed
+ 
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/Klipper_F072.png" alt="Klipper-F072">
 
+#### BTT EBB36 v1.1 und v1.2 (Prozessor G0B1)
 
-für das EBB36 v1.1 und v1.2 (Prozessor GB01)
  - 8MHz crystal
  - Can bus on PB0/PB1 
  - 8KiB offset
  - 500000 CAN bus speed
+ 
+ <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/Klipper_G0B1.png" alt="Klipper-G0B1">
 
 
 #### 5.can0 Schnittstelle auf dem Rpi konfigurieren
