@@ -123,9 +123,9 @@ folgendes einfügen
 allow-hotplug can0
 iface can0 can static
  bitrate 500000
- up ifconfig $IFACE txqueuelen 256
+ up ifconfig $IFACE txqueuelen 128
  pre-up ip link set can0 type can bitrate 500000
- pre-up ip link set can0 txqueuelen 256
+ pre-up ip link set can0 txqueuelen 128
 ```
 mit STRG+X beenden und mit Y bestätigen
 
@@ -148,16 +148,6 @@ du zuvor ausgelesene UUID einsprechend in den Befehl einsetzen
 ```
 python3 flash_can.py -f ~/klipper/out/klipper.bin -u 330a31adf6de
 ```
-
-
-
-
-https://github.com/bigtreetech/U2C/blob/master/Image/pinout.png
-
-https://github.com/bigtreetech/U2C/tree/master/firmware
-
-
-https://maz0r.github.io/klipper_canbus/controller/firmware_files/utoc_firmware.bin
 
 
 ## 8. printer.cfg anpassen
@@ -187,7 +177,7 @@ Folgende Punkte müsst ihr in eurer printer.cfg anpassen
 Pinouts der EBB42 Versionen findet ihr hier: - [BTT EBB36/42 Github](https://github.com/bigtreetech/EBB)
 
 
-### Bespiel für die Anpassung der Pins mit der neuen mcu EBB
+## Bespiel für die Anpassung der Pins mit der neuen mcu EBB
 ###### alle anderen Einstellungen bleiben bestehen
 ```
 [mcu EBB]
@@ -230,3 +220,12 @@ sensor_mcu: EBB
 min_temp: 0
 max_temp: 120
 ```
+
+
+
+### Quellen: 
+- [BTT U2C Github](https://github.com/bigtreetech/U2C/tree/master/firmware)
+- [maz0r Github](https://maz0r.github.io/klipper_canbus/controller/firmware_files/utoc_firmware.bin)
+
+
+
