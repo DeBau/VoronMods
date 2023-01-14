@@ -267,7 +267,7 @@ Folgende Punkte müsst ihr in eurer printer.cfg anpassen
 - Pin Belegung vom Hotend Thermistor
 - Pin Belegung des Probe
 - Pin Belegung Fan
-- Pin Belgung Hotend Fan
+- Pin Belegung Hotend Fan
 - (Optional) Pin Belegung Neopixel Stealthburner LEDs
 - (Optional) Temperatur vom EBB Board 
 - (Optional) Pin Belegung vom adxl345 Sensor  
