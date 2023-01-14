@@ -10,21 +10,22 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 
  * BTT Octopus V1.1
  * BTT EBB36
- * Fly Mellow UTOC-3
+ * BTT U2C V1.1
 
 ###### Es sind aber auch andere Hardware-Konstellationen (Fysetc Spider, Fly UTOC-1 / UTOC-3 möglich)
  
  
 ## U2C Firmware
-Die u2C Board werden bereits mit einer passenden Firmware ausgeliefert.
+Die U2C Board werden bereits mit einer passenden Firmware ausgeliefert.
 Optional kann die Candlelight Firmware geflasht werden. 
-Candleliegt werde ich später noch ergännzen.
+Candlelight werde ich später noch ergännzen.
 
-Für die BTT Board findet ihr die original Firmware hier: [BTT U2C Firmware](https://github.com/bigtreetech/U2C/tree/master/firmware)
+Für die BTT Boards findet ihr die original Firmware hier: [BTT U2C Firmware](https://github.com/bigtreetech/U2C/tree/master/firmware)
 
 :warning: achtet auf den jeweiligen Chipsatz
 
 Der Flashvorgang mittels STM32CubePorgrammer ist analog zum CanBoot Flash, das Vorgehen ist hier beschrieben.
+
 DFU Modus aktivieren
 - Board spannungslos schalten
 - Boot Taster drücken und gedrückt halten
@@ -55,24 +56,24 @@ Bewährt haben sich bei mir folgende:
 
 
 ## :warning: Der Reihe nach folgende Schritte ausführen
-* 1 CanBoot auf dem Rpi installieren
-* 2 CanBoot Firmware erstellen und compilieren
-* 3 CanBoot flashen
-* 4 Klipper Firmware erstellen
-* 5 can0 Schnittstelle auf dem Rpi konfigurieren
-* 6 UUID vom EBB Board auslesen
-* 7 EBB Klipper Firmware flashen
-* 8 printer.cfg anpassen
+* CanBoot auf dem Rpi installieren
+* CanBoot Firmware erstellen und compilieren
+* CanBoot flashen
+* Klipper Firmware erstellen
+* can0 Schnittstelle auf dem Rpi konfigurieren
+* UUID vom EBB Board auslesen
+* EBB Klipper Firmware flashen
+* printer.cfg anpassen
 
 
-# 1. CanBoot auf dem Rpi installieren
+# CanBoot auf dem Rpi installieren
 
 ```
 sudo apt-get install git -y
 git clone https://github.com/Arksine/CanBoot
 ```
 
-# 2.CanBoot Firmware erstellen und compilieren
+# CanBoot Firmware erstellen und compilieren
 ```
 cd CanBoot
 make menuconfig
@@ -101,25 +102,25 @@ make
 
 
 
-# 3. CanBoot Bootloader flashen
+# CanBoot Bootloader flashen
 
 ## :warning: Falls ihr die Heizpatrone bereits am EBB angeschlossen habt, entfernt diese vorerst, da es bei manchen Versionen vorkommt, dass der Heater Ausgang mit 100% angesteuert wird!
 
 ### :warning: Für diesen Schritt benötigen wir nur den USB Anschluss. Entfernt, falls bereits angeschlossen, den Molex Stecker mit der 24V Versorgung vom EBB
 
-### 1. canboot.bin Datei auf den Rechner kopieren
+### canboot.bin Datei auf den Rechner kopieren
 
 Öffnet WinSCP, loggt euch mit der IP vom RPi und euren Anmeldedaten ein
 Navigiert zum Ordner ```/home/pi/CanBoot/out``` und zieht die Datei ```canboot.bin``` via Drag&Drop auf euren Desktopb
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/winscp.png" alt="WinSCP">
 
-### 2. 5V Jumper setzen
+### 5V Jumper setzen
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB_DFU.png" alt="G0B1">
 
-### 3. BTT EBB Board über das migelieferte USB Kabel mit dem PC verbinden
+### BTT EBB Board über das migelieferte USB Kabel mit dem PC verbinden
 
-### 4. DFU Modus aktivieren
+### DFU Modus aktivieren
 
 * Boot Taster drücken und gedrückt halten
 * zusätzlich den Reset Taster Drücken und halten
@@ -127,9 +128,9 @@ Navigiert zum Ordner ```/home/pi/CanBoot/out``` und zieht die Datei ```canboot.b
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB_DFU_Modus.png" alt="G0B1">
 
-### 5. STM32Cube Programmer starten 
+### STM32Cube Programmer starten 
 
-#### 5.1 mit dem Board Verbinden
+#### mit dem Board Verbinden
 
 - USB Schnittstelle auswählen
 - Verbinden
