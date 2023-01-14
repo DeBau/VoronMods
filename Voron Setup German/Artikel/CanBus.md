@@ -210,7 +210,7 @@ iface can0 can static
  pre-up ip link set can0 type can bitrate 500000
  pre-up ip link set can0 txqueuelen 256
 ```
-##### mit STRG+X beenden und mit Y bestätigen
+##### mit STRG+X beenden und mit Y + Enter bestätigen
 
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/can0.png" alt="can0">
