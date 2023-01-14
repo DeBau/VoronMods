@@ -1,4 +1,4 @@
-# CanBus Installation 
+# Voron v2 / Trident CanBus Installation 
 
 
 #### Support
@@ -59,11 +59,11 @@ Bewährt haben sich bei mir folgende:
 * [CanBoot auf dem Rpi installieren](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#canboot-auf-dem-rpi-installieren)
 * [CanBoot Firmware erstellen und compilieren](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#canboot-firmware-erstellen-und-compilieren)
 * [CanBoot flashen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#canboot-bootloader-flashen)
-* [Klipper Firmware erstellen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#4-klipper-firmware-erstellen)
-* can0 Schnittstelle auf dem Rpi konfigurieren
-* UUID vom EBB Board auslesen
-* EBB Klipper Firmware flashen
-* printer.cfg anpassen
+* [Klipper Firmware erstellen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#klipper-firmware-erstellen)
+* [can0 Schnittstelle auf dem Rpi konfigurieren](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#5-can0-schnittstelle-auf-dem-rpi-konfigurieren)
+* [UUID vom EBB Board auslesen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#6-uuid-vom-ebb-board-auslesen)
+* [EBB Klipper Firmware flashen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#ebb-klipper-firmware-flashen)
+* [printer.cfg anpassen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#printercfg-anpassen)
 
 
 # CanBoot auf dem Rpi installieren
