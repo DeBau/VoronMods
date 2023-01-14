@@ -241,17 +241,23 @@ Notiert euch die angezeigte UUID, diese wird im nächste Step benötigt.
 
 
 # EBB Klipper Firmware flashen
+
+Wir benötigen folgenden Befehl um das EBB zu flashen.
+
 ```
 python3 flash_can.py -f ~/klipper/ebb_klipper.bin -u <ebb_uuid>
 ```
-du zuvor ausgelesene UUID einsprechend in den Befehl einsetzen
+
+<ebb_uuid> muss mit der UUID vom EBB Board ausgetauscht werden
+
+Als Beispiel lautet der Befehl mit einer meiner UUIDs:
 
 ```
 python3 flash_can.py -f ~/klipper/out/klipper.bin -u 330a31adf6de
 ```
+Der Flashvorhang sollte starten und erfolgreich abgeschlossen werden.
 
-
-# 8. printer.cfg anpassen
+# printer.cfg anpassen
 
 Folgende Punkte müsst ihr in eurer printer.cfg anpassen
 
