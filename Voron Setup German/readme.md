@@ -5,6 +5,12 @@
 - Omron TL-Q5MC2-Z Sensor
 - mini12864 LC Display
 
+Optional CANBus
+
+- BTT EBB36 v1.2
+- BTT U2C V2
+
+
 ### Quellen: 
 - [Voron Design Dokumentation](https://docs.vorondesign.com)
 - [Voron Design Github Voron v2](https://docs.vorondesign.com)
