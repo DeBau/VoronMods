@@ -35,6 +35,16 @@ DFU Modus aktivieren
 - Boot Taster drücken und gedrückt halten
 - USB Verbindung mit dem PC herstellen
 - Boot Taster loslassen
+
+
+Terminierung / Abschlusswiderstand beim BTT U2C
+
+ <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/U2C_resistor.png
+" alt="resistor">
+ 
+ Es geht auch ohne die Widerstände am U2C, aber schaut man sich mal folgende Grafik an, sieht man deutlich was eine korrekt Terminierung ausmacht
+ 
+ 
  
 ## Vorbereitungen
 #### Flasht euer Board ganz normal wie in der Voron Anleitung angegeben und bindet es als MCU mit der Serial in die printer.cfg ein
