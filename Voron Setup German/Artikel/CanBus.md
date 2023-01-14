@@ -14,21 +14,30 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 
 ###### Es sind aber auch andere Hardware-Konstellationen (Fysetc Spider, Fly UTOC-1 / UTOC-3 möglich)
  
+ ## Vorbereitungen
+#### Flasht euer Board ganz normal wie in der Voron Anleitung angegeben und bindet es als MCU mit der Serial in die printer.cfg ein
+- [Voron Design](https://docs.vorondesign.com/build/software/#firmware-flashing)
+#### STM32CubeProgrammer herunterladen und installieren
+- [BTT Github](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/tree/master/Firmware/DFU%20Update%20bootloader/install%20software)
+#### FTP Programm herunterladen und installieren (ich nutze WinSCP)
+- [WinSCP](https://winscp.net/eng/download.php)
  
-## U2C Firmware
+ 
+## U2C Firmware / Terminierung
 Die U2C Boards werden bereits mit einer passenden Firmware ausgeliefert.
 Optional kann die Candlelight Firmware geflasht werden. 
+
 Candlelight werde ich später noch ergännzen.
 
 Für die BTT Boards findet ihr die original Firmware hier: [BTT U2C Firmware](https://github.com/bigtreetech/U2C/tree/master/firmware)
 
-BTT U2C V2 Firmware fix (canboot programming problem of U2C V2 version)
-
-[BTT U2C Firmware v2](https://github.com/Arksine/CanBoot/files/10410265/G0B1_U2C_V2.zip)
-
 :warning: achtet auf den jeweiligen Chipsatz
 
-Der Flashvorgang mittels STM32CubePorgrammer ist analog zum CanBoot Flash, das Vorgehen ist hier beschrieben.
+### :warning: BTT U2C V2 Firmware fix (canboot programming problem of U2C V2 version) 
+[BTT U2C Firmware v2](https://github.com/Arksine/CanBoot/files/10410265/G0B1_U2C_V2.zip)
+
+
+#### Der Flashvorgang mittels STM32CubePorgrammer ist analog zum CanBoot Flash, das Vorgehen ist hier beschrieben.
 
 DFU Modus aktivieren
 - Board spannungslos schalten
@@ -36,25 +45,16 @@ DFU Modus aktivieren
 - USB Verbindung mit dem PC herstellen
 - Boot Taster loslassen
 
-Terminierung / Abschlusswiderstand beim BTT U2C
+### Terminierung / Abschlusswiderstand beim BTT U2C
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/U2C_resistor.png" alt="resistor">
 
- Es geht auch ohne die Widerstände am U2C, aber schaut man sich mal folgende Grafik an, sieht man deutlich was eine korrekt Terminierung ausmacht
+Es geht auch ohne die Widerstände am U2C, aber schaut man sich mal folgende Grafik an, sieht man deutlich was eine korrekt Terminierung ausmacht
  
- <img src=" https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/Can_term.png" alt="termination">
+<img src=" https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/Can_term.png" alt="termination">
 
  
  
-## Vorbereitungen
-#### Flasht euer Board ganz normal wie in der Voron Anleitung angegeben und bindet es als MCU mit der Serial in die printer.cfg ein
-- [Voron Design](https://docs.vorondesign.com/build/software/#firmware-flashing)
-#### STM32CubeProgrammer herunterladen und installieren
-- [BTT Github](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/tree/master/Firmware/DFU%20Update%20bootloader/install%20software)
-#### FTP Programm herunterladen und installieren (ich nutze WinSCP)
-- [WinSCP](https://winscp.net/eng/download.php)
-
-
 ## Elektrischer Anschluss
 Hier gibt es diverse Möglichkeiten. 
 Bewährt haben sich bei mir folgende:
