@@ -20,18 +20,16 @@ Die u2C Board werden bereits mit einer passenden Firmware ausgeliefert.
 Optional kann die Candlelight Firmware geflasht werden. 
 Candleliegt werde ich später noch ergännzen.
 
-Für die BTT Board findet ihr die original Firmware hier:
+Für die BTT Board findet ihr die original Firmware hier: [BTT U2C Firmware](https://github.com/bigtreetech/U2C/tree/master/firmware)
 
 :warning: achtet auf den jeweiligen Chipsatz
+
 Der Flashvorgang mittels STM32CubePorgrammer ist analog zum CanBoot Flash, das Vorgehen ist hier beschrieben.
 DFU Modus aktivieren
 - Board spannungslos schalten
 - Boot Taster drücken und gedrückt halten
 - USB Verbindung mit dem PC herstellen
 - Boot Taster loslassen
-- 
-[BTT U2C Firmware](https://github.com/bigtreetech/U2C/tree/master/firmware)
-
  
 ## Vorbereitungen
 #### Flasht euer Board ganz normal wie in der Voron Anleitung angegeben und bindet es als MCU mit der Serial in die printer.cfg ein
@@ -42,11 +40,9 @@ DFU Modus aktivieren
 - [WinSCP ](https://winscp.net/eng/download.php)
 
 
-
 ## Elektrischer Anschluss
 Hier gibt es diverse Möglichkeiten. 
 Bewährt haben sich bei mir folgende:
-
 
 ###### :warning: Aufgrund der Übersicht, wurde die 24V Verdrahtung vom Octopus nicht dargestellt. Diese ist nach der Voron Anleitung durchzuführen
 
