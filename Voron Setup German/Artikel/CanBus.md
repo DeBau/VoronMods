@@ -33,7 +33,7 @@ Für die BTT Boards findet ihr die original Firmware hier: [BTT U2C Firmware](ht
 
 :warning: achtet auf den jeweiligen Chipsatz
 
-### :warning: BTT U2C V2 Firmware fix (canboot programming problem of U2C V2 version) 
+#### :warning: BTT U2C V2 Firmware fix (canboot programming problem of U2C V2 version) 
 [BTT U2C Firmware v2](https://github.com/Arksine/CanBoot/files/10410265/G0B1_U2C_V2.zip)
 
 
@@ -49,7 +49,7 @@ DFU Modus aktivieren
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/U2C_resistor.png" alt="resistor">
 
-Es geht auch ohne die Widerstände am U2C, aber schaut man sich mal folgende Grafik an, sieht man deutlich was eine korrekt Terminierung ausmacht
+Es geht auch ohne die Widerstände am U2C, aber schaut man sich mal folgende Grafik an, sieht man deutlich was eine korrekte Terminierung ausmacht
  
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/Can_term.png" alt="termination">
 
