@@ -9,8 +9,8 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 ### Verwendete Hardware 
 
  * BTT Octopus V1.1
- * BTT EBB36
- * BTT U2C V1.1
+ * BTT EBB36 v1.1
+ * BTT U2C 
 
 ###### Es sind aber auch andere Hardware-Konstellationen (Fysetc Spider, Fly UTOC-1 / UTOC-3 möglich)
  
