@@ -24,7 +24,7 @@ Für die BTT Boards findet ihr die original Firmware hier: [BTT U2C Firmware](ht
 
 BTT U2C V2 Firmware fix (canboot programming problem of U2C V2 version)
 
-[BTT U2C Firmware v2]([https://github.com/bigtreetech/U2C/tree/master/firmware](https://github.com/Arksine/CanBoot/files/10410265/G0B1_U2C_V2.zip))
+[BTT U2C Firmware v2](https://github.com/bigtreetech/U2C/tree/master/firmware](https://github.com/Arksine/CanBoot/files/10410265/G0B1_U2C_V2.zip)
 
 :warning: achtet auf den jeweiligen Chipsatz
 
