@@ -16,7 +16,7 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
  
  
 ## U2C Firmware
-Die U2C Board werden bereits mit einer passenden Firmware ausgeliefert.
+Die U2C Boards werden bereits mit einer passenden Firmware ausgeliefert.
 Optional kann die Candlelight Firmware geflasht werden. 
 Candlelight werde ich später noch ergännzen.
 
@@ -215,6 +215,11 @@ iface can0 can static
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/can0.png" alt="can0">
 
+Abschließend einen Reboot vom RPi ausführen
+
+```
+sudo reboot
+```
 
 # 6. UUID vom EBB Board auslesen
 
