@@ -55,11 +55,11 @@ Bewährt haben sich bei mir folgende:
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/CanSetup_02.png" alt="pinout" width=800 height=550>
 
 
-## :warning: Der Reihe nach folgende Schritte ausführen
-* CanBoot auf dem Rpi installieren
-* CanBoot Firmware erstellen und compilieren
-* CanBoot flashen
-* Klipper Firmware erstellen
+# :warning: Der Reihe nach folgende Schritte ausführen
+* [CanBoot auf dem Rpi installieren](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#canboot-auf-dem-rpi-installieren)
+* [CanBoot Firmware erstellen und compilieren](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#canboot-firmware-erstellen-und-compilieren)
+* [CanBoot flashen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#canboot-bootloader-flashen)
+* [Klipper Firmware erstellen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#4-klipper-firmware-erstellen)
 * can0 Schnittstelle auf dem Rpi konfigurieren
 * UUID vom EBB Board auslesen
 * EBB Klipper Firmware flashen
