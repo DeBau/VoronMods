@@ -1,3 +1,4 @@
+```
 # This file contains common pin mappings for the BigTreeTech Octopus V1.
 # To use this config, the firmware should be compiled for the STM32F446 with a "32KiB bootloader"
 # Enable "extra low-level configuration options" and select the "12MHz crystal" as clock reference
@@ -681,4 +682,4 @@ gcode:
     
     BED_MESH_CLEAR
     RESTORE_GCODE_STATE NAME=STATE_PRINT_END
-
+```
