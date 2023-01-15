@@ -27,15 +27,17 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 Die U2C Boards werden bereits mit einer passenden Firmware ausgeliefert.
 Optional kann die Candlelight Firmware geflasht werden. 
 
-Candlelight werde ich später noch ergännzen.
-
 Für die BTT Boards findet ihr die original Firmware hier: [BTT U2C Firmware](https://github.com/bigtreetech/U2C/tree/master/firmware)
 
 :warning: achtet auf den jeweiligen Chipsatz
 
-#### :warning: BTT U2C V2 Firmware fix (canboot programming problem of U2C V2 version) 
-[BTT U2C Firmware v2](https://github.com/Arksine/CanBoot/files/10410265/G0B1_U2C_V2.zip)
 
+
+## BTT U2C v2.1
+
+### Möglichkeit 1: BTT Firmware
+### :warning: BTT U2C V2 Firmware fix (canboot programming problem of U2C V2 version) 
+[BTT U2C Firmware v2](https://github.com/Arksine/CanBoot/files/10410265/G0B1_U2C_V2.zip)
 
 #### Der Flashvorgang mittels STM32CubePorgrammer ist analog zum CanBoot Flash, das Vorgehen ist hier beschrieben.
 
@@ -44,6 +46,39 @@ DFU Modus aktivieren
 - Boot Taster drücken und gedrückt halten
 - USB Verbindung mit dem PC herstellen
 - Boot Taster loslassen
+
+
+
+### Möglichkeit 2: Candlelight FW
+
+```
+sudo apt-get install cmake gcc-arm-none-eabi git
+cd ~
+
+# falls vorher bereits ein candlight Repo geladen wurde führt folgendes aus: rm -r candleLight_fw
+
+git clone https://github.com/bigtreetech/candleLight_fw
+cd candleLight_fw
+git checkout stm32g0_support
+mkdir build
+cd build
+cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/gcc-arm-none-eabi-8-2019-q3-update.cmake
+make G0B1_U2C_fw
+```
+DFU Modus aktivieren
+- Board spannungslos schalten
+- Boot Taster drücken und gedrückt halten
+- USB Verbindung mit dem RPi herstellen
+- Boot Taster loslassen
+
+Firmware flashen
+
+```
+make flash-G0B1_U2C_fw
+```
+
+
+
 
 ### Terminierung / Abschlusswiderstand beim BTT U2C
 
