@@ -170,6 +170,8 @@ make
 
 ### :warning: Für diesen Schritt benötigen wir nur den USB Anschluss. Entfernt, falls bereits angeschlossen, den Molex Stecker mit der 24V Versorgung vom EBB
 
+## Möglichkeit 1: CanBoot mittels STM32CubeProgrammer flashen
+
 ### canboot.bin Datei auf den Rechner kopieren
 
 Öffnet WinSCP, loggt euch mit der IP vom RPi und euren Anmeldedaten ein.
@@ -215,6 +217,39 @@ Navigiert zum Ordner ```/home/pi/CanBoot/out``` und zieht die Datei ```canboot.b
 - Verbindung trennen
 - Programm schließen
 
+
+## Möglichkeit 2: im DFU Modus mittels Rpi flashen
+
+### DFU Modus am EBB36 aktivieren
+
+* EBB36 mit dem RPi verbinden
+* Boot Taster drücken und gedrückt halten
+* zusätzlich den Reset Taster Drücken und halten
+* beide Taster wieder loslassen
+
+in Putty folgenden Befehl ausführen um eure Device ID auszulesen
+ ```
+lusb
+```
+
+```
+Bus 001 Device 005: ID 0483:df11 STMicroelectronics STM Device in DFU Mode
+
+0483:df11 ist die Device ID, die wir im nächsten Step benötigen (eure ist entsprechend anders)
+
+Flashvorgang startet ihr mit folgendem Befehl: 
+
+ ``` 
+sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force:mass-erase:leave -d <device_id>
+
+ ``` 
+<device_id> entsprechend durch die gerade ermittelte ersetzen
+
+ ``` 
+sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force:mass-erase:leave -d <device_id>
+
+ ``` 
+ 
 ### 5V Jumper entfernen und 120Ohm Jumper setzen
 
 - USB Verbindung zum PC trennen
