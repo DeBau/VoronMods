@@ -38,11 +38,11 @@ Für die BTT Boards findet ihr die original Firmware hier: [BTT U2C Firmware](ht
 
 ### Möglichkeit 1: 
 
-Firmware herunterladen 
+Firmware herunterladen und mittels STM32CubeProgrammer flashen
 
 [BTT U2C Firmware v2](https://github.com/Arksine/CanBoot/files/10410265/G0B1_U2C_V2.zip)
 
-#### Der Flashvorgang mittels STM32CubePorgrammer ist analog zum CanBoot Flash, das Vorgehen ist unter Step 3 beschrieben.
+#### Der Flashvorgang mittels STM32CubeProgrammer ist analog zum CanBoot Flash, das Vorgehen ist unter Step 3 beschrieben.
 
 DFU Modus aktivieren
 - Board spannungslos schalten
