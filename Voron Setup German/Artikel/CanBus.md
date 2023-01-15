@@ -65,7 +65,7 @@ git checkout stm32g0_support
 mkdir build
 cd build
 cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/gcc-arm-none-eabi-8-2019-q3-update.cmake
-make
+make G0B1_U2C_fw
 ```
 DFU Modus aktivieren
 - Board spannungslos schalten / USB kabel entfernen
@@ -78,8 +78,6 @@ Firmware flashen
 ```
 make flash-G0B1_U2C_fw
 ```
-
-
 
 
 ### Terminierung / Abschlusswiderstand beim BTT U2C
@@ -237,9 +235,9 @@ lusb
 ```
 Ihr erhaltet als Ausgabe eine Auflistung der angeschlossenen USB Geräte, wobei uns hier nur das EBB36 im DFU Modus interessiert.
 
-##### Bus 001 Device 005: ID 0683:df11 STMicroelectronics STM Device in DFU Mode
+(https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/lusb_device_id.png)
 
-0683:df11 ist die Device ID, die wir im nächsten Step benötigen (eure ist entsprechend anders)
+0483:df11 ist die Device ID, die wir im nächsten Step benötigen (eure ist entsprechend anders)
 
 Den Flashvorgang startet ihr mit folgendem Befehl: 
 
@@ -250,7 +248,7 @@ sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force
 :warning: <device_id> entsprechend durch die gerade ermittelte ersetzen
 
  ``` 
-sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force:mass-erase:leave -d 0683:df11
+sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force:mass-erase:leave -d 0483:df11
 
  ``` 
  
