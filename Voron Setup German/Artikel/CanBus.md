@@ -56,9 +56,7 @@ DFU Modus aktivieren
 ```
 sudo apt-get install cmake gcc-arm-none-eabi git
 cd ~
-
-# falls vorher bereits ein candlight Repo geladen wurde führt folgendes aus: rm -r candleLight_fw
-
+rm -r candleLight_fw
 git clone https://github.com/bigtreetech/candleLight_fw
 cd candleLight_fw
 git checkout stm32g0_support
