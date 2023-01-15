@@ -253,7 +253,7 @@ python3 flash_can.py -i can0 -q
 #### sollte es zu einem Fehler bei ```pip3 install pyserial``` kommen, versucht vorher folgenden Befehl auszuführen:
 
 ```
-apt-get install python3-pip
+sudo apt-get install python3-pip
 ```
 
 Notiert euch die angezeigte UUID, diese wird im nächste Step benötigt.
