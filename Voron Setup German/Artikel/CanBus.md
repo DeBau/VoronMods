@@ -96,6 +96,14 @@ Es geht auch ohne die Widerstände am U2C, aber schaut man sich mal folgende Gra
 Hier gibt es diverse Möglichkeiten. 
 Bewährt haben sich bei mir folgende:
 
+:warning: Arbeiten sollten von einer Elektrofachkraft ausgeführt werden
+Bitte unbedingt vorher den Netzstecker ziehen
+Beachtet, auch wenn es nur ein 3D Drucker ist, die ersten 3 Regeln der 5 Sicherheitsregeln:
+    - Freischalten
+    - Gegen Wiedereinschalten sichern
+    - Spannungsfreiheit feststellen
+
+    
 ###### :warning: Aufgrund der Übersicht, wurde die 24V Verdrahtung vom Octopus nicht dargestellt. Diese ist nach der Voron Anleitung durchzuführen
 
 #### without 24V passthrough
