@@ -231,19 +231,19 @@ in Putty folgenden Befehl ausführen um eure Device ID auszulesen
  ```
 lusb
 ```
+Ihr erhaltet als Ausgabe eine Auflistung der angeschlossenen USB Geräte, wobei uns hier nur das EBB36 im DFU Modus interessiert.
 
-```
-Bus 001 Device 005: ID 0483:df11 STMicroelectronics STM Device in DFU Mode
+##### Bus 001 Device 005: ID 0483:df11 STMicroelectronics STM Device in DFU Mode
 
 0483:df11 ist die Device ID, die wir im nächsten Step benötigen (eure ist entsprechend anders)
 
-Flashvorgang startet ihr mit folgendem Befehl: 
+Den Flashvorgang startet ihr mit folgendem Befehl: 
 
  ``` 
 sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force:mass-erase:leave -d <device_id>
-
  ``` 
-<device_id> entsprechend durch die gerade ermittelte ersetzen
+ 
+:warning: <device_id> entsprechend durch die gerade ermittelte ersetzen
 
  ``` 
 sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force:mass-erase:leave -d <device_id>
