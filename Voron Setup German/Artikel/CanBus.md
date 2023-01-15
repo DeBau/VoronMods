@@ -305,6 +305,8 @@ Pinouts der EBB42 Versionen findet ihr hier: - [BTT EBB36/42 Github](https://git
 
 ## Bespiel für die Anpassung der Pins mit der neuen mcu EBB
 ###### alle anderen Einstellungen bleiben bestehen
+
+## [Beispiel printer.cfg](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/v2_CANbus_printer_cfg.md)
 ```
 [mcu EBB]
 canbus_uuid: 330a31adf6de
