@@ -97,8 +97,11 @@ Hier gibt es diverse Möglichkeiten.
 Bewährt haben sich bei mir folgende:
 
 :warning: Arbeiten sollten von einer Elektrofachkraft ausgeführt werden
+
 Bitte unbedingt vorher den Netzstecker ziehen
+
 Beachtet, auch wenn es nur ein 3D Drucker ist, die ersten 3 Regeln der 5 Sicherheitsregeln:
+
     - Freischalten
     - Gegen Wiedereinschalten sichern
     - Spannungsfreiheit feststellen
