@@ -298,7 +298,7 @@ stealthchop_threshold: 0
 [extruder]
 step_pin: EBB:PD0
 dir_pin: !EBB:PD1
-enable_pin: !EBB:PD
+enable_pin: !EBB:PD2
 ##  Update value below when you perform extruder calibration
 ##  If you ask for 100mm of filament, but in reality it is 98mm:
 ##  rotation_distance = <previous_rotation_distance> * <actual_extrude_distance> / 100
