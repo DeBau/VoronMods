@@ -80,14 +80,14 @@ Bewährt haben sich bei mir folgende:
 * [printer.cfg anpassen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#printercfg-anpassen)
 
 
-# CanBoot auf dem Rpi installieren
+# Step 1: CanBoot auf dem Rpi installieren
 
 ```
 sudo apt-get install git -y
 git clone https://github.com/Arksine/CanBoot
 ```
 
-# CanBoot Firmware erstellen und kompilieren
+# Step 2: CanBoot Firmware erstellen und kompilieren
 ```
 cd CanBoot
 make menuconfig
@@ -116,7 +116,7 @@ make
 
 
 
-# CanBoot Bootloader flashen
+# Step 3: CanBoot Bootloader flashen
 
 ## :warning: Falls ihr die Heizpatrone bereits am EBB angeschlossen habt, entfernt diese vorerst, da es bei manchen Versionen vorkommt, dass der Heater Ausgang mit 100% angesteuert wird!
 
@@ -177,7 +177,7 @@ Navigiert zum Ordner ```/home/pi/CanBoot/out``` und zieht die Datei ```canboot.b
 ### Molexstecker wieder anschließen und das Board mit 24V versorgen
 
 
-# Klipper Firmware erstellen
+# Step 4: Klipper Firmware erstellen
 ```
 cd ~/klipper
 make clean
@@ -206,7 +206,7 @@ make
  <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/Klipper_G0B1.png" alt="Klipper-G0B1">
 
 
-# 5. can0 Schnittstelle auf dem Rpi konfigurieren
+# Step 5: can0 Schnittstelle auf dem Rpi konfigurieren
 ```
 cd
 sudo nano /etc/network/interfaces.d/can0
@@ -231,7 +231,7 @@ Abschließend einen Reboot vom RPi ausführen
 sudo reboot
 ```
 
-# 6. UUID vom EBB Board auslesen
+# Step 6: UUID vom EBB Board auslesen
 
 can0 Netzwerk checken
 ```
@@ -259,7 +259,7 @@ apt-get install python3-pip
 Notiert euch die angezeigte UUID, diese wird im nächste Step benötigt.
 
 
-# EBB Klipper Firmware flashen
+# Step 7: EBB Klipper Firmware flashen
 
 Wir benötigen folgenden Befehl um das EBB zu flashen.
 
@@ -276,7 +276,7 @@ python3 flash_can.py -f ~/klipper/out/klipper.bin -u 330a31adf6de
 ```
 Der Flashvorhang sollte starten und erfolgreich abgeschlossen werden.
 
-# printer.cfg anpassen
+# Step 8: printer.cfg anpassen
 
 Folgende Punkte müsst ihr in eurer printer.cfg anpassen
 
