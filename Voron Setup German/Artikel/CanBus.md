@@ -139,6 +139,7 @@ git clone https://github.com/Arksine/CanBoot
 ```
 cd CanBoot
 make menuconfig
+make clean
 make
 ```
 ###### :warning: Hier bitte aufpassen, welches EBB36/42 Board verwendet wird und folgende Einstellungen verweden
@@ -267,8 +268,8 @@ sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force
 # Step 4: Klipper Firmware erstellen
 ```
 cd ~/klipper
-make clean
 make menuconfig
+make clean
 make
 ```
 
