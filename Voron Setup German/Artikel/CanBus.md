@@ -45,7 +45,7 @@ Firmware herunterladen und mittels STM32CubeProgrammer flashen
 #### Der Flashvorgang mittels STM32CubeProgrammer ist analog zum CanBoot Flash, das Vorgehen ist unter Step 3 beschrieben.
 
 DFU Modus aktivieren
-- Board spannungslos schalten
+- Board spannungslos schalten / USB kabel entfernen
 - Boot Taster drücken und gedrückt halten
 - USB Verbindung mit dem PC herstellen
 - Boot Taster loslassen
@@ -68,7 +68,7 @@ cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/gcc-arm-none-eabi-8-2019-q3-update.cmak
 make G0B1_U2C_fw
 ```
 DFU Modus aktivieren
-- Board spannungslos schalten
+- Board spannungslos schalten / USB kabel entfernen
 - Boot Taster drücken und gedrückt halten
 - USB Verbindung mit dem RPi herstellen
 - Boot Taster loslassen
