@@ -387,6 +387,7 @@ pin: EBB:PB8
 #--------------------------------------------------------------------
 x_offset: 0
 
+## Je nach Konfiguration "#" entsprechend am Zeilenanfang entfernen
 #--------------------------------------------------------------------
 ## Klicky Probe
 # y_offset: 19.75
@@ -395,7 +396,6 @@ x_offset: 0
 # y_offset: 0
 
 ## PROBE_CALIBRATE ausführen, um den korrekten Z-Offset automatisch zu ermitteln
-
 ## Klicky Probe
 # z_offset: 6.42
 
@@ -405,11 +405,19 @@ x_offset: 0
 speed: 10.0
 samples: 3
 samples_result: median
-sample_retract_dist: 3.0
-samples_tolerance: 0.006
+sample_retract_dist: 2.0
+
+## Je nach Konfiguration "#" entsprechend am Zeilenanfang entfernen
+#--------------------------------------------------------------------
+## Klicky Probe
+# samples_tolerance: 0.01
+
+## TAP
+# samples_tolerance: 0.006
+#--------------------------------------------------------------------
+
 samples_tolerance_retries: 3
 
-#--------------------------------------------------------------------
 ## uncomment for TAP
 # activate_gcode:
 #    {% set PROBE_TEMP = 150 %}
