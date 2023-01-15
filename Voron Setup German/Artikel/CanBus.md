@@ -220,6 +220,9 @@ Navigiert zum Ordner ```/home/pi/CanBoot/out``` und zieht die Datei ```canboot.b
 
 ## Möglichkeit 2: im DFU Modus mittels Rpi flashen
 
+### 5V Jumper setzen
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB_DFU.png" alt="G0B1">
+
 ### DFU Modus am EBB36 aktivieren
 
 * EBB36 mit dem RPi verbinden
