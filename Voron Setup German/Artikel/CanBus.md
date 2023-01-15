@@ -65,7 +65,7 @@ git checkout stm32g0_support
 mkdir build
 cd build
 cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/gcc-arm-none-eabi-8-2019-q3-update.cmake
-make G0B1_U2C_fw
+make
 ```
 DFU Modus aktivieren
 - Board spannungslos schalten / USB kabel entfernen
