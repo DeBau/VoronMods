@@ -233,9 +233,9 @@ lusb
 ```
 Ihr erhaltet als Ausgabe eine Auflistung der angeschlossenen USB Geräte, wobei uns hier nur das EBB36 im DFU Modus interessiert.
 
-##### Bus 001 Device 005: ID 0483:df11 STMicroelectronics STM Device in DFU Mode
+##### Bus 001 Device 005: ID 0683:df11 STMicroelectronics STM Device in DFU Mode
 
-0483:df11 ist die Device ID, die wir im nächsten Step benötigen (eure ist entsprechend anders)
+0683:df11 ist die Device ID, die wir im nächsten Step benötigen (eure ist entsprechend anders)
 
 Den Flashvorgang startet ihr mit folgendem Befehl: 
 
@@ -246,13 +246,14 @@ sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force
 :warning: <device_id> entsprechend durch die gerade ermittelte ersetzen
 
  ``` 
-sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force:mass-erase:leave -d <device_id>
+sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force:mass-erase:leave -d 0683:df11
 
  ``` 
  
+ 
 ### 5V Jumper entfernen und 120Ohm Jumper setzen
 
-- USB Verbindung zum PC trennen
+- USB Verbindung trennen
 - entfernt den 5V Jumper und setzt ihn an die Stelle für den 120Ohm Abschlusswiderstand
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/bootjumper.png" alt="120">
