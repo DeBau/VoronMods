@@ -25,21 +25,24 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
  
 ## U2C Firmware / Terminierung
 Die U2C Boards werden bereits mit einer passenden Firmware ausgeliefert.
-Optional kann die Candlelight Firmware geflasht werden. 
+
 
 Für die BTT Boards findet ihr die original Firmware hier: [BTT U2C Firmware](https://github.com/bigtreetech/U2C/tree/master/firmware)
 
 :warning: achtet auf den jeweiligen Chipsatz
 
 
-
 ## BTT U2C v2.1
 
-### Möglichkeit 1: BTT Firmware
 ### :warning: BTT U2C V2 Firmware fix (canboot programming problem of U2C V2 version) 
+
+### Möglichkeit 1: 
+
+Firmware herunterladen 
+
 [BTT U2C Firmware v2](https://github.com/Arksine/CanBoot/files/10410265/G0B1_U2C_V2.zip)
 
-#### Der Flashvorgang mittels STM32CubePorgrammer ist analog zum CanBoot Flash, das Vorgehen ist hier beschrieben.
+#### Der Flashvorgang mittels STM32CubePorgrammer ist analog zum CanBoot Flash, das Vorgehen ist unter Step 3 beschrieben.
 
 DFU Modus aktivieren
 - Board spannungslos schalten
@@ -48,8 +51,7 @@ DFU Modus aktivieren
 - Boot Taster loslassen
 
 
-
-### Möglichkeit 2: Candlelight FW
+### Möglichkeit 2:
 
 ```
 sudo apt-get install cmake gcc-arm-none-eabi git
