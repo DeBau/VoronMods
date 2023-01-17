@@ -31,16 +31,7 @@ Für die BTT Boards findet ihr die original Firmware hier: [BTT U2C Firmware](ht
 
 :warning: achtet auf den jeweiligen Chipsatz
 
-
-## BTT U2C v2.1
-
-### :warning: BTT U2C V2 Firmware fix (canboot programming problem of U2C V2 version) 
-
-### Möglichkeit 1: 
-
-Firmware herunterladen und mittels STM32CubeProgrammer flashen
-
-[BTT U2C Firmware v2](https://github.com/Arksine/CanBoot/files/10410265/G0B1_U2C_V2.zip)
+### Möglichkeit 1: Firmware herunterladen und mittels STM32CubeProgrammer flashen
 
 #### Der Flashvorgang mittels STM32CubeProgrammer ist analog zum CanBoot Flash, das Vorgehen ist unter Step 3 beschrieben.
 
@@ -51,7 +42,10 @@ DFU Modus aktivieren
 - Boot Taster loslassen
 
 
-### Möglichkeit 2:
+### Möglichkeit 2: MIttels RPi und DFU Modus flashen
+
+von mir nicht gestetet!
+[Quelle](https://github.com/bigtreetech/U2C/tree/master/firmware)
 
 ```
 sudo apt-get install cmake gcc-arm-none-eabi git
