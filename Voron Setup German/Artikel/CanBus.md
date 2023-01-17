@@ -77,6 +77,8 @@ Firmware flashen
 ```
 make flash-budgetcan_fw
 ```
+- Board spannungslos schalten / USB kabel entfernen
+- USB Verbindung mit der RPi wieder herstellen
 
 
 ### Terminierung / Abschlusswiderstand beim BTT U2C
