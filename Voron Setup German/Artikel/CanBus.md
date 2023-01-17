@@ -86,11 +86,12 @@ make flash-budgetcan_fw
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/U2C_resistor.png" alt="resistor">
 
 Es geht auch ohne die Widerstände am U2C, aber schaut man sich mal folgende Grafik an, sieht man deutlich was eine korrekte Terminierung ausmacht
- 
+
+### BTT U2C PinOut
+
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/Can_term.png" alt="termination">
 
- 
- 
+
 ## Elektrischer Anschluss
 Hier gibt es diverse Möglichkeiten. 
 Bewährt haben sich bei mir folgende:
@@ -168,7 +169,8 @@ make
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/G0B1_CanBoot.png" alt="CanBoot-G0B1">
 
-
+- mit der Taset "Q" beenden 
+- und mit der Taset "Y" bestätigen
 
 # Step 3: CanBoot Bootloader flashen
 
@@ -242,7 +244,8 @@ lusb
 ```
 Ihr erhaltet als Ausgabe eine Auflistung der angeschlossenen USB Geräte, wobei uns hier nur das EBB36 im DFU Modus interessiert.
 
-(https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/lusb_device_id.png)
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/lusb_device_id.png" alt="device_id">
+
 
 0483:df11 ist die Device ID, die wir im nächsten Step benötigen (eure ist entsprechend anders)
 
@@ -297,6 +300,9 @@ make
  - 500000 CAN bus speed
  
  <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/Klipper_G0B1.png" alt="Klipper-G0B1">
+ 
+ - mit der Taset "Q" beenden 
+ - und mit der Taset "Y" bestätigen
 
 
 # Step 5: can0 Schnittstelle auf dem Rpi konfigurieren
