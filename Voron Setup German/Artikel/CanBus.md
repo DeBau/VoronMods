@@ -71,6 +71,7 @@ DFU Modus aktivieren
 - USB Verbindung mit dem RPi herstellen
 - Boot Taster loslassen
 
+
 Firmware flashen
 
 ```
