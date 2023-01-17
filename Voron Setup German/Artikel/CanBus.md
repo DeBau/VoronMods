@@ -245,7 +245,7 @@ Navigiert zum Ordner ```/home/pi/CanBoot/out``` und zieht die Datei ```canboot.b
 
 in Putty folgenden Befehl ausführen um eure Device ID auszulesen
  ```
-lusb
+lsusb
 ```
 Ihr erhaltet als Ausgabe eine Auflistung der angeschlossenen USB Geräte, wobei uns hier nur das EBB36 im DFU Modus interessiert.
 
