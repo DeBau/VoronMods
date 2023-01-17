@@ -45,7 +45,7 @@ DFU Modus aktivieren
 ### Möglichkeit 2: MIttels RPi und DFU Modus flashen
 
 von mir nicht gestetet!
-[Quelle](https://github.com/bigtreetech/U2C/tree/master/firmware)
+[Quelle](https://github.com/Arksine/CanBoot/issues/44#issuecomment-1384608269)
 
 ```
 sudo apt-get install cmake gcc-arm-none-eabi git
