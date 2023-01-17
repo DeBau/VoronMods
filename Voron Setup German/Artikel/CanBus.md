@@ -112,6 +112,10 @@ Beachtet, auch wenn es nur ein 3D Drucker ist, die ersten 3 Regeln der 5 Sicherh
 #### 24V passthrough
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/CanSetup_02.png" alt="pinout">
 
+## :warning: Steckerbelegung
+
+Bitte prüft auf der Rückseite der EBB und U2C Board`s die korrekte Steckerbelegung.
+
 
 # :warning: Der Reihe nach folgende Schritte ausführen
 * [CanBoot auf dem Rpi installieren](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#canboot-auf-dem-rpi-installieren)
@@ -123,9 +127,7 @@ Beachtet, auch wenn es nur ein 3D Drucker ist, die ersten 3 Regeln der 5 Sicherh
 * [EBB Klipper Firmware flashen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#ebb-klipper-firmware-flashen)
 * [printer.cfg anpassen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#printercfg-anpassen)
 
-## :warning: Steckerbelegung
 
-Bitte prüft auf der Rückseite der EBB und U2C Board`s die korrekte Steckerbelegung.
 
 
 # Step 1: CanBoot auf dem Rpi installieren
