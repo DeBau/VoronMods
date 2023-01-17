@@ -42,7 +42,7 @@ DFU Modus aktivieren
 - Boot Taster loslassen
 
 
-### Möglichkeit 2: MIttels RPi und DFU Modus flashen
+### Möglichkeit 2: Mittels RPi und U2C im DFU Modus flashen
 
 von mir nicht gestetet!
 [Quelle](https://github.com/Arksine/CanBoot/issues/44#issuecomment-1384608269)
