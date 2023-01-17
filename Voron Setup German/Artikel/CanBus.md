@@ -63,7 +63,7 @@ git checkout stm32g0_support
 mkdir build
 cd build
 cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/gcc-arm-none-eabi-8-2019-q3-update.cmake
-make G0B1_U2C_fw
+make budgetcan_fw
 ```
 DFU Modus aktivieren
 - Board spannungslos schalten / USB kabel entfernen
@@ -74,7 +74,7 @@ DFU Modus aktivieren
 Firmware flashen
 
 ```
-make flash-G0B1_U2C_fw
+make flash-budgetcan_fw
 ```
 
 
@@ -122,6 +122,10 @@ Beachtet, auch wenn es nur ein 3D Drucker ist, die ersten 3 Regeln der 5 Sicherh
 * [UUID vom EBB Board auslesen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#6-uuid-vom-ebb-board-auslesen)
 * [EBB Klipper Firmware flashen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#ebb-klipper-firmware-flashen)
 * [printer.cfg anpassen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#printercfg-anpassen)
+
+## :warning: Steckerbelegung
+
+Bitte prüft auf der Rückseite der EBB und U2C Board`s die korrekte Steckerbelegung.
 
 
 # Step 1: CanBoot auf dem Rpi installieren
