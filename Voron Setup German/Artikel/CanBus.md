@@ -226,6 +226,16 @@ Navigiert zum Ordner ```/home/pi/CanBoot/out``` und zieht die Datei ```canboot.b
 - Verbindung trennen
 - Programm schließen
 
+### 5V Jumper entfernen und 120Ohm Jumper setzen
+
+- USB Verbindung trennen
+- entfernt den 5V Jumper und setzt ihn an die Stelle für den 120Ohm Abschlusswiderstand
+
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/bootjumper.png" alt="120">
+
+### Molexstecker wieder anschließen und das Board mit 24V versorgen
+
+
 
 ## Möglichkeit 2: im DFU Modus mittels Rpi flashen
 
@@ -260,11 +270,9 @@ sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force
 
  ``` 
 sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force:mass-erase:leave -d 0483:df11
-
  ``` 
  
- 
-### 5V Jumper entfernen und 120Ohm Jumper setzen
+ ### 5V Jumper entfernen und 120Ohm Jumper setzen
 
 - USB Verbindung trennen
 - entfernt den 5V Jumper und setzt ihn an die Stelle für den 120Ohm Abschlusswiderstand
