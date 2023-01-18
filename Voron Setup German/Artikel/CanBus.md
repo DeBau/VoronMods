@@ -115,6 +115,9 @@ Beachtet, auch wenn es nur ein 3D Drucker ist, die ersten 3 Regeln der 5 Sicherh
 
 Bitte prüft auf der Rückseite der EBB und U2C Board`s die korrekte Steckerbelegung.
 
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB_u2c_wiring.jpg" alt="wiring">
+
+
 
 # :warning: Der Reihe nach folgende Schritte ausführen
 * [CanBoot auf dem Rpi installieren](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#canboot-auf-dem-rpi-installieren)
