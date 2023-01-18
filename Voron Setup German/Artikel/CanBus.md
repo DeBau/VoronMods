@@ -46,6 +46,7 @@ BTT U2C Din Rail Mount
 ## U2C Firmware / Terminierung
 Die U2C Boards werden bereits mit einer passenden Firmware ausgeliefert.
 
+#### :warning: BTT u2c v2.1 - BTT Firmware Fix beachten und unbedingt flashen
 
 Für die BTT Boards findet ihr die original Firmware hier: [BTT U2C Firmware](https://github.com/bigtreetech/U2C/tree/master/firmware)
 
