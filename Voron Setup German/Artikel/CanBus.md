@@ -50,7 +50,6 @@ Die U2C Boards werden bereits mit einer passenden Firmware ausgeliefert.
 
 Für die BTT Boards findet ihr die original Firmware hier: [BTT U2C Firmware](https://github.com/bigtreetech/U2C/tree/master/firmware)
 
-:warning: achtet auf den jeweiligen Chipsatz
 
 ### Möglichkeit 1: Firmware herunterladen und mittels STM32CubeProgrammer flashen
 
