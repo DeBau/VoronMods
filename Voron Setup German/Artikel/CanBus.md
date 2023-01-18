@@ -1,4 +1,4 @@
-# Voron v2 / Trident CanBus Installation 
+# CanBus Installation 
 
 
 #### Support
