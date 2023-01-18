@@ -23,6 +23,22 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 - [WinSCP](https://winscp.net/eng/download.php)
  
  
+## Halter / Mounts / Printheads
+
+Eine kleine Auswahl an Mounts habe ich hier zusammengestellt.
+
+Für den CW2 und LGX Lite Extruder
+
+### [Voron CB-C2 Mod](https://github.com/kejar31/VoronMods/tree/main/CB-C2?fbclid=IwAR2v2ZASvFZWxVNpFTgP3a7tUxhCuuK9y-F1k_sPwuQ7Z6dU4PnJrTDBL1Y)
+
+VZ HextrudORT Mod für den CB-C2
+
+### [Voron CB-C2 Mod VZ HextrudORT](https://www.printables.com/de/model/369577-vz-hextrudort-for-stealthburner)
+
+eine breite Auswahl an Mounts only für zu ziemlich alle Extruder
+
+### [KyaosMaker EBB Mounts](https://github.com/KayosMaker/CANboard_Mounts)
+ 
 ## U2C Firmware / Terminierung
 Die U2C Boards werden bereits mit einer passenden Firmware ausgeliefert.
 
