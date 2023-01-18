@@ -38,6 +38,10 @@ VZ HextrudORT Mod für den CB-C2
 eine breite Auswahl an Mounts only für zu ziemlich alle Extruder
 
 #### [KyaosMaker EBB Mounts](https://github.com/KayosMaker/CANboard_Mounts)
+
+BTT U2C Din Rail Mount
+
+#### [U2C Din Rail Mount](https://www.printables.com/de/model/266737-bigtreetecg-canbus-u2c-board-clip-mount-voron-24/files)
  
 ## U2C Firmware / Terminierung
 Die U2C Boards werden bereits mit einer passenden Firmware ausgeliefert.
