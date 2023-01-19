@@ -139,7 +139,7 @@ Bitte prüft auf der Rückseite der EBB und U2C Board`s die korrekte Steckerbele
 
 ## CANBus Leitungen
 
-den richtigen Typ habe ich für den Anwendungsfall noch nicht wirklich gefunden. Falls jemand eine gute Quelle hat, schriebt mich bitte via Discord an: deba#0887
+den richtigen Typ habe ich für den Anwendungsfall noch nicht wirklich gefunden. Falls jemand eine gute Quelle hat, schreibt mich bitte via Discord an: deba#0887
 
 Bei der Auswahl sollte man sich an folgenden Punkten orientieren:
 
@@ -208,7 +208,7 @@ make
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/G0B1_CanBoot.png" alt="CanBoot-G0B1">
 
 - mit der Taset "Q" beenden 
-- und mit der Taset "Y" bestätigen
+- und mit der Taste "Y" bestätigen
 
 # Step 3: CanBoot Bootloader flashen
 
@@ -348,7 +348,7 @@ make
  <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/Klipper_G0B1.png" alt="Klipper-G0B1">
  
  - mit der Taset "Q" beenden 
- - und mit der Taset "Y" bestätigen
+ - und mit der Taste "Y" bestätigen
 
 
 # Step 5: can0 Schnittstelle auf dem Rpi konfigurieren
