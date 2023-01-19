@@ -151,6 +151,7 @@ Bei der Auswahl sollte man sich an folgenden Punkten orientieren:
 - Spannungsfall (<3%)
 - Temperaturbereich
 - CANBus Spezifakationen
+- für dauerhafte Bewegungen ausgelegt
 
 Aktuell eingesetzt werden von mir:
 
