@@ -501,12 +501,13 @@ max_temp: 120
 
 
 
-### Quellen: 
+### Quellen und Nachschlagewerke: 
+- [Arkshine Canboot](https://github.com/Arksine/CanBoot)
+- [Klipper CANBus](https://www.klipper3d.org/CANBUS.html)
 - [BTT U2C Github](https://github.com/bigtreetech/U2C/tree/master/firmware)
-- [maz0r Github](https://maz0r.github.io/klipper_canbus/controller/firmware_files/utoc_firmware.bin)
+- [maz0r Github](https://github.com/maz0r/klipper_canbus/blob/main/index.md)
 - [chripink](https://github.com/chripink/CanBus-Tuto/blob/4b70f8c3235076c44313e267ab36b370b07d1f80/README_EN.md)
 - [BTT Github](https://github.com/bigtreetech/EBB)
-
 
 
 
