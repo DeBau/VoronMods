@@ -499,7 +499,17 @@ min_temp: 0
 max_temp: 120
 ```
 
+#### Optional für die Voron Stealthburner LEDs
 
+Die Datei stealthburner_leds.cfg herunterladen, als Datei unter Mainsail einfügen und die entsprechende Pin Belegung wählen
+
+#### [Stealthburner LED CANbus](https://raw.githubusercontent.com/VoronDesign/Voron-Stealthburner/main/Firmware/stealthburner_leds.cfg)
+
+in der printer.cfg folgenden Zeile hinzufügen:
+
+```
+[include stealthburner_leds.cfg]
+```
 
 ### Quellen und Nachschlagewerke: 
 - [Arkshine Canboot](https://github.com/Arksine/CanBoot)
