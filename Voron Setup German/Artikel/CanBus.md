@@ -21,6 +21,16 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 - [BTT Github](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/tree/master/Firmware/DFU%20Update%20bootloader/install%20software)
 #### FTP Programm herunterladen und installieren (ich nutze WinSCP)
 - [WinSCP](https://winscp.net/eng/download.php)
+
+#### System aktualisieren
+System updaten und Python installieren
+```
+sudo apt update
+sudo apt upgrade
+sudo apt install python3 python3-pip python3-can
+pip3 install pyserial
+```
+
  
  
 ## Halter / Mounts / Printheads
@@ -295,7 +305,7 @@ Ihr erhaltet als Ausgabe eine Auflistung der angeschlossenen USB Geräte, wobei 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/lusb_device_id.png" alt="device_id">
 
 
-0483:df11 ist die Device ID, die wir im nächsten Step benötigen (eure ist entsprechend anders)
+0483:df11 ist die Device ID, die wir im nächsten Step benötigen (eure könnte anders sein)
 
 Den Flashvorgang startet ihr mit folgendem Befehl: 
 
@@ -390,16 +400,9 @@ Weiter gehts mit folgenden Befehlen in Putty
 
 ```
 cd ~/CanBoot/scripts
-pip3 install pyserial
 python3 flash_can.py -i can0 -q
 ```
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/canboot_nodes.png" alt="can0">
-
-#### sollte es zu einem Fehler bei ```pip3 install pyserial``` kommen, versucht vorher folgenden Befehl auszuführen:
-
-```
-sudo apt-get install python3-pip
-```
 
 Notiert euch die angezeigte UUID, diese wird im nächste Step benötigt.
 
