@@ -59,12 +59,6 @@ canbus_uuid: 330a31adf6de
 #####################################################################
 ##   EBB36 ADXL Sensor
 #####################################################################
-[temperature_sensor ebb_temp]
-sensor_type: temperature_mcu
-sensor_mcu: EBB
-min_temp: 0
-max_temp: 120
-
 [adxl345]
 cs_pin: EBB:PB12
 spi_software_sclk_pin: EBB:PB10
