@@ -45,6 +45,9 @@ VZ HextrudORT Mod für den CB-C2
 
 #### [Voron CB-C2 Mod VZ HextrudORT](https://www.printables.com/de/model/369577-vz-hextrudort-for-stealthburner)
 
+
+#### [Voron CB-C2 Mod VZ HextrudORT Door Fix](https://www.printables.com/de/model/381586-vz-hextrudort-for-stealthburner-door-fix-for-fly-s?fbclid=IwAR26nPBQW9ZnNcHr6nHcK-sSjfhzFGNH59jufnZYwh6Eb4tarDseuxNbFH0)
+
 eine breite Auswahl an Mounts only für zu ziemlich alle Extruder
 
 #### [KyaosMaker EBB Mounts](https://github.com/KayosMaker/CANboard_Mounts)
