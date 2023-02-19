@@ -195,6 +195,9 @@ git clone https://github.com/Arksine/CanBoot
 ```
 
 # Step 2: CanBoot Firmware erstellen und kompilieren
+
+Putty: 
+
 ```
 cd CanBoot
 make menuconfig
@@ -224,7 +227,7 @@ make menuconfig
 - und mit der Taste "Y" bestätigen
 
 
-Abschließend folgende Befehle ausführen:
+Putty:
 
 ```
 make clean
@@ -342,7 +345,7 @@ sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force
 
 # Step 4: Klipper Firmware erstellen
 
-In Putty folgendes ausführen:
+Putty:
 
 ```
 cd ~/klipper
