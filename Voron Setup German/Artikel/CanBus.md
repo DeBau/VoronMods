@@ -196,8 +196,6 @@ git clone https://github.com/Arksine/CanBoot
 ```
 cd CanBoot
 make menuconfig
-make clean
-make
 ```
 ###### :warning: Hier bitte aufpassen, welches EBB36/42 Board verwendet wird und folgende Einstellungen verweden
 
@@ -222,6 +220,14 @@ make
 
 - mit der Taset "Q" beenden 
 - und mit der Taste "Y" bestätigen
+
+
+Abschließend folgende Befehle ausführen:
+
+```
+make clean
+make
+```
 
 # Step 3: CanBoot Bootloader flashen
 
@@ -336,8 +342,6 @@ sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force
 ```
 cd ~/klipper
 make menuconfig
-make clean
-make
 ```
 
 ###### :warning: Hier bitte aufpassen, welches EBB36/42 Board verwendet wird und folgende Einstellungen verweden
@@ -363,6 +367,13 @@ make
  - mit der Taset "Q" beenden 
  - und mit der Taste "Y" bestätigen
 
+
+Abschließend folgede Befehle ausführen:
+
+```
+make clean
+make
+```
 
 # Step 5: can0 Schnittstelle auf dem Rpi konfigurieren
 ```
