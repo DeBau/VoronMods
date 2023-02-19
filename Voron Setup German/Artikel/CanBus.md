@@ -187,6 +187,8 @@ Aktuell eingesetzt werden von mir:
 
 # Step 1: CanBoot auf dem Rpi installieren
 
+In Putty folgende Befehle ausführen:
+
 ```
 sudo apt-get install git -y
 git clone https://github.com/Arksine/CanBoot
@@ -339,6 +341,9 @@ sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force
 
 
 # Step 4: Klipper Firmware erstellen
+
+In Putty folgendes ausführen:
+
 ```
 cd ~/klipper
 make menuconfig
