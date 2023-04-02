@@ -99,7 +99,7 @@ Um zu überprüfen ob ihr den DFU Modus aktiviert habt, gebt folgenden Befehl in
 dfu-util -l
 ```
 
-Es sollte: Found DFU: [Eure Devide ID] angezeigt werden
+Es sollte: Found DFU: [Eure Device ID] angezeigt werden
 
 Weiter gehts mit dem FW-Flash [Putty]:
 
