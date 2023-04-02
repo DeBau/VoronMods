@@ -77,36 +77,42 @@ DFU Modus aktivieren
 
 ### Möglichkeit 2: Mittels RPi und U2C im DFU Modus flashen
 
-von mir nicht gestetet!
-[Quelle](https://github.com/Arksine/CanBoot/issues/44#issuecomment-1384608269)
+[Firware](https://github.com/Arksine/CanBoot/files/10410265/G0B1_U2C_V2.zip)
 
-```
-sudo apt-get install cmake gcc-arm-none-eabi git
-cd ~
-rm -r candleLight_fw
-git clone https://github.com/bigtreetech/candleLight_fw
-cd candleLight_fw
-git checkout stm32g0_support
-mkdir build
-cd build
-cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/gcc-arm-none-eabi-8-2019-q3-update.cmake
-make budgetcan_fw
-```
-DFU Modus aktivieren
+- Firmware herunterladen und entpacken
+- die Datei G0B1_U2C_V2.bin in das Verzeichnis /home/pi/ auf dem RPi kopieren
+
+Die Datei G0B1_U2C_V2.bin bekommt ihr auf verschiedene Arten auf euren RPi kopiert
+- WinSCP
+- Cyberduck (MAC)
+- Windows Powershell über den Befehl: scp G0B1_U2C_V2.bi pi@IP-EURES-RPIs:/home/pi/
+
+DFU Modus vom BTT U2C aktivieren
 - Board spannungslos schalten / USB kabel entfernen
 - Boot Taster drücken und gedrückt halten
-- USB Verbindung mit dem RPi herstellen
+- USB Verbindung mit dem PC herstellen
 - Boot Taster loslassen
 
-
-Firmware flashen
+Um zu überprüfen ob ihr den DFU Modus aktiviert habt, gebt folgenden Befehl in Putty ein:
 
 ```
-make flash-budgetcan_fw
+dfu-util -l
+
 ```
+
+Es sollte: Found DFU: [Eure Devide ID] angezeigt werden
+
+Um die FW auf das Board zu flashen verwendet in Putty folgenden Befehl.
+
+```
+dfu-util -D ~/G0B1_U2C_V2.bin -a 0 -s 0x08000000:leave
+
+```
+
+error during download get-status könnt ihr ignorieren.
+
 - Board spannungslos schalten / USB kabel entfernen
 - USB Verbindung mit der RPi wieder herstellen
-
 
 ### Terminierung / Abschlusswiderstand beim BTT U2C
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/U2C_resistor.png" alt="resistor">
