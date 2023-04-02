@@ -77,12 +77,12 @@ DFU Modus aktivieren
 
 ### Möglichkeit 2: Mittels RPi und U2C im DFU Modus flashen
 
-[Firware](https://github.com/Arksine/CanBoot/files/10410265/G0B1_U2C_V2.zip)
+[Firmware](https://github.com/Arksine/CanBoot/files/10410265/G0B1_U2C_V2.zip)
 
 - Firmware herunterladen und entpacken
 - die Datei G0B1_U2C_V2.bin in das Verzeichnis /home/pi/ auf dem RPi kopieren
 
-Die Datei G0B1_U2C_V2.bin bekommt ihr auf verschiedene Arten auf euren RPi kopiert
+Dies könnt ihr auf verschiedene Arten machen, u.a:
 - WinSCP
 - Cyberduck (MAC)
 - Windows Powershell über den Befehl: scp G0B1_U2C_V2.bi pi@IP-EURES-RPIs:/home/pi/
@@ -97,16 +97,14 @@ Um zu überprüfen ob ihr den DFU Modus aktiviert habt, gebt folgenden Befehl in
 
 ```
 dfu-util -l
-
 ```
 
 Es sollte: Found DFU: [Eure Devide ID] angezeigt werden
 
-Um die FW auf das Board zu flashen verwendet in Putty folgenden Befehl.
+Weiter gehts mit dem FW-Flash [Putty]:
 
 ```
 dfu-util -D ~/G0B1_U2C_V2.bin -a 0 -s 0x08000000:leave
-
 ```
 
 error during download get-status könnt ihr ignorieren.
