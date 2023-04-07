@@ -21,7 +21,7 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 <details>
     <summary>
         <b>       
-### Vorbereitungen
+Vorbereitungen
         </b>
     </summary>
 <p>
