@@ -31,7 +31,8 @@ sudo apt install python3 python3-pip python3-can
 pip3 install pyserial
 ```
 
- 
+
+## Halter / Mounts / Printheads  
 </details>
 
 <br>
@@ -39,7 +40,7 @@ pip3 install pyserial
 <details>
     <summary>
         <b>       
-         ## Halter / Mounts / Printheads 
+        Mounts / Printheads 
         </b>
     </summary>
 <p>
