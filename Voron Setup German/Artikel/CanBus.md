@@ -32,8 +32,19 @@ pip3 install pyserial
 ```
 
  
+</details>
+
+<br>
+
+<details>
+    <summary>
+        <b>       
+         ## Halter / Mounts / Printheads 
+        </b>
+    </summary>
+<p>
+</p>
  
-## Halter / Mounts / Printheads
 
 Eine kleine Auswahl an Mounts habe ich hier zusammengestellt.
 
@@ -55,6 +66,12 @@ eine breite Auswahl an Mounts only für zu ziemlich alle Extruder
 BTT U2C Din Rail Mount
 
 #### [U2C Din Rail Mount](https://www.printables.com/de/model/266737-bigtreetecg-canbus-u2c-board-clip-mount-voron-24/files)
+
+</details>
+
+<br> 
+ 
+ 
  
 ## U2C Firmware / Terminierung
 Die U2C Boards werden bereits mit einer passenden Firmware ausgeliefert.
