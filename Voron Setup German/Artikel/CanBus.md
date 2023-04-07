@@ -163,7 +163,9 @@ Es geht auch ohne die Widerstände am U2C, aber schaut man sich mal folgende Gra
 </p>
  
  
- 
+ </details>
+
+<br> 
  
  
 ## Elektrischer Anschluss
