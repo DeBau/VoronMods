@@ -14,7 +14,19 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 
 ###### Es sind aber auch andere Hardware-Konstellationen (Fysetc Spider, Fly UTOC-1 / UTOC-3 möglich)
  
- ## Vorbereitungen
+##:warning:Vorbereitungen
+ 
+<br>
+
+<details>
+    <summary>
+        <b>       
+         
+        </b>
+    </summary>
+<p>
+</p>
+ 
 #### Flasht euer Board ganz normal wie in der Voron Anleitung angegeben und bindet es als MCU mit der Serial in die printer.cfg ein
 - [Voron Design](https://docs.vorondesign.com/build/software/#firmware-flashing)
 #### STM32CubeProgrammer herunterladen und installieren
@@ -22,7 +34,7 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 #### FTP Programm herunterladen und installieren (ich nutze WinSCP)
 - [WinSCP](https://winscp.net/eng/download.php)
 
-#### System aktualisieren
+#### :warning: System aktualisieren
 System updaten und Python installieren
 ```
 sudo apt update
@@ -30,13 +42,13 @@ sudo apt upgrade
 sudo apt install python3 python3-pip python3-can
 pip3 install pyserial
 ```
-
+</details>
+<br> 
 
 ## Halter / Mounts / Printheads  
 </details>
 
 <br>
-
 <details>
     <summary>
         <b>       
@@ -64,14 +76,12 @@ BTT U2C Din Rail Mount
 #### [U2C Din Rail Mount](https://www.printables.com/de/model/266737-bigtreetecg-canbus-u2c-board-clip-mount-voron-24/files)
 
 </details>
-
 <br> 
 
  
 ## U2C Firmware / Terminierung
  
 <br>
-
 <details>
     <summary>
         <b>       
@@ -88,7 +98,7 @@ Die U2C Boards werden bereits mit einer passenden Firmware ausgeliefert.
 Für die BTT Boards findet ihr die original Firmware hier: [BTT U2C Firmware](https://github.com/bigtreetech/U2C/tree/master/firmware)
 
 
-### Möglichkeit 1: Firmware herunterladen und mittels STM32CubeProgrammer flashen
+### Firmware herunterladen und mittels STM32CubeProgrammer flashen
 
 #### Der Flashvorgang mittels STM32CubeProgrammer ist analog zum CanBoot Flash, das Vorgehen ist unter Step 3 beschrieben.
 
@@ -98,8 +108,15 @@ DFU Modus aktivieren
 - USB Verbindung mit dem PC herstellen
 - Boot Taster loslassen
 
-
-### Möglichkeit 2: Mittels RPi und U2C im DFU Modus flashen
+<br>
+<details>
+    <summary>
+        <b>       
+        Alternative: Mittels RPi und U2C im DFU Modus flashen
+        </b>
+    </summary>
+<p>
+</p>
 
 [Firmware](https://github.com/Arksine/CanBoot/files/10410265/G0B1_U2C_V2.zip)
 
@@ -135,6 +152,9 @@ error during download get-status könnt ihr ignorieren.
 
 - Board spannungslos schalten / USB kabel entfernen
 - USB Verbindung mit der RPi wieder herstellen
+ 
+</details>
+<br> 
 
 ### Terminierung / Abschlusswiderstand beim BTT U2C
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/U2C_resistor.png" alt="resistor">
@@ -148,11 +168,9 @@ Es geht auch ohne die Widerstände am U2C, aber schaut man sich mal folgende Gra
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/U2c_pinout.png" alt="resistor">
 
 </details>
-
 <br> 
 
 <br>
-
 <details>
     <summary>
         <b>       
@@ -164,7 +182,6 @@ Es geht auch ohne die Widerstände am U2C, aber schaut man sich mal folgende Gra
  
  
  </details>
-
 <br> 
  
  
