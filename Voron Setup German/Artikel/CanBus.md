@@ -14,14 +14,14 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 
 ###### Es sind aber auch andere Hardware-Konstellationen (Fysetc Spider, Fly UTOC-1 / UTOC-3 möglich)
  
-##:warning:Vorbereitungen
+## :warning: Vorbereitungen
  
 <br>
 
 <details>
     <summary>
         <b>       
-         
+### Vorbereitungen
         </b>
     </summary>
 <p>
