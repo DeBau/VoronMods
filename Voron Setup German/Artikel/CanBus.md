@@ -40,17 +40,12 @@ pip3 install pyserial
 <details>
     <summary>
         <b>       
-        Mounts / Printheads 
+        Eine kleine Auswahl an Mounts habe ich hier zusammengestellt
         </b>
     </summary>
 <p>
 </p>
  
-
-Eine kleine Auswahl an Mounts habe ich hier zusammengestellt.
-
-Für den CW2 und LGX Lite Extruder
-
 #### [Voron CB-C2 Mod](https://github.com/kejar31/VoronMods/tree/main/CB-C2?fbclid=IwAR2v2ZASvFZWxVNpFTgP3a7tUxhCuuK9y-F1k_sPwuQ7Z6dU4PnJrTDBL1Y)
 
 VZ HextrudORT Mod für den CB-C2
