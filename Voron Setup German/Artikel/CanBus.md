@@ -66,10 +66,21 @@ BTT U2C Din Rail Mount
 </details>
 
 <br> 
- 
- 
+
  
 ## U2C Firmware / Terminierung
+ 
+<br>
+
+<details>
+    <summary>
+        <b>       
+        BTT U2C 
+        </b>
+    </summary>
+<p>
+</p>
+ 
 Die U2C Boards werden bereits mit einer passenden Firmware ausgeliefert.
 
 #### :warning: BTT u2c v2.1 - BTT Firmware Fix beachten und unbedingt flashen
@@ -136,7 +147,25 @@ Es geht auch ohne die Widerstände am U2C, aber schaut man sich mal folgende Gra
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/U2c_pinout.png" alt="resistor">
 
+</details>
 
+<br> 
+
+<br>
+
+<details>
+    <summary>
+        <b>       
+        Fly SHT UTOC 1-3 
+        </b>
+    </summary>
+<p>
+</p>
+ 
+ 
+ 
+ 
+ 
 ## Elektrischer Anschluss
 Hier gibt es diverse Möglichkeiten. 
 Bewährt haben sich bei mir folgende:
