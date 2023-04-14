@@ -87,7 +87,8 @@ BTT U2C Din Rail Mount
     </summary>
 <p>
 </p>
-  [Voron Can Bus z-chain move](https://www.printables.com/de/model/279739-voron-can-bus-z-chain-move)
+#### [Voron Can Bus z-chain move](https://www.printables.com/de/model/279739-voron-can-bus-z-chain-move)
+
  </details>
 <br> 
  
