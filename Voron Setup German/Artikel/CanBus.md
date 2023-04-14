@@ -88,9 +88,11 @@ BTT U2C Din Rail Mount
 <p>
 </p>
  
- #### [Voron Can Bus z-chain move](https://www.printables.com/de/model/279739-voron-can-bus-z-chain-move)
+Z-Chain CanBus Mod
+ 
+#### [Voron Can Bus z-chain move](https://www.printables.com/de/model/279739-voron-can-bus-z-chain-move)
 
-#### [Voron CB-C2 Mod VZ HextrudORT](https://www.printables.com/de/model/369577-vz-hextrudort-for-stealthburner)
+
  
  </details>
 <br> 
