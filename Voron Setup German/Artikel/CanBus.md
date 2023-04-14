@@ -78,6 +78,19 @@ BTT U2C Din Rail Mount
 </details>
 <br> 
 
+<br>
+<details>
+    <summary>
+        <b>       
+        Voron V2 Z-Kette CanBus Mod
+        </b>
+    </summary>
+<p>
+</p>
+[Voron Can Bus z-chain move ](https://www.printables.com/de/model/279739-voron-can-bus-z-chain-move)
+ </details>
+<br> 
+ 
  
 ## U2C Firmware / Terminierung
  
