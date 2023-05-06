@@ -656,11 +656,12 @@ rtd_use_50Hz_filter: True
     </summary>
 <p>
 </p>
-
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/Rapido_Plus_EBB.png" alt="Rapiode_EBB">
+ 
 - PT1000 am Port TH0 anschließen. Die Polung ist hierbei nicht entscheidend.
 - Jumper setzen
 - Extruder Sektion entsprechend anpassen
- 
+
 ```
 sensor_type: PT1000
 sensor_pin: EBBCan: PA3
