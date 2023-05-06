@@ -222,7 +222,7 @@ Beachtet, auch wenn es nur ein 3D Drucker ist, die ersten 3 Regeln der 5 Sicherh
 ###### :warning: Aufgrund der Übersicht, wurde die 24V Verdrahtung vom Octopus nicht dargestellt. Diese ist nach der Voron Anleitung durchzuführen
 
 #### without 24V passthrough
-<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/CanBus01.png" alt="Can01">
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/CanBus001.png" alt="Can01">
 
 
 #### 24V passthrough
