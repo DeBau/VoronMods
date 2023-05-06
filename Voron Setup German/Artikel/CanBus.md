@@ -222,11 +222,11 @@ Beachtet, auch wenn es nur ein 3D Drucker ist, die ersten 3 Regeln der 5 Sicherh
 ###### :warning: Aufgrund der Übersicht, wurde die 24V Verdrahtung vom Octopus nicht dargestellt. Diese ist nach der Voron Anleitung durchzuführen
 
 #### without 24V passthrough
-<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/CanSetup_01.png" alt="pinout">
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/CanBus01.png" alt="Can01">
 
 
 #### 24V passthrough
-<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/CanSetup_02.png" alt="pinout">
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/CanSetup_02.png" alt="Can02">
 
 ## :warning: Steckerbelegung
 
@@ -324,7 +324,16 @@ make
 
 ### :warning: Für diesen Schritt benötigen wir nur den USB Anschluss. Entfernt, falls bereits angeschlossen, den Molex Stecker mit der 24V Versorgung vom EBB
 
-## Möglichkeit 1: CanBoot mittels STM32CubeProgrammer flashen
+<br>
+<details>
+    <summary>
+        <b>       
+        Möglichkeit 1: CanBoot mittels STM32CubeProgrammer flashen
+        </b>
+    </summary>
+<p>
+</p>
+
 
 ### canboot.bin Datei auf den Rechner kopieren
 
@@ -380,9 +389,20 @@ Navigiert zum Ordner ```/home/pi/CanBoot/out``` und zieht die Datei ```canboot.b
 
 ### Molexstecker wieder anschließen und das Board mit 24V versorgen
 
+</details>
+<br> 
+
+<br>
+<details>
+    <summary>
+        <b>       
+        Möglichkeit 2: im DFU Modus mittels Rpi flashen
+        </b>
+    </summary>
+<p>
+</p>
 
 
-## Möglichkeit 2: im DFU Modus mittels Rpi flashen
 
 ### 5V Jumper setzen
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB_DFU.png" alt="G0B1">
@@ -426,6 +446,8 @@ sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force
 
 ### Molexstecker wieder anschließen und das Board mit 24V versorgen
 
+</details>
+<br>
 
 # Step 4: Klipper Firmware erstellen
 
