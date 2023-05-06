@@ -593,48 +593,39 @@ Folgende Punkte müsst ihr in eurer printer.cfg anpassen
 <details>
     <summary>
         <b>       
-        Pinout BTT EBB36 v1.0
+        Pinout BTT EBB36 v1.0 (Bitte aufklappen)
         </b>
     </summary>
 <p>
 </p>
- 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB36%20CAN%20V1.0-PIN.png" alt="pinout-v1">
-
  </details>
 <br>
- 
 <br>
 <details>
     <summary>
         <b>       
-        Pinout BTT EBB36 v1.1 / v1.2
+        Pinout BTT EBB36 v1.1 / v1.2 (Bitte aufklappen)
         </b>
     </summary>
 <p>
 </p>
-
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB36%20CAN%20V1.1%26V1.2-PIN.png" alt="pinout-v1.1-v1.2">
-
-Pinouts der EBB42 Versionen findet ihr hier: - [BTT EBB36/42 Github](https://github.com/bigtreetech/EBB)
-
 </details>
 <br>
-
+Pinouts der EBB42 Versionen findet ihr hier: - [BTT EBB36/42 Github](https://github.com/bigtreetech/EBB)
 ### Rapido Plus HF/UHF Anschluss und Konfiguration
- 
 <br>
 <details>
     <summary>
         <b>       
-        Rapido Plus HF/UHF Anschluss 
+        Rapido Plus HF/UHF Anschluss (Bitte aufklappen)
         </b>
     </summary>
 <p>
 </p>
-
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/Rapido_Plus_EBB_Max.png" alt="Rapiode_EBBMax">
- 
+
  </details>
 <br>
  
