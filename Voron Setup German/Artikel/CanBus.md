@@ -218,15 +218,36 @@ Beachtet, auch wenn es nur ein 3D Drucker ist, die ersten 3 Regeln der 5 Sicherh
     - Gegen Wiedereinschalten sichern
     - Spannungsfreiheit feststellen
 
-    
+<br>
+<details>
+    <summary>
+        <b>       
+        without 24V passthrough
+        </b>
+    </summary>
+<p>
+</p>
+ 
 ###### :warning: Aufgrund der Übersicht, wurde die 24V Verdrahtung vom Octopus nicht dargestellt. Diese ist nach der Voron Anleitung durchzuführen
-
-#### without 24V passthrough
+ 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/CanBus001.png" alt="Can01">
+ </details>
+<br>
 
-
-#### 24V passthrough
+<br>
+<details>
+    <summary>
+        <b>       
+        24V passthrough
+        </b>
+    </summary>
+ 
+ ###### :warning: Aufgrund der Übersicht, wurde die 24V Verdrahtung vom Octopus nicht dargestellt. Diese ist nach der Voron Anleitung durchzuführen
+ 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/CanSetup_02.png" alt="Can02">
+ 
+ </details>
+<br>
 
 ## :warning: Steckerbelegung
 
