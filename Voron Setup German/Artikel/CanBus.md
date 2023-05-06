@@ -615,7 +615,7 @@ Folgende Punkte müsst ihr in eurer printer.cfg anpassen
  
 Pinouts der EBB42 Versionen findet ihr hier: - [BTT EBB36/42 Github](https://github.com/bigtreetech/EBB)
  
-### Rapido Plus HF/UHF Anschluss und Konfiguration
+## Rapido Plus HF/UHF Anschluss und Konfiguration
 <br>
 <details>
     <summary>
@@ -648,7 +648,7 @@ rtd_use_50Hz_filter: True
 ## Bespiel für die Anpassung der Pins mit der neuen mcu EBB
 ###### alle anderen Einstellungen bleiben bestehen
 
-## [Beispiel printer.cfg](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/v2_CANbus_printer_cfg.md)
+### [Beispiel printer.cfg (klick)](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/v2_CANbus_printer_cfg.md)
 ```
 Übersicht der anzupassenden Pins
 
