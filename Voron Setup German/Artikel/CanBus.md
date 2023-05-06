@@ -666,6 +666,7 @@ rtd_use_50Hz_filter: True
 [extruder]
 sensor_type: PT1000
 sensor_pin: EBBCan: PA3
+pullup_resistor: 2200
 ```
   </details>
 <br>
