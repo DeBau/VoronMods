@@ -21,7 +21,7 @@ Wenn ihr mir einen Kaffee ausgeben wollt:
 <details>
     <summary>
         <b>       
-Vorbereitungen
+Vorbereitungen (Bitte aufklappen)
         </b>
     </summary>
 <p>
@@ -52,7 +52,7 @@ pip3 install pyserial
 <details>
     <summary>
         <b>       
-        Eine kleine Auswahl an Mounts habe ich hier zusammengestellt
+        Eine kleine Auswahl an Mounts habe ich hier zusammengestellt (Bitte aufklappen)
         </b>
     </summary>
 <p>
@@ -82,7 +82,7 @@ BTT U2C Din Rail Mount
 <details>
     <summary>
         <b>       
-        Voron V2 Z-Kette CanBus Mod
+        Voron V2 Z-Kette CanBus Mod (Bitte aufklappen)
         </b>
     </summary>
 <p>
@@ -104,7 +104,7 @@ Z-Chain CanBus Mod
 <details>
     <summary>
         <b>       
-        BTT U2C 
+        BTT U2C (Bitte aufklappen)
         </b>
     </summary>
 <p>
@@ -131,7 +131,7 @@ DFU Modus aktivieren
 <details>
     <summary>
         <b>       
-        Alternative: Mittels RPi und U2C im DFU Modus flashen
+        Alternative: Mittels RPi und U2C im DFU Modus flashen (Bitte aufklappen)
         </b>
     </summary>
 <p>
@@ -193,13 +193,12 @@ Es geht auch ohne die Widerstände am U2C, aber schaut man sich mal folgende Gra
 <details>
     <summary>
         <b>       
-        Fly SHT UTOC 1-3 
+        Fly SHT UTOC 1-3 (Bitte aufklappen)
         </b>
     </summary>
 <p>
 </p>
- 
- 
+ folgt! 
  </details>
 <br> 
  
@@ -222,7 +221,7 @@ Beachtet, auch wenn es nur ein 3D Drucker ist, die ersten 3 Regeln der 5 Sicherh
 <details>
     <summary>
         <b>       
-        without 24V passthrough
+        without 24V passthrough (Bitte aufklappen)
         </b>
     </summary>
 <p>
@@ -238,7 +237,7 @@ Beachtet, auch wenn es nur ein 3D Drucker ist, die ersten 3 Regeln der 5 Sicherh
 <details>
     <summary>
         <b>       
-        24V passthrough
+        24V passthrough (Bitte aufklappen)
         </b>
     </summary>
  
@@ -349,7 +348,7 @@ make
 <details>
     <summary>
         <b>       
-        Möglichkeit 1: CanBoot mittels STM32CubeProgrammer flashen
+        Möglichkeit 1: CanBoot mittels STM32CubeProgrammer flashen (Bitte aufklappen)
         </b>
     </summary>
 <p>
@@ -417,7 +416,7 @@ Navigiert zum Ordner ```/home/pi/CanBoot/out``` und zieht die Datei ```canboot.b
 <details>
     <summary>
         <b>       
-        Möglichkeit 2: im DFU Modus mittels Rpi flashen
+        Möglichkeit 2: im DFU Modus mittels Rpi flashen (Bitte aufklappen)
         </b>
     </summary>
 <p>
@@ -613,7 +612,9 @@ Folgende Punkte müsst ihr in eurer printer.cfg anpassen
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB36%20CAN%20V1.1%26V1.2-PIN.png" alt="pinout-v1.1-v1.2">
 </details>
 <br>
+ 
 Pinouts der EBB42 Versionen findet ihr hier: - [BTT EBB36/42 Github](https://github.com/bigtreetech/EBB)
+ 
 ### Rapido Plus HF/UHF Anschluss und Konfiguration
 <br>
 <details>
