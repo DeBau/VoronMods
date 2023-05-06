@@ -578,7 +578,26 @@ Folgende Punkte müsst ihr in eurer printer.cfg anpassen
 
 Pinouts der EBB42 Versionen findet ihr hier: - [BTT EBB36/42 Github](https://github.com/bigtreetech/EBB)
 
-
+ 
+### Rapido Plus HF/UHF Anschluss und Konfiguration
+ 
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/Rapido_Plus_EBB_Max.png" alt="Rapiode_EBBMax">
+ 
+- PT1000 am Port P3 Pin 2/3 anschließen. Die Polung ist hierbei nicht entscheidend.
+- Jumper entsprechend setzen
+- Extruder Sektion entsprechend anpassen
+ 
+```
+[extruder]
+sensor_type:MAX31865
+sensor_pin: EBB:PA4
+spi_bus: spi1
+rtd_nominal_r: 1000
+rtd_reference_r: 4300
+rtd_num_of_wires: 2
+rtd_use_50Hz_filter: True
+```
+ 
 ## Bespiel für die Anpassung der Pins mit der neuen mcu EBB
 ###### alle anderen Einstellungen bleiben bestehen
 
