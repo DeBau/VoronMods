@@ -589,20 +589,54 @@ Folgende Punkte müsst ihr in eurer printer.cfg anpassen
 - (Optional) Pin Belegung vom adxl345 Sensor  
 - (Optional) Pin Belegung X Endschalter, wenn der X Endschalter am Druckkopf montiert wurde
 
-### Pinout BTT EBB36 v1.0
-
+<br>
+<details>
+    <summary>
+        <b>       
+        Pinout BTT EBB36 v1.0
+        </b>
+    </summary>
+<p>
+</p>
+ 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB36%20CAN%20V1.0-PIN.png" alt="pinout-v1">
 
-### Pinout BTT EBB36 v1.1 / v1.2
+ </details>
+<br>
+ 
+<br>
+<details>
+    <summary>
+        <b>       
+        Pinout BTT EBB36 v1.1 / v1.2
+        </b>
+    </summary>
+<p>
+</p>
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB36%20CAN%20V1.1%26V1.2-PIN.png" alt="pinout-v1.1-v1.2">
 
 Pinouts der EBB42 Versionen findet ihr hier: - [BTT EBB36/42 Github](https://github.com/bigtreetech/EBB)
 
- 
+</details>
+<br>
+
 ### Rapido Plus HF/UHF Anschluss und Konfiguration
  
+<br>
+<details>
+    <summary>
+        <b>       
+        Rapido Plus HF/UHF Anschluss 
+        </b>
+    </summary>
+<p>
+</p>
+
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/Rapido_Plus_EBB_Max.png" alt="Rapiode_EBBMax">
+ 
+ </details>
+<br>
  
 - PT1000 am Port P3 Pin 2/3 anschließen. Die Polung ist hierbei nicht entscheidend.
 - Jumper entsprechend setzen
