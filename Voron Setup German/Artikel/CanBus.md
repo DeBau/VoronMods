@@ -663,6 +663,7 @@ rtd_use_50Hz_filter: True
 - Extruder Sektion entsprechend anpassen
 
 ```
+[extruder]
 sensor_type: PT1000
 sensor_pin: EBBCan: PA3
 ```
