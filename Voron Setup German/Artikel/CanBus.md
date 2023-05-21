@@ -266,13 +266,33 @@ Beachtet, auch wenn es nur ein 3D Drucker ist, die ersten 3 Regeln der 5 Sicherh
  </details>
 <br>
 
-## :warning: Steckerbelegung
+<br>
+<details>
+    <summary>
+        <b>       
+        :warning: Steckerbelegung (Bitte aufklappen)
+        </b>
+    </summary>
+<p>
+</p>
 
 Bitte prüft auf der Rückseite der EBB und U2C Board`s die korrekte Steckerbelegung.
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB_u2c_wiring.jpg" alt="wiring">
 
-## CANBus Leitungen
+ </details>
+<br>
+
+<br>
+<details>
+    <summary>
+        <b>       
+        CANBus Leitungen (Bitte aufklappen)
+        </b>
+    </summary>
+<p>
+</p>
+ 
 
 den richtigen Typ habe ich für den Anwendungsfall noch nicht wirklich gefunden. Falls jemand eine gute Quelle hat, schreibt mich bitte via Discord an: deba#0887
 
@@ -290,10 +310,13 @@ Bei der Auswahl sollte man sich an folgenden Punkten orientieren:
 
 Aktuell eingesetzt werden von mir:
 
-- UNITRONIC BUS CAN A 2 x 2 x 0,75 mm²
 - Ölflex Classic 810 4x0.75mm² / 4x1mm²
 - Twisted Pair (YSTY) als Datenleitung + Einzeladern 0,75mm²-1mm² für die Spannungsversorgung
-
+ </details>
+ 
+<br>
+                      
+                      
 # :warning: Der Reihe nach folgende Schritte ausführen
 * [CanBoot auf dem Rpi installieren](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#canboot-auf-dem-rpi-installieren)
 * [CanBoot Firmware erstellen und compilieren](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#canboot-firmware-erstellen-und-compilieren)
