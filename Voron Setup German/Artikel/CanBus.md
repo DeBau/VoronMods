@@ -683,11 +683,12 @@ pullup_resistor: 2200
 </p>
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB36_E0.png" alt="EBB36_E0"> 
  
- Die Farben Rot/Grün und Gelb/Blau dürfen untereinander getauscht werden
+ Die Farben Rot/Grün und Gelb/Blau dürfen untereinander getauscht werden.
+ 
  Sollte der Extruder falsch herum drehen muss in printer.cfg, Sektion [extruder] der DIR Pin negiert werden
  
  ```
-Bespiel:
+Bespiel
 aus:
  
 [extruder]
