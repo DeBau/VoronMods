@@ -615,7 +615,7 @@ Folgende Punkte müsst ihr in eurer printer.cfg anpassen
  
 Pinouts der EBB42 Versionen findet ihr hier: - [BTT EBB36/42 Github](https://github.com/bigtreetech/EBB)
  
-## Rapido Plus HF/UHF Anschluss und Konfiguration 
+# Rapido Plus HF/UHF Anschluss und Konfiguration 
  
 
  
@@ -671,7 +671,7 @@ pullup_resistor: 2200
   </details>
 <br>
  
- ## Anschluss Extruder Motor LDO 36STH20-1004AHG(XH)
+# Anschluss Extruder Motor LDO 36STH20-1004AHG(XH)
 <br>
 <details>
     <summary>
