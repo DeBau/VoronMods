@@ -36,12 +36,30 @@ Vorbereitungen (Bitte aufklappen)
 
 #### :warning: System aktualisieren
 System updaten und Python installieren
+ 
 ```
 sudo apt update
 sudo apt upgrade
 sudo apt install python3 python3-pip python3-can
 pip3 install pyserial
 ```
+ 
+:warning: Beachtet den Hinweis im Voron Discord:
+ 
+There is a recently introduced bug in Debian, MainsailOS, and piOS which breaks all klipper USB printers.  
+As a result, we strongly recommend not updating "System" until the bug is resolved
+
+Lasst vorerst die beiden Befehle ```sudo apt update``` und ```sudo apt upgrade``` aus.
+
+Falls es bereits zu spät ist, wendet folgenden FIX an (In Putty eingeben)
+ 
+```
+sudo cp /usr/lib/udev/rules.d/60-serial.rules /usr/lib/udev/rules.d/60-serial.old
+```
+```
+sudo wget -O /usr/lib/udev/rules.d/60-serial.rules https://raw.githubusercontent.com/systemd/systemd/main/rules.d/60-serial.rules
+```
+ 
 </details>
 <br> 
 
