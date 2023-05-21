@@ -692,12 +692,12 @@ Bespiel
 aus:
  
 [extruder]
-dir_pin: PE3
+dir_pin: !EBB:PD1
 
 wird folgendes:
  
 [extruder]
-dir_pin: !PE3
+dir_pin: EBB:PD1
 ```
    </details>
 <br>
