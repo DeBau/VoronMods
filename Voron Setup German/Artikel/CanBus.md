@@ -59,6 +59,9 @@ sudo cp /usr/lib/udev/rules.d/60-serial.rules /usr/lib/udev/rules.d/60-serial.ol
 ```
 sudo wget -O /usr/lib/udev/rules.d/60-serial.rules https://raw.githubusercontent.com/systemd/systemd/main/rules.d/60-serial.rules
 ```
+```
+sudo reboot
+```
  
 </details>
 <br> 
