@@ -671,6 +671,36 @@ pullup_resistor: 2200
   </details>
 <br>
  
+ ## Anschluss Extruder Motor LDO 36STH20-1004AHG(XH)
+<br>
+<details>
+    <summary>
+        <b>       
+        EBB36 v1.1/v1.2 mit LDO 36STH20-1004AHG(XH) (Bitte aufklappen)
+        </b>
+    </summary>
+<p>
+</p>
+<img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/EBB36_E0.png" alt="EBB36_E0"> 
+ 
+ Die Farben Rot/Grün und Gelb/Blau dürfen untereinander getauscht werden
+ Sollte der Extruder falsch herum drehen muss in printer.cfg, Sektion [extruder] der DIR Pin negiert werden
+ 
+ ```
+Bespiel:
+aus:
+ 
+[extruder]
+dir_pin: PE3
+
+wird folgendes:
+ 
+[extruder]
+dir_pin: !PE3
+```
+   </details>
+<br>
+ 
  
 ## Bespiel für die Anpassung der Pins mit der neuen mcu EBB
 ###### alle anderen Einstellungen bleiben bestehen
