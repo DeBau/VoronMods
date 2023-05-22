@@ -546,7 +546,7 @@ make menuconfig
  - und mit der Taste "Y" bestätigen
 
 
-Abschließend folgede Befehle ausführen:
+Abschließend folgende Befehle ausführen:
 
 ```
 make clean
@@ -567,7 +567,7 @@ iface can0 can static
  pre-up ip link set can0 type can bitrate 500000
  pre-up ip link set can0 txqueuelen 256
 ```
-##### mit STRG+X beenden und mit Y + Enter bestätigen
+##### mit STRG+X beenden und mit Y und Enter bestätigen
 
 
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/can0.png" alt="can0">
@@ -729,7 +729,7 @@ pullup_resistor: 2200
  
  Die Farben Rot/Grün und Gelb/Blau dürfen untereinander getauscht werden.
  
- Sollte der Extruder falsch herum drehen muss in printer.cfg, Sektion [extruder] der DIR Pin negiert werden
+ Sollte der Extruder falsch herum drehen muss in der printer.cfg --> Sektion [extruder] der DIR Pin negiert werden
  
  ```
 Bespiel
