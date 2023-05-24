@@ -598,6 +598,11 @@ python3 flash_can.py -i can0 -q
 
 Notiert euch die angezeigte UUID, diese wird im nächste Step benötigt.
 
+:warning: Was mache ich, wenn mit die UUID nicht angezeigt wird? 
+
+Überprüft folgende Punkte: [Fehlersuche](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#fehlersuche)
+ 
+ 
 
 # Step 7: EBB Klipper Firmware flashen
 
