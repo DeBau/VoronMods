@@ -807,6 +807,45 @@ in der printer.cfg folgenden Zeile hinzufügen:
 [include stealthburner_leds.cfg]
 ```
 
+ # Fehlersuche
+ 
+ <br>
+<details>
+    <summary>
+        <b>       
+        Häufige Fehler bei der Einrichtung (Bitte aufklappen)
+        </b>
+    </summary>
+<p>
+</p>
+ 
+#### Unterschiedliche Baudraten 
+ 
+Achtet bitte darauf überall 500000 einzustellen
+Mischen der Baudraten ist hier nicht möglich
+Es gibt Anleitungen die mit 250000 arbeiten. Wenn ihr dies auch wollt, stellt bitte auch überall 250000 ein
+
+#### EBB36 v1.1/v1.2 Communication interfaces 
+ 
+achtet bitte genau auf die Pins des Communication interfaces 
+(Can bus (on PB0/PB1)) muss eingestellt werden
+(Can bus (on PD0/PD1)) gibt es auch, wird aber so nicht funktionieren
+ 
+#### Can High/Low Leitungen vertauscht
+ 
+Vergewissert euch, dass die Leitungen korrekt angeschlossen sind
+
+#### Schlecht gecrimpte Leitungen 
+ 
+Bei sporadischen Ausfällen wärend der Druckbewegung, kann es am Stecker, bzw. an der Crimps der
+CanBus Leitung liegen. 
+Überprüft diese auf festen Sitz und ordentlichen Kontakt
+ 
+ 
+   </details>
+<br>
+ 
+ 
 ### Quellen und Nachschlagewerke: 
 - [Arkshine Canboot](https://github.com/Arksine/CanBoot)
 - [Klipper CANBus](https://www.klipper3d.org/CANBUS.html)
