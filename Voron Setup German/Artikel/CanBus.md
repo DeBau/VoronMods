@@ -841,7 +841,7 @@ Vergewissert euch, dass die Leitungen korrekt angeschlossen sind.
  
 #### Schlecht gecrimpte Leitungen 
  
-Bei sporadischen Ausfällen wärend der Druckbewegung, kann es am Stecker, bzw. an der Crimps der
+Bei sporadischen Ausfällen während der Druckbewegung, kann es am Stecker, bzw. an der Crimps der
 CanBus Leitung liegen. 
 Überprüft diese auf festen Sitz und ordentlichen Kontakt
  
