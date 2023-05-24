@@ -845,7 +845,7 @@ Achtet bitte genau auf die Pins des Communication interfaces.
 Vergewissert euch, dass die Leitungen korrekt angeschlossen sind.
  
 #### BTT U2C V2
-Probiert den Firmware Fix zu flashen: [BTT U2C FW Fix](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#warning-btt-u2c-v21---btt-firmware-fix-beachten-und-unbedingt-flashen)
+Probiert den Firmware Fix zu flashen: [BTT U2C FW Fix](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#u2c-firmware--terminierung)
 
  
 ### Verbindung bricht während des Drucken ab
