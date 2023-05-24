@@ -819,6 +819,8 @@ in der printer.cfg folgenden Zeile hinzufügen:
 <p>
 </p>
  
+### UUID kann nicht ausgelesen werden
+ 
 #### Unterschiedliche Baudraten 
  
 Achtet bitte darauf überall 500000 einzustellen.
@@ -835,6 +837,8 @@ Achtet bitte genau auf die Pins des Communication interfaces.
  
 Vergewissert euch, dass die Leitungen korrekt angeschlossen sind.
 
+### Verbindung bricht während des Drucken ab
+ 
 #### Schlecht gecrimpte Leitungen 
  
 Bei sporadischen Ausfällen wärend der Druckbewegung, kann es am Stecker, bzw. an der Crimps der
