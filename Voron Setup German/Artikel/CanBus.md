@@ -101,15 +101,21 @@ Z-Chain CanBus Mod
     </summary>
 <p>
 </p>
- 
-Die U2C Boards werden bereits mit einer passenden Firmware ausgeliefert.
 
+
+<br>
+<details>
+    <summary>
+        <b>       
+        Variante 1: Flashvorgang mittels STM32CubeProgrammer  (Bitte aufklappen)
+        </b>
+    </summary>
+<p>
+</p>
+ 
 #### :warning: BTT u2c v2.1 - BTT Firmware Fix beachten und unbedingt flashen
 
 Für die BTT Boards findet ihr die original Firmware hier: [BTT U2C Firmware](https://github.com/bigtreetech/U2C/tree/master/firmware)
-
-
-### Firmware herunterladen und mittels STM32CubeProgrammer flashen
 
 #### Der Flashvorgang mittels STM32CubeProgrammer ist analog zum CanBoot Flash, das Vorgehen ist unter Step 3 beschrieben.
 
@@ -119,11 +125,14 @@ DFU Modus aktivieren
 - USB Verbindung mit dem PC herstellen
 - Boot Taster loslassen
 
+ </details>
+<br>
+ 
 <br>
 <details>
     <summary>
         <b>       
-        Alternative: Mittels RPi und U2C im DFU Modus flashen (Bitte aufklappen)
+        Variante 2: Mittels RPi und U2C im DFU Modus flashen (Bitte aufklappen)
         </b>
     </summary>
 <p>
