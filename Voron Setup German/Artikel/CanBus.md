@@ -354,6 +354,10 @@ git clone https://github.com/Arksine/CanBoot
 </details>
 <br>
  
+
+ 
+# Step 2: CanBoot Firmware erstellen und kompilieren
+
 <br>
 <details>
     <summary>
@@ -364,8 +368,6 @@ CanBoot Firmware erstellen und kompilieren (Bitte aufklappen)
 <p>
 </p>
  
-# Step 2: CanBoot Firmware erstellen und kompilieren
-
 Putty: 
 
 ```
@@ -552,6 +554,17 @@ sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force
  
 # Step 4: Klipper Firmware erstellen
 
+<br>
+<details>
+    <summary>
+        <b>       
+        Klipper Firmware erstellen (Bitte aufklappen)
+        </b>
+    </summary>
+<p>
+</p>
+ 
+ 
 Putty:
 
 ```
@@ -589,8 +602,21 @@ Abschließend folgende Befehle ausführen:
 make clean
 make
 ```
-
+</details>
+<br>
+ 
 # Step 5: can0 Schnittstelle auf dem Rpi konfigurieren
+ 
+<br>
+<details>
+    <summary>
+        <b>       
+can0 Schnittstelle auf dem Rpi konfigurieren (Bitte aufklappen)
+        </b>
+    </summary>
+<p>
+</p>
+ 
 ```
 cd
 sudo nano /etc/network/interfaces.d/can0
@@ -614,9 +640,21 @@ Abschließend einen Reboot vom RPi ausführen
 ```
 sudo reboot
 ```
-
+</details>
+<br>
+ 
 # Step 6: UUID vom EBB Board auslesen
 
+ <br>
+<details>
+    <summary>
+        <b>       
+UUID vom EBB Board auslesen (Bitte aufklappen)
+        </b>
+    </summary>
+<p>
+</p>
+ 
 can0 Netzwerk checken
 ```
 ifconfig
@@ -640,10 +678,22 @@ Notiert euch die angezeigte UUID, diese wird im nächste Step benötigt.
 :warning: Was mache ich, wenn mir die UUID nicht angezeigt wird? 
 
 Überprüft folgende Punkte: [Fehlersuche](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#fehlersuche)
- 
+
+</details>
+<br>
  
 
 # Step 7: EBB Klipper Firmware flashen
+ 
+<br>
+<details>
+    <summary>
+        <b>       
+EBB Klipper Firmware flashen (Bitte aufklappen)
+        </b>
+    </summary>
+<p>
+</p>
 
 Wir benötigen folgenden Befehl um das EBB zu flashen.
 
@@ -660,7 +710,21 @@ python3 flash_can.py -f ~/klipper/out/klipper.bin -u 330a31adf6de
 ```
 Der Flashvorhang sollte starten und erfolgreich abgeschlossen werden.
 
+</details>
+<br>
+ 
+ 
 # Step 8: printer.cfg anpassen
+ 
+<br>
+<details>
+    <summary>
+        <b>       
+printer.cfg anpassen (Bitte aufklappen)
+        </b>
+    </summary>
+<p>
+</p>
 
 Folgende Punkte müsst ihr in eurer printer.cfg anpassen
 
@@ -702,6 +766,9 @@ Folgende Punkte müsst ihr in eurer printer.cfg anpassen
 <br>
  
 Pinouts der EBB42 Versionen findet ihr hier: - [BTT EBB36/42 Github](https://github.com/bigtreetech/EBB)
+ 
+</details>
+<br>
  
 # Rapido Plus HF/UHF Anschluss und Konfiguration 
  
