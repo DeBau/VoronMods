@@ -335,13 +335,35 @@ Aktuell eingesetzt werden von mir:
 
 # Step 1: CanBoot auf dem Rpi installieren
 
+<br>
+<details>
+    <summary>
+        <b>       
+CanBoot auf dem Rpi installieren (Bitte aufklappen)
+        </b>
+    </summary>
+<p>
+</p>
+ 
 In Putty folgende Befehle ausführen:
 
 ```
 sudo apt-get install git -y
 git clone https://github.com/Arksine/CanBoot
 ```
-
+</details>
+<br>
+ 
+<br>
+<details>
+    <summary>
+        <b>       
+CanBoot Firmware erstellen und kompilieren (Bitte aufklappen)
+        </b>
+    </summary>
+<p>
+</p>
+ 
 # Step 2: CanBoot Firmware erstellen und kompilieren
 
 Putty: 
@@ -381,9 +403,21 @@ Putty:
 make clean
 make
 ```
-
+</details>
+<br>
+ 
+ 
 # Step 3: CanBoot Bootloader flashen
 
+<br>
+<details>
+    <summary>
+        <b>       
+CanBoot Bootloader flashen (Bitte aufklappen)
+        </b>
+    </summary>
+<p>
+</p>
 ## :warning: Falls ihr die Heizpatrone bereits am EBB angeschlossen habt, entfernt diese vorerst, da es bei manchen Versionen vorkommt, dass der Heater Ausgang mit 100% angesteuert wird!
 
 ### :warning: Für diesen Schritt benötigen wir nur den USB Anschluss. Entfernt, falls bereits angeschlossen, den Molex Stecker mit der 24V Versorgung vom EBB
@@ -513,6 +547,9 @@ sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force
 </details>
 <br>
 
+</details>
+<br>
+ 
 # Step 4: Klipper Firmware erstellen
 
 Putty:
