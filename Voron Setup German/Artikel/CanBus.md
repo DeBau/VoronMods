@@ -225,6 +225,20 @@ Es geht auch ohne die Widerstände am U2C, aber schaut man sich mal folgende Gra
  
  
 ## Elektrischer Anschluss
+
+<br>
+<details>
+    <summary>
+        <b>       
+        Elektrischer Anschluss (Bitte aufklappen)
+        </b>
+    </summary>
+<p>
+</p>
+ folgt! 
+ </details>
+<br> 
+
 Hier gibt es diverse Möglichkeiten. 
 Bewährt haben sich bei mir folgende:
 
@@ -315,25 +329,27 @@ Aktuell eingesetzt werden von mir:
 
 - Ölflex Classic 810 4x0.75mm² / 4x1mm²
 - Twisted Pair (YSTY) als Datenleitung + Einzeladern 0,75mm²-1mm² für die Spannungsversorgung
- </details>
- 
+</details>
 <br>
+ 
+</details>
+<br> 
                       
                       
 # :warning: Der Reihe nach folgende Schritte ausführen
-* [CanBoot auf dem Rpi installieren](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#canboot-auf-dem-rpi-installieren)
-* [CanBoot Firmware erstellen und compilieren](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#canboot-firmware-erstellen-und-compilieren)
-* [CanBoot flashen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#canboot-bootloader-flashen)
-* [Klipper Firmware erstellen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#klipper-firmware-erstellen)
-* [can0 Schnittstelle auf dem Rpi konfigurieren](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#5-can0-schnittstelle-auf-dem-rpi-konfigurieren)
-* [UUID vom EBB Board auslesen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#6-uuid-vom-ebb-board-auslesen)
-* [EBB Klipper Firmware flashen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#ebb-klipper-firmware-flashen)
-* [printer.cfg anpassen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#printercfg-anpassen)
+* [CanBoot auf dem Rpi installieren](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#step-1-canboot-auf-dem-rpi-installieren)
+* [CanBoot Firmware erstellen und compilieren](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#step-2-canboot-firmware-erstellen-und-kompilieren)
+* [CanBoot flashen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#step-3-canboot-bootloader-flashen)
+* [Klipper Firmware erstellen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#step-4-klipper-firmware-erstellen)
+* [can0 Schnittstelle auf dem Rpi konfigurieren](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#step-5-can0-schnittstelle-auf-dem-rpi-konfigurieren)
+* [UUID vom EBB Board auslesen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#step-6-uuid-vom-ebb-board-auslesen)
+* [EBB Klipper Firmware flashen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#step-7-ebb-klipper-firmware-flashen)
+* [printer.cfg anpassen](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus.md#step-8-printercfg-anpassen)
 
 
 
 
-# Step 1: CanBoot auf dem Rpi installieren
+## Step 1: CanBoot auf dem Rpi installieren
 
 <br>
 <details>
@@ -356,7 +372,7 @@ git clone https://github.com/Arksine/CanBoot
  
 
  
-# Step 2: CanBoot Firmware erstellen und kompilieren
+## Step 2: CanBoot Firmware erstellen und kompilieren
 
 <br>
 <details>
@@ -409,7 +425,7 @@ make
 <br>
  
  
-# Step 3: CanBoot Bootloader flashen
+## Step 3: CanBoot Bootloader flashen
 
 <br>
 <details>
@@ -552,7 +568,7 @@ sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force
 </details>
 <br>
  
-# Step 4: Klipper Firmware erstellen
+## Step 4: Klipper Firmware erstellen
 
 <br>
 <details>
@@ -605,7 +621,7 @@ make
 </details>
 <br>
  
-# Step 5: can0 Schnittstelle auf dem Rpi konfigurieren
+## Step 5: can0 Schnittstelle auf dem Rpi konfigurieren
  
 <br>
 <details>
@@ -643,7 +659,7 @@ sudo reboot
 </details>
 <br>
  
-# Step 6: UUID vom EBB Board auslesen
+## Step 6: UUID vom EBB Board auslesen
 
  <br>
 <details>
@@ -683,7 +699,7 @@ Notiert euch die angezeigte UUID, diese wird im nächste Step benötigt.
 <br>
  
 
-# Step 7: EBB Klipper Firmware flashen
+## Step 7: EBB Klipper Firmware flashen
  
 <br>
 <details>
@@ -714,7 +730,7 @@ Der Flashvorhang sollte starten und erfolgreich abgeschlossen werden.
 <br>
  
  
-# Step 8: printer.cfg anpassen
+## Step 8: printer.cfg anpassen
  
 <br>
 <details>
@@ -770,10 +786,84 @@ Pinouts der EBB42 Versionen findet ihr hier: - [BTT EBB36/42 Github](https://git
 </details>
 <br>
  
-# Rapido Plus HF/UHF Anschluss und Konfiguration 
+<br>
+<details>
+    <summary>
+        <b>       
+Bespiel für die Anpassung der Pins mit der neuen mcu EBB (Bitte aufklappen)
+        </b>
+    </summary>
+<p>
+</p>
  
 
+### [Beispiel printer.cfg (klick)](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/v2_CANbus_printer_cfg.md)
+```
+Übersicht der anzupassenden Pins
+
+[mcu EBB]
+canbus_uuid: 330a31adf6de
+
+[adxl345]
+cs_pin: EBB:PB12
+spi_software_sclk_pin: EBB:PB10
+spi_software_mosi_pin: EBB:PB11
+spi_software_miso_pin: EBB:PB2
+axes_map: x,y,z
+
+[resonance_tester]
+accel_chip: adxl345
+probe_points:
+    150,150,20 
+
+[extruder]
+step_pin: EBB:PD0
+dir_pin: !EBB:PD1
+enable_pin: !EBB:PD2
+heater_pin: EBB:PA2
+sensor_pin: EBB:PA3
+
+[tmc2209 extruder]
+uart_pin: EBB:PA15
+
+[probe]
+pin: EBB:PB8 
+
+[fan]
+pin: EBB:PA0
+
+[heater_fan hotend_fan]
+pin: EBB:PA1 
+
+[temperature_sensor ebb_temp]
+sensor_type: temperature_mcu
+sensor_mcu: EBB
+min_temp: 0
+max_temp: 120
+```
+
+#### Optional für die Voron Stealthburner LEDs
+
+Die Datei stealthburner_leds.cfg herunterladen, als Datei unter Mainsail einfügen und die entsprechende Pin Belegung wählen
+
+#### [Stealthburner LED CANbus](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/stealthburner_leds.cfg)
+
+in der printer.cfg folgenden Zeile hinzufügen:
+
+```
+[include stealthburner_leds.cfg]
+```
+
+</details>
+<br>
  
+ 
+ 
+ 
+ 
+ 
+# Rapido Plus HF/UHF Anschluss und Konfiguration 
+
 <br>
 <details>
     <summary>
@@ -858,66 +948,6 @@ dir_pin: EBB:PD1
 <br>
  
  
-## Bespiel für die Anpassung der Pins mit der neuen mcu EBB
-###### alle anderen Einstellungen bleiben bestehen
-
-### [Beispiel printer.cfg (klick)](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/v2_CANbus_printer_cfg.md)
-```
-Übersicht der anzupassenden Pins
-
-[mcu EBB]
-canbus_uuid: 330a31adf6de
-
-[adxl345]
-cs_pin: EBB:PB12
-spi_software_sclk_pin: EBB:PB10
-spi_software_mosi_pin: EBB:PB11
-spi_software_miso_pin: EBB:PB2
-axes_map: x,y,z
-
-[resonance_tester]
-accel_chip: adxl345
-probe_points:
-    150,150,20 
-
-[extruder]
-step_pin: EBB:PD0
-dir_pin: !EBB:PD1
-enable_pin: !EBB:PD2
-heater_pin: EBB:PA2
-sensor_pin: EBB:PA3
-
-[tmc2209 extruder]
-uart_pin: EBB:PA15
-
-[probe]
-pin: EBB:PB8 
-
-[fan]
-pin: EBB:PA0
-
-[heater_fan hotend_fan]
-pin: EBB:PA1 
-
-[temperature_sensor ebb_temp]
-sensor_type: temperature_mcu
-sensor_mcu: EBB
-min_temp: 0
-max_temp: 120
-```
-
-#### Optional für die Voron Stealthburner LEDs
-
-Die Datei stealthburner_leds.cfg herunterladen, als Datei unter Mainsail einfügen und die entsprechende Pin Belegung wählen
-
-#### [Stealthburner LED CANbus](https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/stealthburner_leds.cfg)
-
-in der printer.cfg folgenden Zeile hinzufügen:
-
-```
-[include stealthburner_leds.cfg]
-```
-
  # Fehlersuche
  
  <br>
