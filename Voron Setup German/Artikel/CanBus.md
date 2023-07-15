@@ -879,7 +879,7 @@ in der printer.cfg folgenden Zeile hinzufügen:
 <img src="https://github.com/DeBau/VoronMods/blob/main/Voron%20Setup%20German/Artikel/CanBus_Pics/Rapido_Plus_EBB_Max.png" alt="Rapiode_EBBMax">
  
 - PT1000 am Port P3 Pin 2/3 anschließen. Die Polung ist hierbei nicht entscheidend.
-- Jumper setzen
+- DIP Schalter passend stellen
 - Extruder Sektion entsprechend anpassen
  
 ```
