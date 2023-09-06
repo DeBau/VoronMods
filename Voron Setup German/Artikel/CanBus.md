@@ -1,5 +1,7 @@
 # CanBus Installation 
 
+#### :warning: wird aktuell nicht weiter gepflegt! 
+
 
 #### Support
 Wenn ihr mir einen Kaffee ausgeben wollt: 
