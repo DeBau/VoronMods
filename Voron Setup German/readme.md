@@ -1,3 +1,6 @@
+## veraltet, wird nicht mehr auf den aktuellen Stand gehalten
+
+
 ## Initial Setup für einen Voron V2 350
 - Octopus v1.1 Board
 - TMC2209 Treiber
