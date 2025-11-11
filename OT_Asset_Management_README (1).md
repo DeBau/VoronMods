@@ -178,48 +178,6 @@
                   /api/v1/agents/push
 ```
 
-### Netzwerk-Segmentierung (IEC 62443 konform)
-
-<table>
-<tr>
-<th>Konfiguration</th>
-<th>Beschreibung</th>
-<th>Security Level</th>
-</tr>
-<tr>
-<td><strong>2 NICs Physisch</strong></td>
-<td>
-• NIC 1: IT-Netzwerk (Management)<br>
-• NIC 2: OT-Netzwerk (Agent Reception)<br>
-• Physische Trennung<br>
-• Keine Routing zwischen NICs<br>
-• Separate Auth per NIC
-</td>
-<td>⭐⭐⭐⭐⭐</td>
-</tr>
-<tr>
-<td><strong>1 NIC + VLAN</strong></td>
-<td>
-• VLAN 100: IT Management<br>
-• VLAN 200: OT Agent Data<br>
-• 802.1Q Tagging<br>
-• Switch-Level Isolation<br>
-• VLAN-specific Auth Keys
-</td>
-<td>⭐⭐⭐⭐</td>
-</tr>
-<tr>
-<td><strong>1 NIC + Port</strong></td>
-<td>
-• Port 443: IT Access<br>
-• Port 8443: OT Agent Push<br>
-• Firewall Rules<br>
-• Port-specific Auth<br>
-• Rate Limiting per Port
-</td>
-<td>⭐⭐⭐</td>
-</tr>
-</table>
 
 ### Datenfluss-Prinzipien
 
