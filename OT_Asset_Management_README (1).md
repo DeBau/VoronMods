@@ -106,38 +106,38 @@
     │    (React)       │                   │   • PROFINET     │
     │                  │                   │   • Modbus       │
     └────────┬─────────┘                   │   • S7/S7+       │
-             │                              │   • SNMP         │
-             │ HTTPS                        │   • SSH          │
-             ▼                              └────────┬─────────┘
-    ┌──────────────────────────────────────────────┼─────────┐
+             │                             │   • SNMP         │
+             │ HTTPS                       │   • SSH          │
+             ▼                             └────────┬─────────┘
+    ┌───────────────────────────────────────────────┼─────────┐
     │                     API SERVER (FastAPI)      │         │
     │  ┌────────────────────────────────────────────▼─────┐   │
-    │  │         Multi-NIC IEC 62443 Configuration       │   │
+    │  │         Multi-NIC IEC 62443 Configuration        │   │
     │  ├──────────────────────────────────────────────────┤   │
-    │  │  NIC 1: IT Network (Bidirectional)              │   │
-    │  │  NIC 2: OT Network (Unidirectional Inbound)     │   │
+    │  │  NIC 1: IT Network (Bidirectional)               │   │
+    │  │  NIC 2: OT Network (Unidirectional Inbound)      │   │
     │  └──────────────────────────────────────────────────┘   │
-    │                                                          │
+    │                                                         │
     │  ┌──────────────────────────────────────────────────┐   │
     │  │          AUTHENTICATION OPTIONS                  │   │
     │  ├──────────────────────────────────────────────────┤   │
     │  │  IT Zone:           │  OT Zone:                  │   │
-    │  │  • None (Dev)       │  • API Key (Default)      │   │
-    │  │  • Basic Auth       │  • mTLS (Recommended)     │   │
-    │  │  • API Key          │  • Basic Auth             │   │
-    │  │  • mTLS/SSL         │  • SSL/TLS                │   │
-    │  │  • LDAP/AD          │  • Zone-specific Keys     │   │
+    │  │  • None (Dev)       │  • API Key (Default)       │   │
+    │  │  • Basic Auth       │  • mTLS (Recommended)      │   │
+    │  │  • API Key          │  • Basic Auth              │   │
+    │  │  • mTLS/SSL         │  • SSL/TLS                 │   │
+    │  │  • LDAP/AD          │                            │   │
     │  └──────────────────────────────────────────────────┘   │
-    ├──────────────────────────────────────────────────────────┤
-    │                    SERVICE LAYER                         │
-    │  • Asset Service          • Financial Rollup Service     │
-    │  • Version Control        • Discovery Service            │
-    │  • Security Assessment    • Risk Calculation             │
-    │  • CVE Matching          • Compliance Service            │
-    │  • OEE Calculation       • Analytics Engine              │
-    └────────────────────┬──────────────────────────────────────┘
-                         │
-                         ▼
+    ├─────────────────────────────────────────────────────────┤
+    │                    SERVICE LAYER                        │
+    │  • Asset Service          • Financial Rollup Service    │
+    │  • Version Control        • Discovery Service           │
+    │  • Security Assessment    • Risk Calculation            │
+    │  • CVE Matching           • Compliance Service          │
+    │  • OEE Calculation        • Analytics Engine            │
+    └─────────────────────────────┬───────────────────────────┘
+                                  │
+                                  ▼
     ┌──────────────────────────────────────────────────────────┐
     │                   DATABASE (PostgreSQL)                  │
     │         Assets | Equipment | Processes | Organizations   │
@@ -148,30 +148,29 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    OT ZONE AGENTS                          │
+│                    OT ZONE AGENTS                           │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  Windows Agents (Level 2-3)          OT Network Scanner    │
-│  ┌─────────────────────┐            ┌──────────────────┐  │
-│  │ • WMI Collection    │            │ • PROFINET DCP   │  │
-│  │ • Hardware Info     │            │ • S7 Protocol    │  │
-│  │ • Software Inventory│            │ • Modbus TCP     │  │
-│  │ • Network Config    │            │ • SNMP Discovery │  │
-│  │ • Performance Data  │            │ • SSH Scanner    │  │
-│  └──────────┬──────────┘            └────────┬─────────┘  │
-│             │                                 │             │
-│             └─────────────┬───────────────────┘             │
+│  Windows Agents (Level 2-3)          OT Network Scanner     │
+│  ┌─────────────────────┐            ┌──────────────────┐    │
+│  │ • WMI Collection    │            │ • PROFINET DCP   │    │
+│  │ • Hardware Info     │            │ • S7 Protocol    │    │
+│  │ • Software Inventory│            │ • Modbus TCP     │    │
+│  │ • Network Config    │            │ • SNMP Discovery │    │
+│  │ • Performance Data  │            │ • SSH Scanner    │    │
+│  └──────────┬──────────┘            └────────┬─────────┘    │
+│             │                                │              │
+│             └─────────────┬──────────────────┘              │
 │                           │                                 │
-│                    PUSH ONLY (HTTPS)                       │
+│                    PUSH ONLY (HTTPS)                        │
 │                           │                                 │
-│             ┌─────────────▼──────────────┐                 │
-│             │   Unidirectional Push      │                 │
-│             │   • JSON Payload           │                 │
-│             │   • Compressed (gzip)      │                 │
-│             │   • Encrypted (TLS 1.3)    │                 │
-│             │   • Auth (API Key/mTLS)    │                 │
-│             │   • No Callback            │                 │
-│             └─────────────────────────────┘                 │
+│             ┌─────────────▼──────────────┐                  │
+│             │   Unidirectional Push      │                  │
+│             │   • JSON Payload           │                  │
+│             │   • Compressed (gzip)      │                  │
+│             │   • Encrypted (TLS 1.3)    │                  │
+│             │   • Auth (API Key/mTLS)    │                  │
+│             └────────────────────────────┘                  │
 └─────────────────────────────────────────────────────────────┘
                            ▲
                            │
